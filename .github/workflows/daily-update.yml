@@ -1,0 +1,78 @@
+name: Daily Knowledge Base Update
+
+on:
+  schedule:
+    # Run daily at 10:00 UTC (18:00 CST)
+    - cron: '0 10 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-knowledge-base:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check for updated knowledge base
+        id: check
+        run: |
+          # This step checks if a new version of VLA_EXPERT_MEMORY.md
+          # has been pushed to the 'updates' branch by the local sync script
+          git fetch origin updates 2>/dev/null || echo "No updates branch yet"
+
+          if git rev-parse origin/updates >/dev/null 2>&1; then
+            # Compare the memory file
+            git diff main..origin/updates -- skill/references/VLA_EXPERT_MEMORY.md > /tmp/diff.txt
+            if [ -s /tmp/diff.txt ]; then
+              echo "has_update=true" >> $GITHUB_OUTPUT
+              echo "📦 New knowledge base update found!"
+            else
+              echo "has_update=false" >> $GITHUB_OUTPUT
+              echo "✅ Knowledge base is already up to date."
+            fi
+          else
+            echo "has_update=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No updates branch found. Push updates locally first."
+          fi
+
+      - name: Merge updates
+        if: steps.check.outputs.has_update == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Merge only the knowledge base file from updates branch
+          git checkout origin/updates -- skill/references/VLA_EXPERT_MEMORY.md
+
+          # Update changelog with today's date
+          TODAY=$(date +%Y-%m-%d)
+          HEADER=$(head -1 skill/references/VLA_EXPERT_MEMORY.md | sed 's/# //')
+
+          # Prepend update entry to CHANGELOG.md
+          echo -e "## ${TODAY} — Daily Update\n\n- Knowledge base synced: ${HEADER}\n" | cat - CHANGELOG.md > /tmp/changelog.tmp
+          mv /tmp/changelog.tmp CHANGELOG.md
+
+          git add skill/references/VLA_EXPERT_MEMORY.md CHANGELOG.md
+          git commit -m "📚 Daily knowledge base update — ${TODAY}"
+          git push origin main
+
+      - name: Summary
+        run: |
+          echo "### 📊 Daily Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check.outputs.has_update }}" == "true" ]; then
+            echo "✅ Knowledge base updated successfully." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ No new updates available." >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Memory file:** \`skill/references/VLA_EXPERT_MEMORY.md\`" >> $GITHUB_STEP_SUMMARY
+          LINES=$(wc -l < skill/references/VLA_EXPERT_MEMORY.md)
+          SIZE=$(du -h skill/references/VLA_EXPERT_MEMORY.md | cut -f1)
+          echo "**Size:** ${SIZE} (${LINES} lines)" >> $GITHUB_STEP_SUMMARY
