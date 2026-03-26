@@ -1,18 +1,18 @@
 <p align="center">
   <h1 align="center">🤖 VLA Expert Skill</h1>
   <p align="center">
-    <strong>Turn your AI coding assistant into a VLA domain expert — in one step</strong><br/>
-    328+ papers · adversarial debate · daily updates · multi-platform<br/><br/>
-    <a href="#quick-install"><img src="https://img.shields.io/badge/Claude_Code-supported-blueviolet?logo=anthropic" alt="Claude"/></a>
-    <a href="#quick-install"><img src="https://img.shields.io/badge/Cursor-supported-00C7B7" alt="Cursor"/></a>
-    <a href="#quick-install"><img src="https://img.shields.io/badge/Codex-supported-412991?logo=openai" alt="Codex"/></a>
-    <a href="#quick-install"><img src="https://img.shields.io/badge/OpenCode-supported-333" alt="OpenCode"/></a>
+    <strong>Give your AI assistant expert-level judgment in VLA</strong><br/>
+    Composable domain knowledge module · Activate on-demand · Never interferes with your workflow<br/><br/>
+    <a href="#installation"><img src="https://img.shields.io/badge/Claude_Code-supported-blueviolet?logo=anthropic" alt="Claude"/></a>
+    <a href="#installation"><img src="https://img.shields.io/badge/Cursor-supported-00C7B7" alt="Cursor"/></a>
+    <a href="#installation"><img src="https://img.shields.io/badge/Codex-supported-412991?logo=openai" alt="Codex"/></a>
+    <a href="#installation"><img src="https://img.shields.io/badge/OpenCode-supported-333" alt="OpenCode"/></a>
   </p>
   <p align="center">
     <a href="https://github.com/sou350121/VLA-expert-skill/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"/></a>
-    <a href="https://github.com/sou350121/VLA-Handbook"><img src="https://img.shields.io/badge/Source-VLA--Handbook_⭐100+-orange?logo=github" alt="VLA-Handbook"/></a>
-    <img src="https://img.shields.io/badge/Papers-328%2B-brightgreen" alt="Papers"/>
-    <img src="https://img.shields.io/badge/Updates-Daily-blueviolet" alt="Daily Update"/>
+    <a href="https://github.com/sou350121/VLA-Handbook"><img src="https://img.shields.io/badge/Knowledge_Source-VLA--Handbook_⭐100+-orange?logo=github" alt="VLA-Handbook"/></a>
+    <img src="https://img.shields.io/badge/Papers-328%2B_covered-brightgreen" alt="Papers"/>
+    <img src="https://img.shields.io/badge/Updates-Daily_Auto-blueviolet" alt="Daily Update"/>
   </p>
   <p align="center">
     <b>English</b> · <a href="./README.md">中文</a>
@@ -21,70 +21,67 @@
 
 ---
 
-## Why?
+## What is this?
 
-You ask your AI assistant to analyze a VLA paper — it gives you a polite, correct, but useless summary. You ask for a direction call — it hedges both ways.
+VLA Expert Skill is a **composable domain knowledge module**—it doesn't manage your workflow, doesn't replace your development tools. It does one thing:
 
-**The problem isn't that AI isn't smart enough. It lacks domain knowledge and a judgment framework.**
+**When your AI assistant encounters a VLA (Vision-Language-Action) question, it gets expert-level judgment based on 328+ papers and deployment experience.**
 
-VLA Expert Skill fixes both:
+It sits quietly most of the time. When you ask about VLA architecture trade-offs, paper evaluations, direction calls, or deployment pitfalls, it activates, provides deep analysis grounded in evidence, then hands control back to you.
 
-1. **Injects compressed knowledge from 328+ papers** — not summaries, but engineering details, architecture choices, and training recipes
-2. **Enforces adversarial three-perspective debate** — 🔴 Bull / 🔵 Bear / 🟢 Arbiter, every judgment gets cross-attacked
+> 💡 It has a **complementary relationship** with frameworks like [Superpowers](https://github.com/obra/superpowers): Superpowers manages **how you code** (brainstorm → spec → implement → test), VLA Expert Skill manages **what decisions you make in the VLA domain**. Both can be installed together without interference.
 
-> Research shows ([AI-Augmented Predictions, 2024](https://arxiv.org/abs/2402.07862)): even a biased AI improves human prediction accuracy by +29%. The mechanism isn't "AI is more accurate" — it's **forcing you to rethink**.
+## When does it activate?
 
-## Demo: Before vs After
+| You ask | Activates? | What happens |
+|---------|-----------|--------------|
+| "Help me refactor this Python module" | ❌ No | That's workflow—your dev tools handle it |
+| "What action head does π0.6 use?" | ✅ Yes | Query from 328-paper memory in 2-5 sentences |
+| "Diffusion Policy vs Flow Matching—which should we use?" | ✅ Yes | 🔴🔵🟢 Three-perspective debate + calibrated confidence |
+| "Is this VLA paper worth reading?" | ✅ Yes | Information value triage → debate → belief update |
+| "Write a unit test" | ❌ No | Development task, not domain knowledge |
+| "What direction should we bet on next for VLA?" | ✅ Yes | Full debate + crucial experiments + contrarian checks |
+| "How do I deploy π0 on a FR3 arm?" | ✅ Yes | Step-by-step + hardware picks + common pitfalls (300+ community notes) |
+| "Is Physical Intelligence worth tracking?" | ✅ Yes | Competitive positioning + moats + risk matrix |
 
-**You ask**: "Diffusion Policy vs Flow Matching — which is better?"
+## Demo: Without vs With
 
-| | Vanilla AI assistant | **With VLA Expert Skill** |
-|---|---|---|
-| Answer | "Both have pros and cons, Diffusion is more mature, Flow Matching is newer…" (correct but useless) | 🔴 Bull: FM achieves 50Hz in 5-20 steps on π0, engineering winner `[Signal: §2]`<br/>🔵 Bear: FM's multi-modal coverage on high-dim bimanual tasks lags Diffusion `[Inference]`<br/>🟢 Arbiter: 79% confidence → FM (calibrated: 71%). Kill experiment: if a Diffusion-beats-FM bimanual comparison appears within 6 months, drop to 60%. |
+**You ask**: "Which is better—Diffusion Policy or Flow Matching?"
 
-## What it can do
-
-| Your question | Mode | What AI does |
-|--------------|------|-------------|
-| "What architecture does π0.6 use?" | 🔍 Lookup | Retrieves from 328-paper memory, 2-5 sentences |
-| "Diffusion vs Flow Matching?" | ⚖️ Compare | Comparison table + Bull/Bear debate + calibrated verdict |
-| "Analyze this VLA paper for me" | 📄 Paper Eval | Value filter → adversarial debate → belief update |
-| "What VLA direction should I bet on?" | 🎯 Direction | Full debate + kill experiments + contrarian check + temporal arbitrage |
-| "How to deploy π0 on FR3?" | 🔧 Deploy | Steps + hardware picks + common pitfalls (from 300+ field notes) |
-| "How is Physical Intelligence doing?" | 💼 Business | Competitive position + moat analysis + risk matrix |
-| "Preparing for VLA interviews" | 🎤 Interview | Structured answers + high-frequency topics |
-| "Haven't followed VLA for 6 months" | 📰 Catch-up | Timeline narrative: old consensus → new consensus |
+| Without VLA Expert Skill | **With VLA Expert Skill** |
+|---|---|
+| "Both have trade-offs. Diffusion is more mature, Flow Matching is newer…" (correct but useless) | 🔴 Bull: FM hits 50Hz on π0 with 5-20 reasoning steps—engineering already favors it `[signal: §2]`<br/>🔵 Bear: FM's multimodal coverage on high-DoF bimanual tasks lags Diffusion `[inference]`<br/>🟢 Arbiter: 79% confidence → FM (calibrated to 71%). Falsifiable: if 6-month window sees Diffusion win on bimanual, drop to 60%. |
 
 ## Knowledge Coverage
 
-Knowledge sourced from [**VLA-Handbook**](https://github.com/sou350121/VLA-Handbook) (⭐100+) — an engineering-focused VLA knowledge base in Chinese, with daily auto-updates.
+Sourced from [**VLA-Handbook**](https://github.com/sou350121/VLA-Handbook) (⭐100+), compressed into on-demand domain memory:
 
 ```
-Architecture     RT-1 → RT-2 → Octo → OpenVLA → π0 → π0.5 → π0.6
-Action Gen       Diffusion Policy · Flow Matching · FAST Tokenization · Autoregressive
-Training         Behavior Cloning · Co-training · RL Post-training · Self-improvement
-World Models     Cosmos · Video prediction · Physics sim · Decision support
-Tactile          TacVLA · Visuo-tactile fusion · Force feedback · Proprioception
-Deployment       300+ community field notes (CN+EN) · Real-robot guides · Sim-to-Real
-Industry         PI($2.4B) · Figure · Tesla Optimus · NVIDIA GR00T · AGIBOT · Unitree · Rhoda AI($4.5B)
-Belief Tracking  10 calibrated beliefs (incl. contrarian) · 5 convergence phases · kill experiment deadlines
+Model architectures          RT-1 → RT-2 → Octo → OpenVLA → π0 → π0.5 → π0.6
+Action generation paradigms  Diffusion Policy · Flow Matching · FAST Tokenization · Autoregressive
+Training paradigms           Behavior Cloning · Co-training · RL Post-training · Self-improving loops
+World models                 Cosmos · Video prediction · Physics simulation · Planning augmentation
+Tactile & multimodality      TacVLA · Vision-touch fusion · Force feedback · Proprioception
+Deployment in the wild       300+ EN/CN community field notes · Real-robot guides · Sim-to-Real
+Industry landscape           PI($2.4B) · Figure · Tesla Optimus · NVIDIA GR00T · Unitree · Rhoda AI($4.5B)
+Belief tracking system       10 calibrated beliefs (+ contrarian signals) · 5 convergence phases · falsifiable experiments
 ```
 
 ## Built-in Cognitive Discipline
 
-This isn't just a RAG knowledge base. It has strict epistemic guardrails:
+When activated, it doesn't just fetch knowledge—it runs a strict judgment framework:
 
 | Mechanism | What it does | Why |
 |-----------|-------------|-----|
-| **Source grading** | Every claim tagged `[Signal]` / `[Inference]` / `[Bet]` | You know what's hard data vs speculation |
-| **Humility discount** | Confidence >80% auto-multiplied by 0.9 | LLMs are systematically overconfident at high certainty ([ForecastBench](https://arxiv.org/abs/2409.11839)) |
-| **Conservative bias fix** | Strong evidence → min ±5% update; consensus → min ±10% | LLMs under-update beliefs ([EvolveCast](https://arxiv.org/abs/2310.15145)) |
-| **Kill conditions** | Every judgment has "what would overturn this + by when" | Unfalsifiable = invalid |
-| **Anti-hallucination** | If not in memory, says "not recorded" — never fabricates | A wrong specific number is worse than admitting ignorance |
+| **Three-perspective debate** | 🔴 Bull / 🔵 Bear / 🟢 Arbiter directly attack each other | Forces blind spots into the open, improves judgment quality ([AI-Augmented Predictions](https://arxiv.org/abs/2402.07862)) |
+| **Source tagging** | Every claim marked `[signal]` / `[inference]` / `[wager]` | Distinguish hard data from speculation |
+| **Humility discount** | >80% confidence auto-scaled ×0.9 | LLMs overconfident in high-certainty range ([ForecastBench](https://arxiv.org/abs/2409.11839)) |
+| **Falsifiability** | Every judgment includes "what would prove me wrong + deadline" | Non-falsifiable = invalid |
+| **Hallucination shield** | When memory has no answer: "Not recorded" instead of making it up | Wrong numbers harm worse than admitting ignorance |
 
 ## Installation
 
-> **Note:** Installation differs by platform. Claude Code and Cursor use file copying. Codex and OpenCode can fetch instructions directly.
+> **Note:** Installation varies by platform. VLA Expert Skill installs as a knowledge module and doesn't interfere with existing workflow configs (like Superpowers).
 
 ### Claude Code / Cowork
 
@@ -92,6 +89,8 @@ This isn't just a RAG knowledge base. It has strict epistemic guardrails:
 git clone https://github.com/sou350121/VLA-expert-skill.git
 cp -r VLA-expert-skill/skill/ your-project/.claude/skills/vla-expert/
 ```
+
+Claude Code automatically activates this Skill based on conversation context—only triggers on VLA topics.
 
 ### Cursor
 
@@ -110,7 +109,7 @@ Tell Codex:
 Fetch and follow instructions from https://raw.githubusercontent.com/sou350121/VLA-expert-skill/main/platforms/codex/SYSTEM_PROMPT.md
 ```
 
-Detailed docs: [platforms/codex/SYSTEM_PROMPT.md](platforms/codex/SYSTEM_PROMPT.md)
+Full docs: [platforms/codex/SYSTEM_PROMPT.md](platforms/codex/SYSTEM_PROMPT.md)
 
 ### OpenCode
 
@@ -130,30 +129,31 @@ cp VLA-expert-skill/platforms/codex/SYSTEM_PROMPT.md .opencode/instructions.md
 
 ### Other AI Tools
 
-Use [`platforms/codex/SYSTEM_PROMPT.md`](platforms/codex/SYSTEM_PROMPT.md) as system prompt and attach [`skill/references/VLA_EXPERT_MEMORY.md`](skill/references/VLA_EXPERT_MEMORY.md) as context.
+Use the contents of [`platforms/codex/SYSTEM_PROMPT.md`](platforms/codex/SYSTEM_PROMPT.md) as your system prompt, and attach [`skill/references/VLA_EXPERT_MEMORY.md`](skill/references/VLA_EXPERT_MEMORY.md) as context.
 
 ### Verify Installation
 
-Start a new session and ask:
+Start a fresh session and ask: "Diffusion Policy or Flow Matching—which is better?"—if you see 🔴🔵🟢 three-perspective debate, installation succeeded.
 
-> "Diffusion Policy vs Flow Matching — which is better?"
+## Standalone vs Deep Mode
 
-If the answer shows 🔴 Bull / 🔵 Bear / 🟢 Arbiter three-perspective debate, you're good.
+| Mode | Condition | Depth |
+|------|-----------|-------|
+| **Standalone** | VLA Expert Skill only | Compressed memory covers ~90% of scenarios |
+| **Deep Mode** | Also clone [VLA-Handbook](https://github.com/sou350121/VLA-Handbook) | On-demand access to full paper breakdowns; 5-20× more context |
 
-### Standalone vs Deep Mode
+## Related Projects
 
-| Mode | Requirement | Depth |
-|------|------------|-------|
-| **Standalone** | Just this Skill | Compressed memory covers 90% of scenarios |
-| **Deep** | Also clone [VLA-Handbook](https://github.com/sou350121/VLA-Handbook) | On-demand access to full paper dissections, 5-20× more detail |
-
-> 🔗 Recommended: pair with [**VLA-Handbook**](https://github.com/sou350121/VLA-Handbook) (⭐100+) for Deep Mode.
+| Tool | What it does | Relationship with VLA Expert Skill |
+|------|-------------|-----------------------------------|
+| [Superpowers](https://github.com/obra/superpowers) | Development workflow framework (spec → plan → implement → test) | **Complementary**. Superpowers manages how you code; VLA Expert Skill manages what decisions you make in VLA domain |
+| [VLA-Handbook](https://github.com/sou350121/VLA-Handbook) | Complete VLA knowledge base (70+ paper breakdowns + 300+ community field notes) | **Upstream data source**. Skill knowledge is compressed from Handbook; use both together to unlock deep mode |
+| Cursor Rules / .codex | Platform-level AI configuration | **Coexist**. VLA Expert Skill installs as a rule alongside your others—no conflicts |
 
 ## Daily Updates
 
-The knowledge base is auto-synced daily, tracking: new papers & breakthroughs, belief confidence shifts, convergence phase transitions, industry moves & funding, community deployment experiences.
+Knowledge is synced daily via automation pipeline. Stay current:
 
-Stay current:
 ```bash
 cd VLA-expert-skill && git pull
 ```
@@ -163,33 +163,27 @@ cd VLA-expert-skill && git pull
 ```
 VLA-expert-skill/
 ├── skill/
-│   ├── SKILL.md                    # Full Skill definition (routing + 8 modes + debate protocol)
+│   ├── SKILL.md                    # Skill definition (activation triggers + intent routing + debate protocol)
 │   └── references/
 │       └── VLA_EXPERT_MEMORY.md    # Compressed knowledge base (328+ papers, daily updates)
 ├── platforms/
-│   ├── cursor/.cursorrules         # Cursor Rules adapter
-│   └── codex/SYSTEM_PROMPT.md      # Codex / OpenCode / generic system prompt
-├── INSTALL.md                      # LLM-readable self-install guide
+│   ├── cursor/.cursorrules         # Cursor Rules adaptation
+│   └── codex/SYSTEM_PROMPT.md      # Codex / OpenCode / universal system prompt
+├── INSTALL.md                      # LLM-readable self-service guide
 ├── .github/workflows/              # GitHub Actions automation
 └── README.md / README_EN.md
 ```
 
-## Related Projects
-
-| Project | Description |
-|---------|-------------|
-| [**VLA-Handbook**](https://github.com/sou350121/VLA-Handbook) ⭐100+ | The knowledge source for this Skill. Full Chinese VLA knowledge base: 70+ paper dissections, 300+ community field notes, daily auto-updates. **Recommended for Deep Mode.** |
-
 ## License
 
-[MIT](LICENSE) — use, modify, distribute freely.
+[MIT](LICENSE)—use, modify, distribute freely.
 
 ## Contributing
 
-Contributions welcome! Paper analyses, deployment experiences, bug reports — please open an Issue or PR.
+Contributions welcome! Paper analysis, deployment experience, bug reports—open an Issue or PR.
 
 ---
 
 <p align="center">
-  <sub>Built on <a href="https://github.com/sou350121/VLA-Handbook">VLA-Handbook</a> · Knowledge base updated daily · Let AI help you make better research decisions</sub>
+  <sub>Built on <a href="https://github.com/sou350121/VLA-Handbook">VLA-Handbook</a> · Daily-updated knowledge base · Composable domain knowledge module</sub>
 </p>
