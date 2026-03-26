@@ -38,7 +38,7 @@
 
 ## 知识覆盖
 
-基于 [**VLA-Handbook**](https://github.com/sou350121/VLA-Handbook) 的 328+ 篇论文深度拆解，压缩为 ~15K tokens 的自足知识底座：
+基于 [**VLA-Handbook**](https://github.com/sou350121/VLA-Handbook) 的 328+ 篇论文深度拆解，压缩为 ~38KB 的自足知识底座：
 
 ```
 模型架构        RT-1 → RT-2 → Octo → OpenVLA → π0 → π0.5 → π0.6
