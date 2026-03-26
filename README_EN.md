@@ -82,25 +82,63 @@ This isn't just a RAG knowledge base. It has strict epistemic guardrails:
 | **Kill conditions** | Every judgment has "what would overturn this + by when" | Unfalsifiable = invalid |
 | **Anti-hallucination** | If not in memory, says "not recorded" — never fabricates | A wrong specific number is worse than admitting ignorance |
 
-## Quick Install
+## Installation
+
+> **Note:** Installation differs by platform. Claude Code and Cursor use file copying. Codex and OpenCode can fetch instructions directly.
+
+### Claude Code / Cowork
 
 ```bash
 git clone https://github.com/sou350121/VLA-expert-skill.git
+cp -r VLA-expert-skill/skill/ your-project/.claude/skills/vla-expert/
 ```
 
-| Platform | One-liner |
-|----------|----------|
-| **Claude Code / Cowork** | `cp -r VLA-expert-skill/skill/ .claude/skills/vla-expert/` |
-| **Cursor** | `cp VLA-expert-skill/platforms/cursor/.cursorrules .cursor/rules/vla-expert.md` |
-| **Codex CLI** | `codex --instructions VLA-expert-skill/platforms/codex/SYSTEM_PROMPT.md` |
-| **OpenCode** | `cp VLA-expert-skill/platforms/codex/SYSTEM_PROMPT.md .opencode/instructions.md` |
-| **Any LLM tool** | Use `SYSTEM_PROMPT.md` as system prompt + attach `VLA_EXPERT_MEMORY.md` |
+### Cursor
 
-> AI self-install: have your AI assistant read [INSTALL.md](INSTALL.md) — it will detect its environment and install automatically.
+```bash
+git clone https://github.com/sou350121/VLA-expert-skill.git
+mkdir -p .cursor/rules
+cp VLA-expert-skill/platforms/cursor/.cursorrules .cursor/rules/vla-expert.md
+cp VLA-expert-skill/skill/references/VLA_EXPERT_MEMORY.md docs/
+```
 
-### Verify installation
+### Codex
 
-Ask: "Diffusion Policy vs Flow Matching?" — if the answer shows 🔴🔵🟢 three-perspective debate, you're good.
+Tell Codex:
+
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/sou350121/VLA-expert-skill/main/platforms/codex/SYSTEM_PROMPT.md
+```
+
+Detailed docs: [platforms/codex/SYSTEM_PROMPT.md](platforms/codex/SYSTEM_PROMPT.md)
+
+### OpenCode
+
+Tell OpenCode:
+
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/sou350121/VLA-expert-skill/main/platforms/codex/SYSTEM_PROMPT.md
+```
+
+Or manual install:
+
+```bash
+git clone https://github.com/sou350121/VLA-expert-skill.git
+mkdir -p .opencode
+cp VLA-expert-skill/platforms/codex/SYSTEM_PROMPT.md .opencode/instructions.md
+```
+
+### Other AI Tools
+
+Use [`platforms/codex/SYSTEM_PROMPT.md`](platforms/codex/SYSTEM_PROMPT.md) as system prompt and attach [`skill/references/VLA_EXPERT_MEMORY.md`](skill/references/VLA_EXPERT_MEMORY.md) as context.
+
+### Verify Installation
+
+Start a new session and ask:
+
+> "Diffusion Policy vs Flow Matching — which is better?"
+
+If the answer shows 🔴 Bull / 🔵 Bear / 🟢 Arbiter three-perspective debate, you're good.
 
 ### Standalone vs Deep Mode
 
@@ -108,6 +146,8 @@ Ask: "Diffusion Policy vs Flow Matching?" — if the answer shows 🔴🔵🟢 t
 |------|------------|-------|
 | **Standalone** | Just this Skill | Compressed memory covers 90% of scenarios |
 | **Deep** | Also clone [VLA-Handbook](https://github.com/sou350121/VLA-Handbook) | On-demand access to full paper dissections, 5-20× more detail |
+
+> 🔗 Recommended: pair with [**VLA-Handbook**](https://github.com/sou350121/VLA-Handbook) (⭐100+) for Deep Mode.
 
 ## Daily Updates
 

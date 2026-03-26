@@ -82,25 +82,63 @@ World Model    Cosmos · 视频预测 · 物理仿真 · 决策辅助
 | **推翻条件** | 每个判断附带"什么能推翻 + 截止日期" | 不可证伪 = 无效判断 |
 | **防幻觉** | 记忆中没有就说"未记录"，不编造 | 具体的错误数字比承认不知道更有害 |
 
-## 快速安装
+## 安装
+
+> **Note:** 安装方式因平台而异。Claude Code 和 Cursor 通过文件复制，Codex 和 OpenCode 通过让 AI 自行获取指令。
+
+### Claude Code / Cowork
 
 ```bash
 git clone https://github.com/sou350121/VLA-expert-skill.git
+cp -r VLA-expert-skill/skill/ your-project/.claude/skills/vla-expert/
 ```
 
-| 平台 | 一行安装 |
-|------|---------|
-| **Claude Code / Cowork** | `cp -r VLA-expert-skill/skill/ .claude/skills/vla-expert/` |
-| **Cursor** | `cp VLA-expert-skill/platforms/cursor/.cursorrules .cursor/rules/vla-expert.md` |
-| **Codex CLI** | `codex --instructions VLA-expert-skill/platforms/codex/SYSTEM_PROMPT.md` |
-| **OpenCode** | `cp VLA-expert-skill/platforms/codex/SYSTEM_PROMPT.md .opencode/instructions.md` |
-| **任何 LLM 工具** | 用 `SYSTEM_PROMPT.md` 作为 system prompt，附加 `VLA_EXPERT_MEMORY.md` |
+### Cursor
 
-> AI 助手自助安装：让你的 AI 读 [INSTALL.md](INSTALL.md)，它会自己判断环境并完成安装。
+```bash
+git clone https://github.com/sou350121/VLA-expert-skill.git
+mkdir -p .cursor/rules
+cp VLA-expert-skill/platforms/cursor/.cursorrules .cursor/rules/vla-expert.md
+cp VLA-expert-skill/skill/references/VLA_EXPERT_MEMORY.md docs/
+```
+
+### Codex
+
+告诉 Codex：
+
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/sou350121/VLA-expert-skill/main/platforms/codex/SYSTEM_PROMPT.md
+```
+
+详细文档：[platforms/codex/SYSTEM_PROMPT.md](platforms/codex/SYSTEM_PROMPT.md)
+
+### OpenCode
+
+告诉 OpenCode：
+
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/sou350121/VLA-expert-skill/main/platforms/codex/SYSTEM_PROMPT.md
+```
+
+或手动安装：
+
+```bash
+git clone https://github.com/sou350121/VLA-expert-skill.git
+mkdir -p .opencode
+cp VLA-expert-skill/platforms/codex/SYSTEM_PROMPT.md .opencode/instructions.md
+```
+
+### 其他 AI 工具
+
+将 [`platforms/codex/SYSTEM_PROMPT.md`](platforms/codex/SYSTEM_PROMPT.md) 的内容作为 system prompt，并附加 [`skill/references/VLA_EXPERT_MEMORY.md`](skill/references/VLA_EXPERT_MEMORY.md) 作为上下文。
 
 ### 验证安装
 
-问一句：「Diffusion Policy 和 Flow Matching 哪个更好？」——如果回答出现 🔴🔵🟢 三视角辩论，安装成功。
+启动一个新会话，问：
+
+> "Diffusion Policy 和 Flow Matching 哪个更好？"
+
+如果回答中出现 🔴 Bull / 🔵 Bear / 🟢 Arbiter 三视角辩论，安装成功。
 
 ### 独立模式 vs 深度模式
 
@@ -108,6 +146,8 @@ git clone https://github.com/sou350121/VLA-expert-skill.git
 |------|------|------|
 | **独立模式** | 只装 VLA Expert Skill | 压缩记忆覆盖 90% 场景 |
 | **深度模式** | 同时 clone [VLA-Handbook](https://github.com/sou350121/VLA-Handbook) | 按需读取原始论文拆解，信息量 5-20× |
+
+> 🔗 推荐搭配 [**VLA-Handbook**](https://github.com/sou350121/VLA-Handbook)（⭐100+）使用以获得深度模式。
 
 ## 每日更新
 
