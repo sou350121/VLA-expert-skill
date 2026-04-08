@@ -9,19 +9,28 @@
 > **v1.6 变更摘要**（03-31）：DFM-VLA、VLA-OPD、Scaling Sim-to-Real RL、VLA-MBPO、Realtime-VLA V2、Ruka-v2。Phase 1 82%→80%。套利 #3 ≤1 月。
 > **v1.5 变更摘要**（03-29）：静默日。Unitree R1 Air $4,900、Amazon 收购 Fauna Robotics、ROBOTERA 100 亿 RMB。
 
-### Source Map（深度分析时按需读取原始文件）
+### Source Map（行号索引 + 深度文件路由）
 
-| 本文 Section | 原始文件（KW_VLA/ 下） | 深度倍率 |
-|---|---|---|
-| §4 信念网络 | `docs/system/BELIEF_GRAPH.md` (468行) | 10× |
-| §5 收敛地图 | `docs/system/CONVERGENCE_MAP.md` (296行) | 8× |
-| §15 校准纪律 | `docs/system/EPISTEMICS.md` (191行) | 5× |
-| §9 当前状态 | `reports/weekly/` 最新文件 + `reports/biweekly/` 最新文件 | 实时 |
-| §6 触觉 | `theory/tactile/` + `theory/frontier/tactile_*` | 5× |
-| §7 部署 | `deployment/` | 20× |
-| §8 产业 | `companies/` + `memory/blog/archives/vla-social-intel/` 最新 | 10× |
-| §10 深度专题 | `theory/frontier/` 对应论文 | 逐篇 |
-| §14 面试 | `question-bank/` + `cheat-sheet/` | 5× |
+**选择性加载指引**：QUICK 模式用 offset/limit 只读相关章节；DEEP 模式优先读 ★ 标记章节。
+
+| Section | 行号 | 优先级 | 深度文件（KW_VLA/ 下） |
+|---|---|---|---|
+| §0 VLA 定义 | 28-34 | 跳过 | — |
+| §1 模型族谱 | 37-71 | 跳过 | — |
+| §2 动作生成范式 | 75-113 | 按需 | — |
+| §3 训练范式 | 116-163 | 跳过 | — |
+| §4 信念网络 ★ | 166-193 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
+| §5 收敛地图 ★ | 196-248 | **必读** | — (本文已是最完整版本) |
+| §6 触觉 | 251-273 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
+| §7 部署 | 276-323 | 按需 | `deployment/` |
+| §8 产业 | 325-362 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
+| §9 当前状态 ★ | 365-420 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
+| §10 深度专题 | 422-498 | 按需 | `theory/frontier/` 对应论文 |
+| §11 论文速查 | 499-574 | 按需 | — |
+| §12 工具链 | 577-589 | 跳过 | — |
+| §13 产品市场 | 593-598 | 按需 | — |
+| §14 面试 | 601-635 | 跳过 | `question-bank/` + `cheat-sheet/` |
+| §15 校准纪律 | 638-649 | 按需 | — |
 
 ---
 
