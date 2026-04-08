@@ -11,7 +11,7 @@
   <p align="center">
     <a href="https://github.com/sou350121/VLA-expert-skill/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"/></a>
     <a href="https://github.com/sou350121/VLA-Handbook"><img src="https://img.shields.io/badge/知识来源-VLA--Handbook_⭐100+-orange?logo=github" alt="VLA-Handbook"/></a>
-    <img src="https://img.shields.io/badge/论文-328%2B_篇-brightgreen" alt="Papers"/>
+    <img src="https://img.shields.io/badge/论文-332%2B_篇-brightgreen" alt="Papers"/>
     <img src="https://img.shields.io/badge/更新-每日自动-blueviolet" alt="Daily Update"/>
   </p>
   <p align="center">
@@ -27,22 +27,22 @@ VLA Expert Skill 是一个**可组合的领域知识模块**——它不管理�
 
 **当你的 AI 助手遇到 VLA（Vision-Language-Action）相关问题时，给它专家级的判断力。**
 
-平时它安静地待着。当你问到 VLA 架构选型、论文价值、方向判断、部署踩坑时，它被激活，提供基于 328+ 篇论文的深度分析，然后交还控制权。
+平时它安静地待着。当你问到 VLA 架构选型、论文价值、方向判断、部署踩坑时，它被激活，提供基于 332+ 篇论文的深度分析，然后交还控制权。
 
-> 💡 它和 [Superpowers](https://github.com/obra/superpowers) 这类开发流程框架是**互补关系**：Superpowers 管你**怎么写代码**（brainstorm → spec → implement → test），VLA Expert Skill 管你**在 VLA 领域做什么决策**。两者可以同时安装，互不干扰。
+> 💡 它和 [Superpowers](https://github.com/obra/superpowers) 这类开发流程框架是**互补关系**：Superpowers 管你**怎么写代码**，VLA Expert Skill 管你**在 VLA 领域做什么决策**。两者可以同时安装，互不干扰。
 
 ## 什么时候会被激活
 
 | 你说的话 | 激活？ | 做什么 |
 |---------|--------|--------|
 | "帮我重构这个 Python 模块" | ❌ 不激活 | 这是开发流程的事，交给你的 workflow 工具 |
-| "π0.6 的 action head 用了什么？" | ✅ 激活 | 从 328 篇论文记忆中查找，2-5 句话 |
-| "Diffusion vs Flow Matching 选哪个？" | ✅ 激活 | 🔴🔵🟢 三视角辩论 + 校准置信度 |
-| "帮我看这篇 VLA 论文值不值得读" | ✅ 激活 | 信息价值快筛 → 三视角辩论 → 信念更新 |
+| "π0.6 的 action head 用了什么？" | ✅ QUICK | 从记忆中查找，2-5 句话直接回答 |
+| "Diffusion vs Flow Matching 选哪个？" | ✅ DEEP | 双向取证 + 对抗性思考 + 可操作建议 |
+| "帮我看这篇 VLA 论文值不值得读" | ✅ DEEP | 快筛（改变信念吗？）→ 值得则展开分析 |
 | "写个单元测试" | ❌ 不激活 | 开发任务，不是领域知识 |
-| "VLA 下一步该赌哪个方向？" | ✅ 激活 | 完整辩论 + 致命实验 + 逆共识检查 |
-| "怎么在 FR3 上部署 π0？" | ✅ 激活 | 步骤 + 硬件选型 + 常见坑（300+ 社区笔记） |
-| "Physical Intelligence 值不值得关注？" | ✅ 激活 | 竞争定位 + 护城河 + 风险矩阵 |
+| "VLA 下一步该赌哪个方向？" | ✅ DEEP | 论述 + 可操作建议 + 什么信号出现就该撤 |
+| "怎么在 FR3 上部署 π0？" | ✅ QUICK | 步骤 + 硬件选型 + 常见坑（300+ 社区笔记） |
+| "Physical Intelligence 值不值得关注？" | ✅ DEEP | 竞争定位 + 风险 + 判断 |
 
 ## Demo：有 vs 没有
 
@@ -50,7 +50,21 @@ VLA Expert Skill 是一个**可组合的领域知识模块**——它不管理�
 
 | 没有 VLA Expert Skill | **有 VLA Expert Skill** |
 |---|---|
-| "两者各有优劣，Diffusion 更成熟，Flow Matching 更新…"（正确的废话） | 🔴 Bull：FM 在 π0 上 5-20 步推理达 50Hz，工程上已胜出 `[信号: §2]`<br/>🔵 Bear：FM 在高维双臂任务上的多模态覆盖不如 Diffusion `[推断]`<br/>🟢 Arbiter：79% 置信度选 FM（校准后 71%）。致命实验：如果 6 个月内出现 Diffusion 在 bimanual 上显著胜出的对比实验，降至 60%。 |
+| "两者各有优劣，Diffusion 更成熟，Flow Matching 更新…"（正确的废话） | FM 在 π0 上 5-20 步推理达 50Hz，工程上已胜出 `[事实: §2]`。但 FM 在高维双臂任务上的多模态覆盖尚未被充分验证 `[推断]`。**判断**：当前证据偏向 FM，但如果 6 个月内出现 Diffusion 在 bimanual 上显著胜出的对比实验，这个判断需要修正。搭配 VLA-Handbook 深度模式可读完整 Diffusion Policy 和 Flow Matching 的论文拆解。 |
+
+## v3 升级：思考纪律 > 输出模板
+
+v2 把 54% 的指令预算花在格式合规上（强制三视角、×0.9 校准算术、7 个输出模板）。v3 砍掉了这些，把上下文还给推理。
+
+| v2 | v3 |
+|---|---|
+| 8 种意图路由 | 2 种：QUICK / DEEP |
+| 7 个输出模板 | 格式跟着内容走，不硬套 |
+| 强制 🔴🔵🟢 三视角输出 | 对抗性思考是内在纪律，不是表演 |
+| 全量加载记忆（~16K tokens） | Source Map 行号索引，选择性加载 |
+| 引用 3 个不存在的文件 | 已清理，只引用真实存在的文件 |
+
+**核心不变**：对抗性思考、防幻觉、可证伪判断、诚实标注来源。
 
 ## 知识覆盖
 
@@ -58,7 +72,7 @@ VLA Expert Skill 是一个**可组合的领域知识模块**——它不管理�
 
 ```
 模型架构演化     RT-1 → RT-2 → Octo → OpenVLA → π0 → π0.5 → π0.6
-动作生成三范式   Diffusion Policy · Flow Matching · FAST Tokenization · 自回归
+动作生成范式     Diffusion Policy · Flow Matching · FAST Tokenization · 自回归
 训练范式        Behavior Cloning · Co-training · RL Post-training · 自我改进闭环
 World Model    Cosmos · 视频预测 · 物理仿真 · 决策辅助
 触觉 & 多模态   TacVLA · 视触融合 · 力反馈 · 本体感觉
@@ -69,19 +83,19 @@ World Model    Cosmos · 视频预测 · 物理仿真 · 决策辅助
 
 ## 内置认知纪律
 
-激活时不只是查知识库，还有严格的判断框架：
+激活时不只是查知识库，还有严格的思考纪律：
 
 | 机制 | 做什么 | 为什么 |
 |------|--------|--------|
-| **三视角辩论** | 🔴 看多 / 🔵 看空 / 🟢 套利，互相直接攻击 | 强制暴露盲点，提升判断质量 ([AI-Augmented Predictions](https://arxiv.org/abs/2402.07862)) |
-| **来源分级** | 每个论点标 `[信号]` / `[推断]` / `[投注]` | 区分硬数据和推测 |
-| **谦逊折扣** | >80% 置信度自动 ×0.9 | LLM 高确定性区间过度自信 ([ForecastBench](https://arxiv.org/abs/2409.11839)) |
-| **推翻条件** | 每个判断附带"什么能推翻 + 截止日期" | 不可证伪 = 无效判断 |
+| **双向取证** | 先找支持证据，再找反对证据，两者都被认真考虑 | 单向论证容易自我说服 |
+| **来源分级** | 关键声明标 `[事实]` / `[推断]` / `[判断]` | 区分硬数据和推测 |
+| **可证伪** | 每个重要判断附带"什么能推翻 + 什么时候之前" | 不可证伪 = 无效判断 |
+| **分歧诚实** | 支持≈反对时标注为高信号分歧点，不和稀泥 | 假共识比承认不确定更有害 |
 | **防幻觉** | 记忆中没有就说"未记录"，不编造 | 错误数字比承认不知道更有害 |
 
 ## 安装
 
-> **Note:** 安装方式因平台而异。VLA Expert Skill 作为知识模块安装，不影响你已有的开发流程配置（如 Superpowers）。
+> **Note:** 安装方式因平台而异。VLA Expert Skill 作为知识模块安装，不影响你已有的开发流程配置。
 
 ### Claude Code / Cowork
 
@@ -90,7 +104,7 @@ git clone https://github.com/sou350121/VLA-expert-skill.git
 cp -r VLA-expert-skill/skill/ your-project/.claude/skills/vla-expert/
 ```
 
-Claude Code 会根据对话内容自动判断是否激活这个 Skill——只在涉及 VLA 话题时触发。
+Claude Code 会根据对话内容自动判断是否激活——只在涉及 VLA 话题时触发。
 
 ### Cursor
 
@@ -133,7 +147,7 @@ cp VLA-expert-skill/platforms/codex/SYSTEM_PROMPT.md .opencode/instructions.md
 
 ### 验证安装
 
-启动新会话，问：「Diffusion Policy 和 Flow Matching 哪个更好？」——出现 🔴🔵🟢 三视角辩论即安装成功。
+启动新会话，问：「Diffusion Policy 和 Flow Matching 哪个更好？」——如果回答包含具体论文证据、对立面分析、以及可证伪条件，安装成功。
 
 ### 独立模式 vs 深度模式
 
@@ -163,9 +177,9 @@ cd VLA-expert-skill && git pull
 ```
 VLA-expert-skill/
 ├── skill/
-│   ├── SKILL.md                    # Skill 定义（触发条件 + 意图路由 + 辩论协议）
+│   ├── SKILL.md                    # Skill 指令（意图分类 + 思考纪律 + 防幻觉）
 │   └── references/
-│       └── VLA_EXPERT_MEMORY.md    # 压缩知识库（328+ 论文，每日更新）
+│       └── VLA_EXPERT_MEMORY.md    # 压缩知识库（332+ 论文，每日更新，含行号索引）
 ├── platforms/
 │   ├── cursor/.cursorrules         # Cursor Rules 适配
 │   └── codex/SYSTEM_PROMPT.md      # Codex / OpenCode / 通用 system prompt
@@ -185,5 +199,5 @@ VLA-expert-skill/
 ---
 
 <p align="center">
-  <sub>基于 <a href="https://github.com/sou350121/VLA-Handbook">VLA-Handbook</a> 构建 · 知识库每日更新 · 可组合的领域知识模块</sub>
+  <sub>基于 <a href="https://github.com/sou350121/VLA-Handbook">VLA-Handbook</a> 构建 · 知识库每日更新 · v3：思考纪律 > 输出模板</sub>
 </p>
