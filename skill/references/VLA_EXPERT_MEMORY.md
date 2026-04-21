@@ -1,8 +1,9 @@
-# VLA 专家记忆 v2.0.6 | 2026-04-20
+# VLA 专家记忆 v2.0.7 | 2026-04-21
 
 > **角色**：压缩索引 + 自足知识底座。无 repo 时独立运作；有 repo 时作为快速框架，深度分析由原始文件补充。
 > **来源**：KW_VLA Handbook（332+ 篇 Markdown，70+ 论文拆解，产业分析，周报系统）。
 > **维护**：定时任务每日 09:00 增量更新。
+> **v2.0.7 变更摘要**（04-21）：定时任务增量运行；**04-21 无新 daily-digest / paper-scan**（下午才由 scheduled 任务生成）。(1) **无置信度变更** — 所有 B0-B9/C1-C3 节点保持 04-17 状态不动。(2) **04-20 社交情报文件补齐**（昨日 digest 记录"❌ 无生成文件"，今晨已生成）：新增 **4 条融资密集披露 (2026-04-18)** —— **它石智航 Pre-A 超 30 亿元 RMB (~4.55 亿美元)，创中国具身智能单轮融资纪录**；**极佳视界 B1 近 15 亿元 RMB**（具身智能/人形机器人生态）；**DeepSeek 首轮融资寻求 >100 亿美元估值 / 拟募 ≥3 亿美元**（LLM+具身双线研发成本）；Faraday Future 4500 万美元（已在 04-19 digest 中标记为 EV 存疑不计入）；2026 中国人形机器人生态大会（04-17~19，智元/宇树/优必选/小米/荣耀参会）。**信念影响**：全部产业融资信号 → B1 远期飞轮"产业资本 + 规模化前夜"间接正向累积（不跨 ±5% 门槛，不单独触发变更）；DeepSeek 进入具身赛道是 **LLM 巨头首次具身侧重投**——C1 / B0 弱间接观察信号（架构侧主体"数据工程"叙事尚无变化，但新玩家资本密度 → 下一轮架构 / 数据策略分化可能提前）。(3) **保守偏误 +1 天**：B1=**47d** / B6=**47d** / B7=**37d** / B8=**35d** 🔴 四节点持续超阈值；**B3=28d** ⚠️ 距 30d 阈值仅 2 天，**04-23 扫描即触发**。(4) **顶级实验室 arxiv 信号连续 16 天缺席**（04-06 ~ 04-21）—— 静默窗口继续延长；预测 04-23~04-28 可能是恢复窗口；若到 04-28 仍缺席，产品化闭门（H2）占比上调。(5) **预测窗口更新**：#11 (latent-WM planner +1 条 → B4 +5%) 窗口 **04-22~04-24 剩余 3 天**；#12 (B1 77→72%) 4/25 双周 self-reflection 剩 4 天。(6) 本次增量更新：§8 新增 4 月融资密集披露段；§9 当前状态追加 04-21 当日快照（保守偏误 / 窗口倒计时）。**无 Source Map 行号偏移**（本次新增集中在 §8/§9 尾部，§0-§7 / §10-§12 行号不变）。
 > **v2.0.6 变更摘要**（04-20）：整合 04-18~04-20 低信号窗口三日 + 04-19 产业密集披露 + VGA 回溯补录。(1) **无置信度变更** — 所有 B0-B9/C1-C3 节点保持 04-17 状态；三日 arxiv 全空 + 顶级实验室 arxiv 15 天缺席（04-06~04-20）= 学术静默期结构性确认（ICLR 2027 ddl 前闭门/产品化封锁）。(2) **VGA (2604.12908) 回溯补录**（Zijian Song 等 7 人, 04-14 submission, 2604.12 段位于 04-15 两轮扫描间隙被漏过）：主张 "robot manipulation 本质是 vision-to-geometry 映射"，3D 几何 backbone 优于 VLM/video 语义表示；sim benchmark 击败 top-tier + 真机零样本视角迁移鲁棒。标记为 **C3/B7/C1 间接弱正向**，不触发升格（单篇 sim）。(3) **04-18 FluxVLA Engine 社交情报**（逐际动力开源 VLA 工程底座，模型+backbone 可替换）= B6 分层第 9 条独立信号 + B1 "工程门槛下降"第 6+ 条累积（Yuke Zhu co-training + SIM1 + UMI-3D/DEX-Mouse/DockAnywhere + FluxVLA）。(4) **04-19 产业密集披露 5 条**：宇树 H1/R1 拳击动态控制、智元 2025 营收 >10.5 亿元 + 核心 BU 独立融资、**优必选 Walker S2 部署德国 ROSSMANN 物流（中国人形首条海外商用）**、领益智造北京具身超级工厂天工 Ultra/3.0 下线（2026 年 1 万台产能）；Faraday Future 疑非 humanoid 存疑。全部交付/融资/产能，非研究侧证据。(5) **保守偏误**：B1(46d)/B6(46d)/B7(36d)/B8(34d) 🔴 四节点持续超阈值；B3(27d) ⚠️ 接近 30d 阈值（下次扫描即触发）。(6) **预测追踪**：#11 下周 1 条 latent-WM planner 新信号 → B4 +5%（04-22~04-24 窗口即将到期，连续 3 天低信号 = 未触发概率大）；#12 B1 77→72% 系统审计条件持续强化，等 4/25 双周 self-reflection 执行。(7) **新 SOP**：每次 digest 记录已覆盖 arxiv ID 段；下次补扫漏过段（VGA 教训）。
 > **v2.0.5 变更摘要**（04-17）：π0.7 发布（2026-04-16, Physical Intelligence）是本月最大 VLA 产业信号。(1) **B0 上调 72%→77%**（raw 80→85%）——π0.7 以 Episode Metadata（Quality/Mistake/Speed 标签）+ Knowledge Insulation + "架构上没啥特别，功夫在数据工程" 产业级背书"数据策略 > 架构创新"；恢复 B0=B1=B2=B3=77% 父子一致性。(2) 新模型：**π0.7**（PI, 04-16）—— compositional generalization via language coaching, 匹配 specialist 模型性能（coffee/laundry/box assembly）；5B 主体 + 14B BAGEL WM 架构（paper-verified 解读见 theory/vla-core/）；声称"language coaching without retraining"= B3 在线自改进雏形。(3) 新论文（2604.13xxx-15xxx, arxiv 04-15~17 扫描 16 篇）：**WAV**（Westlake, latent WM+trajectory value function+ action-space feasibility exponential decay 理论论证，B4 累积）；**Sim-Real Co-Training Mechanistic Analysis**（Yuke Zhu 组, structured representation alignment + importance reweighting，B0/B1 方法论化）；**Goal2Skill**（VLM-planner+VLA-executor, RMBench 32.4% vs 9.8%，B6 分层第 5 条）；**SpaceMind/EEAgent**（prompt-level self-evolution, B3 叙事风险）；**HiST-AT**（双层 VQ Hierarchical Spatiotemporal Action Tokenizer, Phase 1 反相变第 7 条）；**R3D**（3D policy + diffusion decoder, B5 弱反方）；HRDexDB/DockAnywhere/UMI-3D/DEX-Mouse/Switch 等。(4) **趋势**：Latent-WM planner 路线形成多团队共识（WAV+GIRL+ViVa 一周 3 条）—— B4 接近 +5% 上调触发线；若下周再出 1 条则执行 70→75%。Co-training 理论化（Yuke Zhu + SIM1）= B1 隐性下行压力累积。Prompt-level vs weight-update self-evolution 概念分化风险。(5) **小红书 15 篇高密度共识**：LeRobot pi0 官方承认 30% 成功率（论文 vs 复现 2-3x 衰减系统性确认）；Jupiter Zhai "real-world RL 物料被干烂"（3583 赞=本周最高，B2 反方）；SimpleVLA-RL LIBERO-10 17→91%（单轨迹 SFT+RL）；VLA 推理频率虚标=frequency×action_chunk_size（B9 校准规则）；TouchAnything（EgoTouch 视频→双手触觉估计，B8 弱正向）。(6) **产业**：灵初智能再融资（国投先导+京西瑞瓴），智元酷拓 04-14 上海浦东产品发布；**顶级实验室 arxiv 信号连续 13 天缺席**（ICRA/RSS/NeurIPS 2026 投稿沉默期猜测）。(7) **保守偏误**：B1(43d)/B6(43d)/B7(33d)/B8(31d) 四节点持续超阈值；B0 刚上调重置；Phase 4 计数器 15/12 → 16/12（+WAV）。(8) **新预测**：#9 π0.7 第三方独立复现能否达"match specialist"（30 天窗口到期 2026-05-17）；#11 下周再出 1 条 latent-WM planner → B4 +5%。
 > **v2.0.4 变更摘要**（04-16）：整合 04-15 每日摘要 + 论文补充扫描 + 双周元审计。(1) **B9 上调 70%→75%**（双周 self-reflection 审计触发累积更新规则：6 条独立边缘推理信号 GigaBrain-0-Small/AutoQVLA/RoboECC/Realtime-VLA V2/HY-Embodied 2B MoT/A₁ VLA）。(2) 新论文：ProGAL-VLA（3D entity-centric graph + slow-planner 修复 VLA "language ignorance"，LIBERO-Plus 鲁棒性 30.3→71.5%；B6/C3 弱累积）；ViVa（video-generative value model，Phase 2×4 弱累积）；**Action Images**（视频生成即策略，无独立 action head——B7 反方第 2 条 + C1 弱正向）；JailWAM（WAM 安全 84.2% 攻击成功率，B3/B4 弱累积）；GIRL（latent WM + DINOv2 hallucination control，B4 弱累积）；FlashSAC（off-policy RL hours→minutes，B2 弱累积）。(3) 趋势确认：「**视频生成即策略**」路线成形（Action Images + ViVa + Video Generators are Robot Policies），挑战 action head 解耦正统。(4) **B8 致命实验重新定义**：「连续 3 月 VLA+tactile 占比 <5% → 下调至 60%」。审计建议待确认：B1 下调 77→72%、B8 下调 70→65%。(5) **保守偏误**：B1(**42d**)/B6(**42d**)/B7(**32d**)/B8(**30d** 触发) 四节点同时超阈值——系统级保守偏误。(6) 产业：智元 04-17 合作伙伴大会预告（4 款人形 + 4 模型 + 7 方案）；智元 SpikePingpong（高频脉冲视觉 + 模仿学习）。(7) 顶级实验室连续 11 天缺席。
@@ -21,19 +22,18 @@
 
 | Section | 行号 | 优先级 | 深度文件（KW_VLA/ 下） |
 |---|---|---|---|
-| §0 VLA 定义 | 40-47 | 跳过 | — |
-| §1 模型族谱 | 49-87 | 跳过 | — |
-| §2 动作生成范式 | 89-128 | 按需 | — |
-| §3 训练范式 | 130-178 | 跳过 | — |
-| §4 信念网络 ★ | 180-214 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
-| §5 收敛地图 ★ | 216-273 | **必读** | — (本文已是最完整版本) |
-| §6 触觉 | 275-298 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
-| §7 部署 | 300-347 | 按需 | `deployment/` |
-| §8 产业 | 349-395 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
-| §9 当前状态 ★ | 397-469 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
-| §10 深度专题 | 471-546 | 按需 | `theory/frontier/` 对应论文 |
-| §11 论文速查 | 548-666 | 按需 | — |
-| §12 工具链 | 668-684 | 跳过 | — |
+| §0 VLA 定义 | 41-48 | 跳过 | — |
+| §1 模型族谱 | 50-88 | 跳过 | — |
+| §2 动作生成范式 | 90-129 | 按需 | — |
+| §3 训练范式 | 131-179 | 跳过 | — |
+| §4 信念网络 ★ | 181-215 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
+| §5 收敛地图 ★ | 217-274 | **必读** | — (本文已是最完整版本) |
+| §6 触觉 | 276-299 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
+| §7 部署 | 301-348 | 按需 | `deployment/` |
+| §8 产业 | 350-397 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
+| §9 当前状态 ★ | 399-472 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
+| §10 深度专题 | 474-550 | 按需 | `theory/frontier/` 对应论文 |
+| §11 论文速查 | 551-652 | 按需 | — |
 
 ---
 
@@ -388,13 +388,14 @@ RT-1(2022) → RT-2(2023) → OpenVLA(2024) → π0(2024) → π0.5(2025) → π
 - **04-17 融资**：灵初智能再融资（国投先导+京西瑞瓴领投），继 20 亿天使/Pre-A 后再融资——具身/VLA 大模型赛道资本热度持续
 - **04-18 产业基建**：逐际动力 FluxVLA Engine 开源（标准化 VLA 工程底座，OpenVLA/π0/π0.5 等模型可插拔，DINOv2/SigLIP/PaliGemma/Qwen-VL backbone 可替换）——B6 分层第 9 条 + B1 "工程门槛下降"累积。Tesla Optimus 上海超级工厂量产线确认（2026 年底 10 万台/年目标）
 - **04-19 产业密集披露 5 条**：(1) 宇树 H1/R1 2026 中国人形机器人生态大会 + 拳击对战动态控制演示；(2) 智元 2025 营收 >10.5 亿元 + 核心 BU 独立融资（产业资本热度持续）；(3) **优必选 Walker S2 签约 Terra Robotics → 部署德国 ROSSMANN 物流（中国人形机器人首条海外商用物流首秀）**——B1 远期飞轮"产业专有数据"路线信号；(4) 领益智造北京具身智能超级工厂天工 Ultra/3.0 首批下线，2026 年 1 万台产能；(5) Faraday Future 4500 万美元融资 + 34 台交付（疑 EV 非 humanoid，存疑不计入）
+- **04-20 社交情报补齐（04-18 融资密集披露 4 条）**：(1) **它石智航 Pre-A 轮 > 30 亿元 RMB（~4.55 亿美元）——创中国具身智能单轮融资纪录**；(2) **极佳视界 B1 轮近 15 亿元 RMB**（具身/人形生态企业）；(3) **DeepSeek 寻求首轮融资 / 估值 > 100 亿美元 / 拟募 ≥ 3 亿美元**——LLM 巨头首次具身侧重投，双线研发成本；(4) Faraday Future 4500 万美元（已归入 04-19 存疑）。2026 中国人形机器人生态大会（04-17~19，智元/宇树/优必选/小米/荣耀）。**判断**：资本加速押注"规模化前夜"；DeepSeek 跨界是 LLM→具身一体化的早期结构性信号；学术 - 产业温差继续扩大（顶级实验室连续 16 天 arxiv 缺席）。对 B1 远期飞轮"产业资本 / 规模化前夜"累积；对 B0/C1 弱间接观察（新玩家密度→下一轮架构/数据策略分化可能提前）
 - **04-18~20 趋势**：连续 3 天低信号窗口 + 顶级实验室 arxiv 信号连续 15 天缺席（04-06~04-20, PI/Figure/NVIDIA/Berkeley/MIT/Google Gemini Robotics/DeepMind/Tesla/Apptronik/1X/Amazon）——ICLR 2027 ddl 前静默期 / 产品化闭门期双重成因；历史规律（ICLR 2026 ddl 前持续 12~18 天）预计 04-23~04-28 间 arxiv 投稿可能恢复
 - **产业规模化"密集披露期"**：连续 4 天 5+ 条产能/交付/海外部署/融资信号（04-16 FluxVLA + Tesla + UBTech → 04-19 宇树+智元+优必选海外+领益）——"工程/产能 > 研究" 2026-Q2 阶段性成立，但全部为交付进度/融资/产能，**没有一条触及 VLA 核心研究问题**（架构/训练/闭环/数据策略）；**本阶段信念网络的研究侧更新几乎停滞**
 - **论文 vs 复现鸿沟系统性确认 (04-17)**：LeRobot 官方承认 pi0 成功率仅 30%；Lingbot-VLA 个人 20% vs 官方复测 55% vs paper 更高；小红书社区共识"论文 vs 实测 2-3x 衰减"。评估未来 VLA benchmark 数据需统一打 0.4-0.5x 折扣还原真实部署水平
 
 ---
 
-## 9. 领域当前状态（截至 2026-04-20）
+## 9. 领域当前状态（截至 2026-04-21）
 
 ### 9.1 核心判断
 - **执行层收敛**：Action Head(Flow Matching 胜) + 后训练(RL 胜)
@@ -419,8 +420,9 @@ RT-1(2022) → RT-2(2023) → OpenVLA(2024) → π0(2024) → π0.5(2025) → π
 - **04-18 低信号日**：FluxVLA Engine 社交情报（B6 第 9 条 + B1 工程门槛下降）；Tesla Optimus 上海量产线确认；UBTech Walker S2 量产交付。顶级实验室 arxiv 信号连续 14 天缺席
 - **04-19 产业密集披露日**：5 条产业信号（宇树动态控制 + 智元 10.5 亿营收 + **优必选 Walker S2 → 德国 ROSSMANN 物流（中国人形首条海外商用）** + 领益 1 万台产能 + Faraday Future 存疑）——全部交付/融资/产能，**无一条触及 VLA 核心研究问题**；本阶段信念网络研究侧更新几乎停滞
 - **04-20 低信号日 + VGA 回溯补录**：连续 3 天 arxiv 空档（04-18/04-19/04-20）+ 顶级实验室 15 天缺席（04-06~04-20）= 学术静默期结构性确认（ICLR 2027 ddl 前）。回溯补录 VGA (2604.12908, 04-14 submission) —— vision-to-geometry backbone 替代 VLM/video 语义表示主张，C3/B7/C1 间接弱正向；扫描间隙漏过教训 → 新 SOP "2604 段空洞补扫"
+- **04-21 增量更新（定时任务）**：无新 daily-digest / paper-scan（当日尚未生成）；**04-20 社交情报补齐**发现 4 条 04-18 融资（它石 30 亿/极佳 15 亿/DeepSeek $10B+ 估值/FF 存疑）——对 B1 远期飞轮资本热度累积，不触发置信度变更。顶级实验室 arxiv **连续 16 天缺席**（04-06~04-21）。**保守偏误 +1 天**：B1=47d / B6=47d / B7=37d / B8=35d 🔴；**B3=28d** ⚠️（距 30d 阈值仅 2 天，04-23 扫描即触发）。**预测窗口倒计时**：#11 剩 3 天（04-24 到期）；#12 距 4/25 剩 4 天。**DeepSeek 跨界**是 LLM 巨头首次具身侧重投，C1 / B0 弱间接观察（新玩家资本密度→架构/数据策略分化可能提前）
 - **社区复现鸿沟系统性确认**：LeRobot pi0 官方 30%/Lingbot 55 vs paper 更高——未来 benchmark 数据需统一打 0.4-0.5x 折扣还原真实部署水平
-- **预测追踪**：#9 π0.7 第三方复现能否达"match specialist"（到期 05-17）；#11 下周 1 条 latent-WM planner → B4 +5%（04-22~04-24 窗口即将到期，连续 3 天低信号 = 未触发概率大）；#12 B1 77→72% 条件持续强化（46d 保守偏误 + FluxVLA + 工业交付累积），等 4/25 双周 self-reflection 执行
+- **预测追踪**：#9 π0.7 第三方复现能否达"match specialist"（到期 05-17）；#11 下周 1 条 latent-WM planner → B4 +5%（04-22~04-24 窗口倒计时 3 天，连续 4 天低信号 = 被动未触发概率大）；#12 B1 77→72% 条件持续强化（47d 保守偏误 + FluxVLA + 工业交付累积 + 04-18 DeepSeek/它石/极佳融资密集），4/25 双周 self-reflection 剩 4 天
 
 ### 9.2 速度异常（双周报 03-25 更新）
 | 方法族 | 14d加速比 | 7d加速比 | 趋势 |
@@ -682,4 +684,60 @@ Helix 02 训练数据：>1000h 人类运动 + >200k 仿真环境。无状态机�
 
 ---
 
-## 13. 产品与市�
+## 13. 产品与市场
+
+- **PMF 真标准**：持续用户留存 + 可量化 ROI + 可靠性验证（非 demo 级别）
+- **人形机器人**：Figure/Tesla/1X/Agility 领跑，中国 Unitree/LimX/银河通用追赶；2026 年进入小批量产线部署但距大规模量产仍有 2-3 年
+- **产业与学术脱节**：学术卷 LIBERO 99.2%→99.5%，产业谈"产线部署""量产基地"——当基准分数与客户付费标准脱钩，学术研究合法性基础正在松动
+
+---
+
+## 14. 高频面试要点
+
+**Q: VLA 和传统机器人学习有什么本质区别？**
+A: 传统方法是模块化流水线(感知→规划→控制)，VLA 是端到端：视觉+语言直接映射到动作。优势是涌现泛化能力，代价是可解释性和安全保障。
+
+**Q: 为什么 Flow Matching 胜出？**
+A: Diffusion 走随机路径需 50-100 步去噪，Flow 走最优传输直线仅需 1-10 步。同等精度下推理快 10 倍+，首次让大模型支持 50Hz+ 实时控制。OFP 进一步证明单步 flow 可超越多步版本。
+
+**Q: VLA 最大瓶颈是什么？**
+A: 数据。真机数据采集成本是 #1 约束（1 小时数百元，无法覆盖长尾）。三条绕过路径：互联网视频跨模态迁移、World Model 生成合成数据、Sim2Real。
+
+**Q: RL 后训练为什么是突破口？**
+A: BC 只能学到专家分布内行为，分布外崩溃。RL 通过在线探索收集分布外数据 + 自动奖励(VLM 打分) → 突破 BC 天花板。π0.6 Recap 是典型代表。
+
+**Q: 触觉为什么重要？**
+A: 视觉给坐标，语言给意图，触觉给接触相位真反馈。遮挡下力/形/质不可视觉观测，精密操作的最后 1cm 靠触觉闭环。MoDE-VLA 量化证明：去除力觉-11%，去除触觉-8%。
+
+**Q: World Model 当前状态？**
+A: 从 nice-to-have 预测器 → 评估器 → 规划器 → 动作生成基底 演进中。PlayWorld 已证明 WM→RL 闭环可行(+65%)，但接触密集任务的物理幻觉是致命障碍。方法论分化为 pixel/latent/structured/WAM 四条路线。Cosmos 3（NVIDIA 产品化）+ NC AI WFM（25% GPU 成本达 80%性能）= 双工业级信号。置信度 70%↑，Phase 4 持续超临界(60%)。
+
+**Q: 小模型能替代大模型吗？**
+A: 在受限场景可以。Evo-1 (450M) 达 LIBERO 94.8%，仅 RT-2 参数的 1.4%。GigaBrain-0-Small(840 GFLOPs, 0.13s, 80%)进一步验证。AutoQVLA(ICLR 2026)节省30% VRAM。RoboECC 边缘云协同将延迟从 1274→362ms。置信度已升至 70%。但开放世界泛化仍需大模型。
+
+**Q: SimVLA 的启示？**
+A: 0.5B 模型通过正确训练 recipe（数据 shuffling、归一化、LR schedule）达 98.6% LIBERO。关键："沉默旋钮"(shuffling off = 9.9% vs on = 98.6%) 比花哨模块重要得多。数据策略 > 架构创新(B0)的直接证据。
+
+**Q: Knowledge Insulation 是什么？**
+A: 双轨训练防灾难性遗忘：VLM backbone 只学离散 token（保留语义能力），Action Expert 独立学连续控制，梯度隔离不互传。π0.6 核心技巧之一。
+
+**Q: 当前领域最大风险？**
+A: 学术与产业脱节。学术在 LIBERO 上刷 0.3% 提升，产业需要"产线任务成功率""维护周期"。工具链(LeRobot)收敛加速了实验民主化，但 54 篇 RL 论文中多数是调参报告而非方法创新——"工具易得≠方法成熟"。
+
+**Q: ICLR 2026 揭示了什么？**
+A: 164 篇 VLA 提交(18× 年增长)。关键发现：VLM backbone 大小与 VLA 性能无关(VLM4VLA)；LIBERO 已饱和；Discrete Diffusion VLA 是新兴趋势(4篇并发)；零样本差距依然巨大——开源 VLA 远落后 π0.5/Gemini-Robotics。
+
+---
+
+## 15. 校准纪律（使用本记忆时的注意事项）
+
+1. **谦逊折扣**：所有 >80% 置信度已乘 0.9（LLM 在此区间系统性过度自信）
+2. **保守偏误修正**：强证据最小更新 ±5%，Bull+Bear 共识最小 ±10%。**禁止 2-3% 安慰性微调**——要么 ≥5% 要么不调整(记录为观察中)
+3. **逆共识保护**：逆共识信号的筛选阈值为正常的 1/3（防止系统性杀死异见）
+4. **高确定性 = 高风险**：你最确定的判断，恰恰是最需要被挑战的
+5. **生存者偏误警告 🔴**：系统零失败案例记录。每次分析需主动搜索失败/无法复现/部署失败信号
+6. **本文档截止日期**：2026-04-17，VLA 领域每周都有重大变化
+
+---
+
+*生成自 KW_VLA Handbook v3 | 332+ 篇源文件 → ~16K tokens 压缩索引 | 定时任务每日 09:00 增量更新 | v2.0.5 2026-04-17 (scheduled task run)*
