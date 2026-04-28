@@ -1,8 +1,9 @@
-# VLA 专家记忆 v2.0.11 | 2026-04-27
+# VLA 专家记忆 v2.0.12 | 2026-04-28
 
 > **角色**：压缩索引 + 自足知识底座。无 repo 时独立运作；有 repo 时作为快速框架，深度分析由原始文件补充。
 > **来源**：KW_VLA Handbook（332+ 篇 Markdown，70+ 论文拆解，产业分析，周报系统）。
 > **维护**：定时任务每日 09:00 增量更新。
+> **v2.0.12 变更摘要**（04-27 paper-scan v3.5.3 整合 + 04-28 当日定时任务运行）：定时任务增量运行；04-28 无新 daily-digest（窗口内尚未生成），整合 04-27 paper-scan v3.5.3（2604.18-25 段补扫发现 daily-digest 漏过 6 篇论文）。(1) **无置信度变更** — 6 条新信号皆未跨 ±5% 门槛，但多节点弱累积压力进一步显现。(2) **🔺 CorridorVLA (2604.21241, 04-23) 中-强信号**：稀疏空间锚点（Δ-position 增量物理变化）→ corridor tolerance loss 约束 flow-matching action head；跨 backbone 验证（SmolVLA + GR00T 双 backbone 测试）；LIBERO-Plus +3.4% ~ +12.4%；GR00T-Corr 83.21%。**B5 弱正向**（FM action head 仍主流且可被增强；不抵消早前 5 条下行累积；维持 69%）；**B7 弱正向**（保持解耦同时注入空间先验）；**C1 (35% ⚠️) 弱-中正向累积** — 显式空间约束第 **3** 条独立信号（VGA 2604.12908 + ProGAL-VLA + CorridorVLA），距升格阈值 4-5pp；下次再出 1 条同向（非 PI 锚定）即触发 C1 升格审查。(3) **UniT (2604.19734, 04-21, XPENG Robotics + Tsinghua + HKU) 中信号**：三分支 cross-reconstruction（action↔vision↔fusion）→ unified discrete latent action token；二联应用 = VLA-UniT (policy) + WM-UniT (world model)。**B1 弱负向累积**（人类视频替代第 5 条独立信号，首个 industrial-led 案例 XPENG）；**B4 弱正向累积**（latent-WM 应用变体第 3 条 = Cortex 2.0 / Hi-WM / WM-UniT，#16 工业级跟进口径需 1-2 条独立工业级实证，UniT 是 industrial-academic 混合仅部分工业含量）；**B6 弱正向**（分层架构第 11+ 条）；**B7 弱负向**（unified token vs decoupled action expert 路线张力）；**C3 中性偏负**（physical language ≠ 自然语言）。(4) **AEL (2604.21725, 04-23, Rutgers) 弱-中信号** + **EvoAgent (2604.20133, 04-22) 弱信号**：双时间尺度 self-evolution = Thompson Sampling bandit + LLM 反思（非 robotics 域）；**B3 弱负向累积**：prompt-level self-evolution 第 8+ 条（继 SpaceMind/EEAgent/KITE/FIDeL/ChemBot/WALL-B）；定义切分议程（"权重闭环" vs "prompt/memory 闭环"）继续累积压力。(5) **SynAgent (2604.18557, 04-20) 弱信号**：solo-to-cooperative humanoid manipulation；Interact Mesh + Delaunay tetrahedralization；记录"协作人形"细分赛道形成中。(6) **EUEA (2604.19839, 04-21, UNIST) 弱信号**：VLM 4-skill 微调 + GRPO 一致性细化；B6 弱正向（skill 分解第 N 条）。(7) **趋势观察**：**显式空间约束架构 = 第 3 条独立信号**（C1 累积压力即将触发升格审查）；**人类视频替代机器人数据 = 第 5 条独立信号**（B1 远期飞轮反方持续，UniT 是首个 industrial-led 案例）；**prompt/memory 自进化 = 第 8+ 条独立信号**（B3 节点定义切分议程）。(8) **顶级实验室 arxiv 缺席延续至 26 天**（04-06~05-02 区间）—— 再破历史 ICLR ddl 前静默期上限 +3 天。(9) **扫描漏过累计达 11 次** = 系统性偏差立项（SOP 升级建议：段编号穷举 + 关键词矩阵化）。(10) **保守偏误状态（04-28）**：B0 (11d) ✅ / B1 (2d) ✅ / B2 (28d) ✅ / B3 (2d) ✅ / B4 (4d) ✅ / B5 (28d) ✅ / **B6 (54d) / B7 (44d) / B8 (42d) 🔴 三节点持续超阈值** / B9 (13d) ✅。(11) 本次增量更新：§4 保守偏误日数 +1 + C1 距升格更新 + B7 双向弱信号互抵注解；§5 Phase 4 计数器 23/12 → 24/12（+UniT WM-UniT）+ 套利 #6 latent 跨模态 4 团队 → 5 团队；§8 追加 XPENG industrial-academic UniT 段；§9 当前状态追加 04-27 paper-scan v3.5.3 + 04-28 当日快照；§10 WM 路线追加 WM-UniT；§11 关键论文表追加 6 条新论文（CorridorVLA / UniT / AEL / EvoAgent / SynAgent / EUEA）。**Source Map 行号偏移**：v2.0.12 changelog 增加约 1 行；§4 注释扩写约 2 行；§5 扩写约 2 行；§8 新增约 1 行；§9 新增约 3 行；§10 新增约 2 行；§11 新增约 8 行——Source Map 表格已按最新行号更新。
 > **v2.0.11 变更摘要**（04-27 daily-digest v3.5.2 整合）：定时任务增量运行；**低信号日**——arxiv cs.RO/cs.AI/cs.LG 多角度 WebSearch 2604.22-25 段未发现明确新 VLA 论文；**04-27 社交情报 = 小鹏汽车/何小鹏 04-25 北京车展宣布的 04-27 复述**：人形机器人 2026 年底量产 / 2027 全年销售 / 明年门店 10% 销售人员由机器人担任 / 预测行业增速超 NEV。(1) **无置信度变更** — 4 条新信号皆未跨 ±5% 门槛。(2) **B1 (72%) 弱正向累积**：工业兑现累积第 12 条独立信号（继 Tesla / 智元 3C / 自变量 / 它石 / 银河 / 盛视 / 华勤 / 长城 + 此前 5+ 条之后第 12 条）；**新场景维度记录**：to-C 零售 / 经销渠道首次进入工业兑现栈（区别于 Tesla 工厂 / 智元 3C 制造 / 长城整车装配的 to-B 制造场景）；CEO 车展承诺历史回测严重打折（小鹏自身机器人 PR 多次未见显著产品落地），明年 04-27 节点回测"门店 10% 销售人员"达成度作为可证伪性测试。(3) **顶级实验室 arxiv 缺席延续至 25 天**（04-06~05-01）—— 再破历史 ICLR ddl 前静默期上限 +2 天；"学术-产业温差进入新均衡态"假设进一步从临时反相 → 结构性现象的判断进一步强化；预计 5 月中下旬 ICLR 2027 ddl 后反弹。(4) **2026 H2 → 2027 H1 时间窗共振**：与 Tesla 7-8 月量产 + 小鹏 2026 年底量产 + 2027 全年销售 + #15 Cortex 2.0 8 月复现节点 + #16 下季度工业级 latent-WM + 特斯拉 Optimus 2027 外部场景形成连续兑现节奏，值得密集监测。(5) **保守偏误状态（04-27）**：B0 (10d) ✅ / B1 (1d) ✅ / B2 (27d) ✅ / B3 (1d) ✅ / B4 (3d) ✅ / B5 (27d) ✅ / **B6 (53d) / B7 (43d) / B8 (41d) 🔴 三节点持续超阈值**（v3.5.0 已审查并维持，标记"已审查-趋势确认未达上调阈值"）/ B9 (12d) ✅。(6) **结构性维护**：清理 §11-§15 末尾来自前次 run 的重复内容（lines 796-910），文件长度回收 ~115 行，Source Map 行号偏移随之收紧。(7) 本次增量更新：§4 保守偏误日数 +1 / §8 追加 04-27 小鹏量产时间表段 / §9 当前状态追加 04-27 当日快照。**Source Map 行号偏移**：v2.0.11 changelog 增加约 1 行；§8 新增约 2 行；§9 新增约 1 行；duplicate trailing 删除收紧约 -115 行——Source Map 表格已按最新行号更新。
 > **v2.0.10 变更摘要**（04-25 ~ 04-26 整合 + v3.5.0 假设审计执行）：(1) **🔴 重大置信度变更：B1 77→72% (-5%) + B3 77→72% (-5%)**——04-26 v3.5.0 每周假设审计执行：B1 51 天保守偏误 + 反方累积达决定性强度（评估方法论级 2604.21192 BEHAVIOR1K 暴露 SOTA 系统性高估 / 工程门槛 6+ 条 / 人类视频替代 4 条 / 论文-复现 2-3x 衰减 / π0.7 metadata 双向影响）；B3 依赖链强制（B3 ≤ min(B1, B2) = 72%）+ 32 天保守偏误 + 6 条 prompt/memory-level 自进化稀释。**Bull 反向论点**（产业兑现 11+ 条）成立但被重新解释为"产业飞轮 ≠ 学术研究核心壁垒"。**预测 #12 ✅ 关闭**。**B3 定义切分议题**（"权重闭环" vs "prompt/memory 闭环"）仍待人工 reflection 事件。(2) **B4 70→75% (+5%, 04-24 paper-scan)**：Cortex 2.0 (Sereact, 2604.20246, 04-22) 工业 VLA + visual latent space WM + Process-Reward Operator + flow-based heads 四级显式分层 = **第 4 个独立 latent-WM planner 团队**（继 WAV/GIRL/ViVa）+ **首次跨越 academic→industrial 鸿沟**——预测 #11 严格口径触发。同期 RoboWM-Bench (2604.19092, 04-21) 量化 video WM 物理可执行性差距，B4 内部子路线分化明朗。(3) **新论文 6 篇**：**Cortex 2.0** (B4 工业级首条) / **RoboWM-Bench** (video WM 物理可行性 benchmark, B4 中-强反方) / **Hi-WM** (2604.21741, Tsinghua/PKU/U.Toronto, 04-23) Human-in-the-World-Model 学习 WM 作为 reusable corrective substrate, post-training 失败矫正脱离物理执行 = latent-WM 第 5 团队 + B2/B3 弱反方/正向间接 / **2604.21192** (BEHAVIOR1K 评估方法论, 04-23) 首次系统化暴露 VLA 真实差距 / **EmbodiedMidtrain** (2604.20012, 04-21) VLM↔VLA 数据分布对齐 mid-training 阶段 / **PokéVLA** (2604.20834, 04-21 段, 04-26 回溯发现) 1.22B params LIBERO 98.2% / Long suite 95.2%（CoT-VLA 69 / WorldVLA 54）= **B9 累积第 7 条独立信号**（参数预算结构性新低；LIBERO 接近饱和需打折，单条不达 ±5% 门槛维持 75%）。(4) **04-23 社交情报产业三连弹**：特斯拉 Optimus V3 时间表（年中亮相 / 7-8 月量产 / 2026 下半年企业客户 / 04-24 复述延伸至 2027 外部场景）+ **智元景灵 G2 进入南昌龙旗 3C 精密制造产线 7×24h（首次大规模 3C 核心制造）** + 自变量近 20 亿元 B 轮（小米/红杉中国领投，国内首获四大互联网巨头 BAT+小米全员投资）+ 宇树轮足双模高动态。**04-26 资本侧弱信号**：盛视科技 NAO 收购涨停 + 华勤技术港股上市。(5) **新预测 #15/#16/#17**：#15 Cortex 2.0 第三方独立复现达 SOTA（到期 2026-08-22）；#16 下季度 1-2 条 latent-WM 工业级跟进 → B4 75→80%（到期 2026-07-31，Hi-WM 学术应用变体不计入）；#17 Hi-WM "post-training-without-real-robot" 范式 6 月内 Tier-1 复现 → B2 反方升格审查（到期 2026-10-25）。(6) **顶级实验室 arxiv 缺席延续至 24 天**（04-06~04-30）破历史 ICLR ddl 前静默期上限 +1 天，预计 5 月中下旬 ICLR 2027 ddl 后反弹；学术-产业温差进入"新均衡态"假设逐步从临时反相 → 结构性现象。(7) **保守偏误状态（04-26）**：B1 (0d) ✅ 重置 / B3 (0d) ✅ 重置 / B4 (2d) ✅ / B6 (52d) / B7 (42d) / B8 (40d) 🔴 三节点持续超阈值，v3.5.0 已审查并维持，标记"已审查-趋势确认未达上调阈值"。(8) **2604.20-21 段补扫 SOP 第 4 次执行**：单独捕获 PokéVLA（位于 EmbodiedMidtrain 与 2604.21192 之间），提示日级 paper-scan 在密集 segment 内仍存在 lag → 4/25 双周 self-reflection 议程"日级 paper-scan 时延评估"。**Source Map 行号偏移**：v2.0.10 条目新增约 8 行；§4 改写约 6 行；§5 扩写约 4 行；§8 扩写约 4 行；§9 扩写约 5 行；§10 追加约 3 行；§11 追加约 6 行——Source Map 表格已按最新行号更新。
 > **v2.0.9 变更摘要**（04-24）：定时任务增量运行；04-23 / 04-24 均**无新 daily-digest / paper-scan 生成**（窗口内连续静默），但 04-22 paper-scan（回溯补扫 2604.09-13 / 16-17 段，发现 7 篇前期漏过论文）此前仅进入 BELIEF_GRAPH.md v3.4.2，**尚未整合入记忆文件**；本版完成整合。(1) **无置信度变更** — 所有 B0-B9/C1-C3 节点保持 04-17 状态。(2) **新增论文 7 篇（均回溯自 04-22 paper-scan，2604.09-17 段空洞补扫）**：**Touch Dreaming/HTD** (2604.13015, CMU+UT Arlington+Bosch, 04-14) — Humanoid Transformer + latent tactile dreaming 辅助任务，**latent tactile 预测 > raw tactile 预测 +30%**，5 个 contact-rich 任务平均 +90.9% 相对提升；B8 **方法论级第 8 条** 触觉独立信号 + B4 跨模态 latent 预测弱正向（严格口径不计 #11，宽松口径达成但**不采用**）+ Phase 3 升级 12.5-13/10 + Phase 4 升级 17/12；**LIDEA** (2604.10677, SJTU Cewu Lu+Yong-Lu Li, 04-12) — 双阶段蒸馏 + 3D 几何对齐，声称 **人类视频替代 80% 机器人演示**，B1 绕过路径第 N+1 条 + C1 架构级贡献第 N+1 条；**VLA-World for AD** (2604.09059, SJTU+Huawei, 04-10) — 自动驾驶域 VLA+WM 架构，与 **04-20 坦克 700 Coffee Pilot 4.0 车规量产形成 research+product 双轨共振（10 天 gap）**，Phase 4 新增 AD 子域标记；**I2RLC** (2604.16850, OMRON+Waseda, ~04-20) — 10× 演示加速 + peg-in-hole 100%（B1 绕过/B2 中性）；**Web-Gewu** (2604.17050) — Browser-based RL 训练基础设施（B1 工程门槛第 7+）；**Mini-BEHAVIOR-Gran** (2604.17019) — 指令粒度 U 形效应 benchmark 工具；**Seeing Through Touch** (2604.11579, KAIST+UNIST, 04-13) — 触觉→视觉材质定位 perception（B8 弱间接）。(3) **方法论级共识跨模态形成**：WAV (action-space latent) + GIRL (latent-WM DINOv2) + ViVa (video-generative value) + Touch Dreaming (tactile latent) = **"latent 预测 > raw 预测" 规律跨视觉/动作/触觉 4 modality 4 团队独立收敛** → 对 C2 下限（15%）构成进一步反证压力；**建立新套利窗口：Latent 预测方法论（~3-6 月）**。(4) **扫描系统性偏差立项**：5 次 arxiv 段漏过（VGA / ChemBot / Touch Dreaming / LIDEA / VLA-World）达系统化立项阈值 → 4/25 双周 self-reflection SOP 升级"2604 段空洞补扫"。(5) **保守偏误 +2 天**：B1=**50d** / B6=**50d** / B7=**40d** / B8=**38d** 🔴 四节点持续超阈值（再破本周期峰值）；**B3=31d 🔴 04-23 已触发 30d 阈值** → B3 明确定义切分议题（"模型权重更新闭环" vs "记忆/prompt-level 反思 agent"）正式进入 4/25 议程；B4=30d 🟡 刚达阈值。(6) **顶级实验室 arxiv 连续 20 天缺席**（04-06~04-24）— **已超历史 ICLR ddl 前静默期上限（12-18 天）2 天**，产品化闭门（H2）假设占比需升格观察。(7) **预测窗口结算**：#11 (latent-WM planner +1 条 → B4 +5%) 窗口 04-22~04-24 **今日到期**；严格口径未触发（Touch Dreaming 为 modality 扩展，不计入 video/scene-level 原锚定）→ **维持 B4 70%**。Phase 4 本身因 Touch Dreaming 跨模态规律+VLA-World for AD 跨域扩散，计数器从 16/12 升至 17/12。#12 (B1 77→72%) 距 4/25 剩 1 天，条件持续强化至 10+ 条绕过路径。(8) 本次增量更新：§4 B4/B8 反驳栏扩写；§5 Phase 3（12.5-13/10）+ Phase 4（17/12）+ 套利 #1 窗口收紧 / #4 重定义 / 新增窗口"Latent 预测方法论"；§8 / §9 追加 04-24 当日快照；§10 WM 路线追加 VLA-World for AD；§11 关键论文表追加 Touch Dreaming。**Source Map 行号偏移**：表头 v2.0.9 条目新增约 2 行；§4 扩写约 3 行、§5 扩写约 6 行、§8 扩写约 3 行、§9 扩写约 4 行、§10 追加约 2 行、§11 追加约 1 行——Source Map 表格已按最新行号更新。
@@ -26,22 +27,22 @@
 
 | Section | 行号 | 优先级 | 深度文件（KW_VLA/ 下） |
 |---|---|---|---|
-| §0 VLA 定义 | 48-55 | 跳过 | — |
-| §1 模型族谱 | 57-95 | 跳过 | — |
-| §2 动作生成范式 | 97-136 | 按需 | — |
-| §3 训练范式 | 138-186 | 跳过 | — |
-| §4 信念网络 ★ | 188-224 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
-| §5 收敛地图 ★ | 226-286 | **必读** | — (本文已是最完整版本) |
-| §6 触觉 | 288-312 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
-| §7 部署 | 314-361 | 按需 | `deployment/` |
-| §8 产业 | 363-418 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
-| §9 当前状态 ★ | 420-502 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
-| §10 深度专题 | 504-584 | 按需 | `theory/frontier/` 对应论文 |
-| §11 论文速查 | 586-724 | 按需 | — |
-| §12 开源基础设施 | 726-741 | 按需 | — |
-| §13 产品与市场 | 743-749 | 跳过 | — |
-| §14 高频面试要点 | 751-786 | 按需 | — |
-| §15 校准纪律 ★ | 788-798 | **必读** | — |
+| §0 VLA 定义 | 49-56 | 跳过 | — |
+| §1 模型族谱 | 58-96 | 跳过 | — |
+| §2 动作生成范式 | 98-137 | 按需 | — |
+| §3 训练范式 | 139-187 | 跳过 | — |
+| §4 信念网络 ★ | 189-225 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
+| §5 收敛地图 ★ | 227-287 | **必读** | — (本文已是最完整版本) |
+| §6 触觉 | 289-313 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
+| §7 部署 | 315-362 | 按需 | `deployment/` |
+| §8 产业 | 364-420 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
+| §9 当前状态 ★ | 422-506 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
+| §10 深度专题 | 508-589 | 按需 | `theory/frontier/` 对应论文 |
+| §11 论文速查 | 591-736 | 按需 | — |
+| §12 开源基础设施 | 738-753 | 按需 | — |
+| §13 产品与市场 | 755-761 | 跳过 | — |
+| §14 高频面试要点 | 763-798 | 按需 | — |
+| §15 校准纪律 ★ | 800-811 | **必读** | — |
 
 ---
 
@@ -196,22 +197,22 @@ RT-1(2022) → RT-2(2023) → OpenVLA(2024) → π0(2024) → π0.5(2025) → π
 | B2 | RL 后训练突破 BC 天花板 | **77%** ↓ | **04-01** | 03-31 deadline 执行下调。反方持续累积：PI小actor/假探索/HIL-SERL/LRM仅+14pp/VLA-MBPO弱真机。**04-17 小红书新反方**：Jupiter Zhai (3583 赞=本周最高) "real-world RL 物料被干烂" + 社区共识"大规模 VLA 的 RL 做不了"；正向：SimpleVLA-RL LIBERO-10 17→91%（清华+上海AI Lab）。**04-25 弱反方累积**：Hi-WM (2604.21741) 提供"learned WM 替代物理 RL 矫正"路径 — 不抵消 RL 后训练 dominant 趋势但增加 in-WM post-training 替代叙事强度；预测 #17 追踪 6 个月内 Tier-1 复现 |
 | B3 | 自我改进闭环是终极形态 | **72%** ↓ | **04-26** | **04-26 v3.5.0 假设审计执行 77→72% (-5%)**：依赖链一致性强制（B3 ≤ min(B1, B2) = min(72%, 77%) = 72%）+ 32 天保守偏误 + 6 条 prompt/memory-level 自进化稀释（SpaceMind/EEAgent/KITE/FIDeL/ChemBot/WALL-B）使原定义"模型权重更新闭环"被社区话术弱化。**Hi-WM (04-23) "failure-targeted policy improvement"** 是机制级闭环弱正向但**不抵消依赖链下调**。**定义切分议程**（"权重闭环" vs "prompt/memory 闭环"）仍待人工 reflection 事件触发——本审计仅做置信度调整 |
 | B4 | World Model 作为闭环加速器 | **75%** ↑ | **04-24** | 物理幻觉在接触密集任务中致命；WM 分化三路线(pixel/latent/WAM)。**04-24 触发预测 #11 严格口径**：**Cortex 2.0** (Sereact, 2604.20246, 04-22) 工业 VLA + visual latent space WM + Process-Reward Operator + flow-based heads 四级显式分层 = **第 4 个独立 latent-WM planner 团队**（继 WAV/GIRL/ViVa）+ **首次跨越 academic→industrial 鸿沟** → 执行 70→75%。同期 **RoboWM-Bench** (2604.19092, 04-21) 量化 video WM 物理可执行性差距（"reliably generating physically executable behaviors remains an open challenge"）= B4 内部 video WM vs latent WM 路线分化进一步明朗。**04-25 Hi-WM (2604.21741) 第 5 团队**（学术 4 + 工业 1），维持 75%，#16 工业级跟进口径仍差工业信号。Phase 4 计数器 23/12 持续严重超临界 |
-| B5 | Flow Matching 主导 Action Head | **69%** ↓ | 03-31 | 5条下行累积执行(HybridVLA+A2A FM+Mean-Flow+FODMP+DFM-VLA)，continuous FM唯一性弱化；定义需审查"FM" vs "Flow-based"。**04-17 新反相变**：HiST-AT 双层 VQ action tokenizer（离散第 7 条）+ R3D diffusion decoder（3D policy 优选 Diffusion 非 FM） |
-| B6 | 分层架构(S0/S1/S2)标准化 | 75% | 03-05 | 🔴 **53天保守偏误持续**（v3.5.0 已审查标记"未达上调阈值"）。04-18 FluxVLA Engine = 分层/模块化第 9 条独立信号（产业级首条）。**04-17 强正向累积抵消下调建议**：Goal2Skill（VLM-planner+VLA-executor, RMBench 32.4% vs 9.8%=3.3× gap, 长时程验证）+ SpaceMind/Switch/HiST-AT = 本批次 4 条本批次信号（叠加早前 HiVLA/ProGAL-VLA/SV-VLA/HY-Embodied 累积至 8+ 条独立分层信号）。"物理必要 vs 工程现状"分歧未解 |
-| B7 | Action Expert 解耦语义与运动 | 75% | 03-15 | 🔴 **43天保守偏误持续**（v3.5.0 已审查标记"反方累积无决定性"）。解耦可能损失跨模态协同(WholeBodyVLA latent action+Action Images 视频生成即策略)。**04-17 弱正向**：π0.7 Knowledge Insulation 梯度隔离 PI 再度背书。**04-20 新累积**：VGA (2604.12908) vision-geometry 直接映射 = 解耦叙事替代形态（语义中介 → 几何中介） |
-| B8 | 触觉从可选→必需 | **70%** ↑ | **03-17** | 🔴 **41天保守偏误持续**（v3.5.0 已审查；继续追踪触觉+latent 第 9 条）。硬件标准化遥遥无期；VFE 替代路线追踪中。04-15 审计"下调至 65%"建议被抵消：TouchAnything + DECO + TaSA + 视觉力矩 4 条近期累积，维持 70%。04-17 新：HRDexDB（1.4K 人+机器手抓取+触觉）弱正向但规模小。**04-22 回溯补扫 🟧 中-强累积：Touch Dreaming (2604.13015, CMU+UT Arlington+Bosch, 04-14) — 首个"触觉+latent 预测方法论化"级别信号，latent tactile > raw tactile +30%，5 contact-rich 任务 +90.9%**。B8 累积第 8 条（TacVLA / MoDE-VLA / OmniVTA / Vision-Torque / DECO / TaSA / TouchAnything / HRDexDB / **+ Touch Dreaming**）且为**方法论级**——若下次扫描触觉+latent 再出 1 条 → **B8 70→75% 累积更新规则触发**。Seeing Through Touch (2604.11579, KAIST, 04-13) 触觉→视觉材质定位（perception 而非 policy）弱间接。致命实验"连续 3 月 VLA+tactile 占比 <5%"继续追踪 |
+| B5 | Flow Matching 主导 Action Head | **69%** ↓ | 03-31 | 5条下行累积执行(HybridVLA+A2A FM+Mean-Flow+FODMP+DFM-VLA)，continuous FM唯一性弱化；定义需审查"FM" vs "Flow-based"。**04-17 新反相变**：HiST-AT 双层 VQ action tokenizer（离散第 7 条）+ R3D diffusion decoder（3D policy 优选 Diffusion 非 FM）。**04-27 paper-scan 弱正向**：CorridorVLA (2604.21241) sparse spatial anchor + corridor tolerance loss 跨 SmolVLA + GR00T 双 backbone 验证；FM head 仍主流且可被增强而非替换；不抵消早前 5 条下行累积；维持 69% |
+| B6 | 分层架构(S0/S1/S2)标准化 | 75% | 03-05 | 🔴 **54天保守偏误持续**（v3.5.0 已审查标记"未达上调阈值"）。04-18 FluxVLA Engine = 分层/模块化第 9 条独立信号（产业级首条）。**04-17 强正向累积抵消下调建议**：Goal2Skill（VLM-planner+VLA-executor, RMBench 32.4% vs 9.8%=3.3× gap, 长时程验证）+ SpaceMind/Switch/HiST-AT = 本批次 4 条本批次信号（叠加早前 HiVLA/ProGAL-VLA/SV-VLA/HY-Embodied 累积至 8+ 条独立分层信号）。**04-27 paper-scan 弱正向**：UniT (2604.19734) tri-branch + EUEA (2604.19839) 4-skill 微调 + EvoAgent (2604.20133, 非 robotics 域权重 0.5) + SynAgent (2604.18557, multi-agent cooperative) = 第 11+ 条独立信号；保守上限附近不达 +5%。"物理必要 vs 工程现状"分歧未解 |
+| B7 | Action Expert 解耦语义与运动 | 75% | 03-15 | 🔴 **44天保守偏误持续**（v3.5.0 已审查标记"反方累积无决定性"）。解耦可能损失跨模态协同(WholeBodyVLA latent action+Action Images 视频生成即策略)。**04-17 弱正向**：π0.7 Knowledge Insulation 梯度隔离 PI 再度背书。**04-20 新累积**：VGA (2604.12908) vision-geometry 直接映射 = 解耦叙事替代形态（语义中介 → 几何中介）。**04-27 paper-scan 双向弱信号互抵**：CorridorVLA 弱正向（保持解耦同时注入空间先验）+ UniT 弱负向（unified token 路线 vs decoupled action expert 张力）—— 维持 75% |
+| B8 | 触觉从可选→必需 | **70%** ↑ | **03-17** | 🔴 **42天保守偏误持续**（v3.5.0 已审查；继续追踪触觉+latent 第 9 条）。硬件标准化遥遥无期；VFE 替代路线追踪中。04-15 审计"下调至 65%"建议被抵消：TouchAnything + DECO + TaSA + 视觉力矩 4 条近期累积，维持 70%。04-17 新：HRDexDB（1.4K 人+机器手抓取+触觉）弱正向但规模小。**04-22 回溯补扫 🟧 中-强累积：Touch Dreaming (2604.13015, CMU+UT Arlington+Bosch, 04-14) — 首个"触觉+latent 预测方法论化"级别信号，latent tactile > raw tactile +30%，5 contact-rich 任务 +90.9%**。B8 累积第 8 条（TacVLA / MoDE-VLA / OmniVTA / Vision-Torque / DECO / TaSA / TouchAnything / HRDexDB / **+ Touch Dreaming**）且为**方法论级**——若下次扫描触觉+latent 再出 1 条 → **B8 70→75% 累积更新规则触发**。Seeing Through Touch (2604.11579, KAIST, 04-13) 触觉→视觉材质定位（perception 而非 policy）弱间接。致命实验"连续 3 月 VLA+tactile 占比 <5%"继续追踪 |
 | B9 | 小模型/边缘推理可行 | **75%** ↑ | **04-15** | 6 条独立边缘推理信号累积触发上调。**04-17 反方弱信号**：小红书社区共识——VLA 论文"推理频率"=frequency×action_chunk_size 虚标（帖 14），实际 latency 需打 0.05~0.1 折扣还原。**04-26 累积第 7 条**：PokéVLA (2604.20834, 04-21 段, 04-26 回溯发现) 1.22B params LIBERO 98.2% / Long suite 95.2%（CoT-VLA 69 / WorldVLA 54）= 参数预算结构性新低 + Long suite gap 显著；LIBERO 接近饱和需打折，单条不达 +5% 门槛维持 75%；下次 75→80% 触发条件需"真机长时程 + ≤1.5B + 击败 SOTA"组合 |
 
 **逆共识（赌注）**：
-- C1：架构创新会回归 (**35%** ↑⚠️) — 致命实验到期未触发+5%。DIAL/DFM-VLA 架构贡献不可被数据解释。**距升格阈值(40%)仅差5%**。**04-17 反方弹药**：π0.7 "架构上没啥特别，功夫在数据工程"——PI 产业级反对 C1；但逆共识保护不触发下调。**04-20 新弱正向**：VGA (2604.12908) vision-geometry backbone 架构贡献（非纯 scale-up/data-work）—— 标记但不触发升格
-- C2：World Model 是死胡同 (**15%** ↓ 达下限) — 压倒性反面证据(Cosmos 3/NC AI WFM/GR00T N2 WAM)。下限规则：15% 不得再降，除非物理幻觉+因果保留双解决。**04-22 新反证压力**：跨模态 "latent 预测 > raw 预测" 规律跨视觉/动作/触觉 4 modality 4 团队独立收敛（WAV+GIRL+ViVa+Touch Dreaming）= latent WM 路线跨模态普适性。**04-24 Cortex 2.0 工业 deployment + RoboWM-Bench 评估方法论同期发表 = WM 工业化 + 评估方法论双轨爆发**（C2 最强反证之一）；**04-25 Hi-WM 第 5 latent-WM 团队**累积
-- C3：VLA 不需要语言 (24%) — 纯视觉-动作路线有上升信号(VLM4VLA backbone无关性)。**04-17 反方弹药**：π0.7 "听得到语言并据此行动——甚至违反训练数据视觉偏差"——语言 grounding 作为核心能力被 PI 强化。**04-20 新弱正向**：VGA (2604.12908) 主张 3D 几何 backbone > VLM/video 语义——距升格阈值 40% 还差 16pp
+- C1：架构创新会回归 (**35%** ↑⚠️) — 致命实验到期未触发+5%。DIAL/DFM-VLA 架构贡献不可被数据解释。**距升格阈值(40%)仅差4-5pp**。**04-17 反方弹药**：π0.7 "架构上没啥特别，功夫在数据工程"——PI 产业级反对 C1；但逆共识保护不触发下调。**04-20 新弱正向**：VGA (2604.12908) vision-geometry backbone 架构贡献（非纯 scale-up/data-work）—— 标记但不触发升格。**04-27 paper-scan 弱-中正向累积**：CorridorVLA (2604.21241) "显式空间约束"独立信号第 **3** 条（VGA + ProGAL-VLA + CorridorVLA）；与"功夫在数据工程"（π0.7）路线形成持续张力；**距升格阈值仅 4-5pp**——下次再出 1 条同向（"显式空间结构 / 几何 backbone / 物理先验注入"且非 PI 锚定）即触发 C1 升格审查
+- C2：World Model 是死胡同 (**15%** ↓ 达下限) — 压倒性反面证据(Cosmos 3/NC AI WFM/GR00T N2 WAM)。下限规则：15% 不得再降，除非物理幻觉+因果保留双解决。**04-22 新反证压力**：跨模态 "latent 预测 > raw 预测" 规律跨视觉/动作/触觉 4 modality 4 团队独立收敛（WAV+GIRL+ViVa+Touch Dreaming）= latent WM 路线跨模态普适性。**04-24 Cortex 2.0 工业 deployment + RoboWM-Bench 评估方法论同期发表 = WM 工业化 + 评估方法论双轨爆发**（C2 最强反证之一）；**04-25 Hi-WM 第 5 latent-WM 团队**累积；**04-27 UniT WM-UniT 第 6 latent-WM 应用变体**（XPENG industrial-academic 混合，部分工业含量）
+- C3：VLA 不需要语言 (24%) — 纯视觉-动作路线有上升信号(VLM4VLA backbone无关性)。**04-17 反方弹药**：π0.7 "听得到语言并据此行动——甚至违反训练数据视觉偏差"——语言 grounding 作为核心能力被 PI 强化。**04-20 新弱正向**：VGA (2604.12908) 主张 3D 几何 backbone > VLM/video 语义——距升格阈值 40% 还差 16pp。**04-27 paper-scan 中性偏负**：UniT (2604.19734) 强调 "physical language" 作为 unified token 但不直接是自然语言，间接弱化语言中心地位；但同时强调 unified physical token 而非 vision-only → 对 C3 不直接支持，维持 24%
 
 **风险标记**：
 - B5 有 PI 锚定风险——去掉 PI 系列后 FM 独立收敛信号只剩 3 条。且 FM adoption 全量统计缺失（Moritz Reuss 博客无比例数据）
 - B3 闭环实证来源风险**部分解除**——PLD(CMU, ICLR 2026) 是第二个独立团队验证残差RL+蒸馏闭环。但 B2+B3 双高置信度(90% raw)需 03-29 优先审查
 - ✅ B2 保守偏误修正完成：04-01 执行下调 raw 90→85%/cal 81→77%（27/30 天无下调证据，5+ 条反方弹药）。下次审查周期重置
-- ⚠️ **系统级保守偏误（04-27）**：B0 (10d) ✅ / B1 (1d) ✅ / B2 (27d) ✅ / B3 (1d) ✅ / B4 (3d) ✅ / B5 (27d) ✅ / B6 (**53d**) / B7 (**43d**) / B8 (**41d**) 🔴 三节点持续超阈值，v3.5.0 已审查并维持，标记"已审查-趋势确认未达上调阈值"——下次触发条件：B6 端到端 humanoid 全身控制论文 / B7 统一 token 真机长时程击败解耦正统 / B8 触觉+latent 第 9 条独立方法论信号 / B9 (12d) ✅
+- ⚠️ **系统级保守偏误（04-28）**：B0 (11d) ✅ / B1 (2d) ✅ / B2 (28d) ✅ / B3 (2d) ✅ / B4 (4d) ✅ / B5 (28d) ✅ / B6 (**54d**) / B7 (**44d**) / B8 (**42d**) 🔴 三节点持续超阈值，v3.5.0 已审查并维持，标记"已审查-趋势确认未达上调阈值"——下次触发条件：B6 端到端 humanoid 全身控制论文 / B7 统一 token 真机长时程击败解耦正统 / B8 触觉+latent 第 9 条独立方法论信号 / B9 (13d) ✅
 - 🆕 **04-17 新弹药**：π0.7 发布改变 B0（+5%）；Latent-WM planner 累积接近 B4 +5% 触发线（WAV+GIRL+ViVa 一周 3 条）；Prompt-level self-evolution 4 条集中出现（SpaceMind/EEAgent/KITE/FIDeL）= B3 叙事稀释风险
 - 🆕 **04-15 已记**：Action Images（视频生成即策略，无独立 action head）= B7 反方第 2 条；JailWAM 84.2% 攻击成功率 = B3 安全约束累积
 - ✅ **预测 #6 (04-15) 已确认**：CALVIN/LIBERO 新 SOTA 频率↓——校准 +5% 待执行
@@ -248,8 +249,8 @@ RT-1(2022) → RT-2(2023) → OpenVLA(2024) → π0(2024) → π0.5(2025) → π
 - 但学术端 tactile 加速比 0.26x（结构性衰退），被 dexterous_hand(0.62x) 以 4:1 碾压。**预测 #8 到期未触发（04-15）**
 
 ### Phase 4: World Model → 闭环实用化 【60% 完成】 ↑ 🔴持续超临界
-- **23/12 独立信号**（+ **Cortex 2.0 04-22 工业级 latent-WM planner** + **RoboWM-Bench 04-21 video WM benchmark** + **Hi-WM 04-23 in-WM post-training substrate** + Curiosity-Critic 04-20 + GNWM 04-19 + WAV 04-16 + Touch Dreaming 04-14 + VLA-World for AD 04-10）
-- **Latent-WM planner 路线工业化跨越（04-24 关键里程碑）**：**Cortex 2.0** (Sereact, 2604.20246, 04-22) = **第 4 个独立 latent-WM planner 团队 + 首个工业级背书**——visual latent space WM + Process-Reward Operator + flow-based heads，单/双臂 4 任务全面超越 SOTA VLA baselines；**预测 #11 严格口径触发 → B4 70→75% 已执行**。**04-25 Hi-WM** (2604.21741, Tsinghua/PKU/U.Toronto) 第 5 团队（学术 4 + 工业 1），WM-as-post-training-substrate 应用变体（区别于 inference-time planner）；维持 75%，#16 工业级跟进口径仍差工业信号。**RoboWM-Bench (04-21)** = video WM 物理可执行性 benchmark，揭示 SOTA video WM 失败模式（空间推理错误 / 不稳定接触 / 非物理形变）= B4 内部 video vs latent 路线分化进一步明朗
+- **24/12 独立信号**（+ **WM-UniT 04-21 XPENG industrial-academic** + **Cortex 2.0 04-22 工业级 latent-WM planner** + **RoboWM-Bench 04-21 video WM benchmark** + **Hi-WM 04-23 in-WM post-training substrate** + Curiosity-Critic 04-20 + GNWM 04-19 + WAV 04-16 + Touch Dreaming 04-14 + VLA-World for AD 04-10）
+- **Latent-WM planner 路线工业化跨越（04-24 关键里程碑）**：**Cortex 2.0** (Sereact, 2604.20246, 04-22) = **第 4 个独立 latent-WM planner 团队 + 首个工业级背书**——visual latent space WM + Process-Reward Operator + flow-based heads，单/双臂 4 任务全面超越 SOTA VLA baselines；**预测 #11 严格口径触发 → B4 70→75% 已执行**。**04-25 Hi-WM** (2604.21741, Tsinghua/PKU/U.Toronto) 第 5 团队（学术 4 + 工业 1），WM-as-post-training-substrate 应用变体（区别于 inference-time planner）；**04-27 paper-scan UniT WM-UniT** (2604.19734, XPENG + Tsinghua + HKU) **第 6 latent-WM 应用变体**（cross-embodiment 动力学对齐，human → humanoid 视频生成可控）；维持 75%，#16 工业级跟进口径仍差独立工业信号（UniT 是 industrial-academic 混合，部分工业含量但不足以单条达标）。**RoboWM-Bench (04-21)** = video WM 物理可执行性 benchmark，揭示 SOTA video WM 失败模式（空间推理错误 / 不稳定接触 / 非物理形变）= B4 内部 video vs latent 路线分化进一步明朗
 - **AD 跨域子赛道（04-22 新标记）**：VLA-World for AD (2604.09059, SJTU+Huawei, 04-10 submission) + **长城坦克 700 Coffee Pilot 4.0 车规量产 (04-20 上市)** = research + product 双轨共振，时间 gap 10 天；Li Auto/Tesla FSD/XPeng/长城 = 4 家车企 VLA+WM 路线同构
 - PlayWorld：自主探索→WM→RL 闭环，+65% 真机成功率
 - WM 方法论持续分化：pixel WM → latent WM (CoWVLA) → structured planner (StructVLA) → WAM
@@ -276,7 +277,7 @@ RT-1(2022) → RT-2(2023) → OpenVLA(2024) → π0(2024) → π0.5(2025) → π
   - #3 ⬛ ~~仿真规模化 > 真实数据~~（**04-06 正式关闭**——已成产业共识）
   - #4 触觉×RL 交叉 → **重定义为触觉×latent prediction 交叉**（Touch Dreaming 证明 latent tactile 预测 > raw，替代 touch×RL 路线；6-9月，早期）
   - #5 工业数据飞轮（**缩小至 8-12月**，ABB/FANUC/YASKAWA/KUKA 整合 NVIDIA 栈）
-  - **#6 新增：Latent 预测方法论**（04-22 立项，**~3-6月**）——跨视觉/动作/触觉 4 modality 4 团队独立收敛"latent 预测 > raw 预测"规律，尚无产业统一封装；率先把 latent 预测做成 modality-agnostic 工具库的团队获先发优势
+  - **#6 新增：Latent 预测方法论**（04-22 立项，**~3-6月**）——跨视觉/动作/触觉 4 modality 4 团队独立收敛"latent 预测 > raw 预测"规律（WAV/GIRL/ViVa/Touch Dreaming）+ **04-27 UniT WM-UniT** unified discrete latent action token cross-embodiment 第 5 团队（XPENG industrial-academic）；尚无产业统一封装；率先把 latent 预测做成 modality-agnostic 工具库的团队获先发优势
 - **新增跨Phase监测**：Phase 3×5（触觉跨具身）、Phase 2×6（RL+灵巧操作）
 - **新潜在套利（观察中）**：
   - RL→Distillation→Deploy 流水线（VLA-OPD 提示，训练一次 + 蒸馏部署多次 = 成本摊销，窗口 ~8-12月）
@@ -414,10 +415,11 @@ RT-1(2022) → RT-2(2023) → OpenVLA(2024) → π0(2024) → π0.5(2025) → π
 - **顶级实验室 arxiv 缺席延续至 24 天**（04-06~04-30 区间）——比历史 ICLR ddl 前静默期上限多 1 天，预计 5 月中下旬 ICLR 2027 ddl 后显著反弹
 - **04-27 小鹏汽车量产时间表（04-25 北京车展宣布，04-27 复述）**：何小鹏宣布人形机器人 **2026 年底量产 / 2027 全年销售 / 明年门店 10% 销售人员由机器人担任 / 预测行业增速超 NEV**——**工业兑现累积第 12 条独立信号**；**新场景维度**：to-C 零售 / 经销渠道首次进入工业兑现栈（区别于 Tesla 工厂 / 智元 3C 制造 / 长城整车装配的 to-B 制造场景）；CEO 车展承诺历史回测严重打折（小鹏 PX5 等过往机器人 PR 多次未见显著产品落地），明年 04-27 节点回测"门店 10% 销售人员"达成度作为可证伪性测试。**2026 H2 → 2027 H1 时间窗共振**：与 Tesla 7-8 月量产 + #15 Cortex 2.0 8 月复现节点 + #16 下季度工业级 latent-WM + 特斯拉 Optimus 2027 外部场景形成连续兑现节奏
 - **顶级实验室 arxiv 缺席延续至 25 天**（04-06~05-01 区间）——再破历史 ICLR ddl 前静默期上限 +2 天；若 5 月底 ICLR 2027 ddl 后仍持续静默 → 触发"新均衡态"假设结构性重估
+- **04-28 增量整合 04-27 paper-scan v3.5.3 industrial-academic 信号**：**UniT (2604.19734, 04-21, XPENG Robotics + Tsinghua + HKU)** = XPENG 进入"unified latent action token + cross-embodiment WM"赛道——industrial-led 用 human 视频替代机器人数据的产业级背书第 5 条（继 LIDEA / EgoVLA / SIM1 / co-training，首个 industrial-led 案例）；与 PI π0.7 "数据工程" 路线 + Cortex 2.0 "工业级 latent-WM" 路线形成中-美产业实力分布对照。**顶级实验室 arxiv 缺席延续至 26 天**（04-06~05-02 区间）——再破历史 ICLR ddl 前静默期上限 +3 天
 
 ---
 
-## 9. 领域当前状态（截至 2026-04-27）
+## 9. 领域当前状态（截至 2026-04-28）
 
 ### 9.1 核心判断
 - **执行层收敛**：Action Head(Flow Matching 胜) + 后训练(RL 胜)
@@ -454,6 +456,8 @@ RT-1(2022) → RT-2(2023) → OpenVLA(2024) → π0(2024) → π0.5(2025) → π
 - **预测追踪**（04-26 后）：**#9** π0.7 第三方复现"match specialist"（到期 05-17，剩 21 天）；**#11 ✅ 关闭** (Cortex 2.0 04-24)；**#12 ✅ 关闭** (B1 77→72% v3.5.0 04-26 执行)；**#15** Cortex 2.0 第三方独立复现达 SOTA（到期 2026-08-22，剩 4 月）；**#16** 下季度 1-2 条 latent-WM 工业级跟进 → B4 75→80%（到期 2026-07-31，剩 3 月，Hi-WM 学术应用变体不计入）；**#17** Hi-WM 范式 6 月内 Tier-1 复现 → B2 反方升格审查（到期 2026-10-25，剩 6 月）
 - **2026 Q3/Q1 产业兑现密集窗口**：#15 Cortex 2.0 8 月复现节点 + #16 下季度工业级 latent-WM 跟进 + 特斯拉 Optimus 2027 外部场景时间窗共振（2026 Q3 → 2027 Q1）值得密集监测
 - **04-27 daily-digest（v3.5.2，低信号日）**：arxiv 0 篇新 VLA 论文 + 社交情报 1 条复述（小鹏汽车 04-25 北京车展量产时间表）= **工业兑现累积第 12 条** + **to-C 零售场景新维度**首次进入工业兑现栈。无置信度变更（4 条信号皆未跨 ±5% 门槛）。**保守偏误状态（04-27）**：B6 (**53d**) / B7 (**43d**) / B8 (**41d**) 🔴 三节点持续超阈值（v3.5.0 已审查并维持）；B1 (1d) / B3 (1d) ✅ 04-26 重置后正常。顶级实验室 arxiv 缺席 25 天 = 历史最长，再破上限 +2 天。低信号日的存在本身是数据点：表明前一周 04-21~04-26 密集信号期已被系统性消化。🆕 **内部回测节点**：明年 04-27 检视小鹏"门店 10% 销售人员"达成度
+- **🔺 04-27 paper-scan（v3.5.3）2604.18-25 段补扫发现 daily-digest 漏过 6 篇论文**：**(1) CorridorVLA** (2604.21241, 04-23) 中-强信号 — sparse spatial anchors + corridor tolerance loss 约束 FM action head；跨 SmolVLA + GR00T 双 backbone 验证；LIBERO-Plus +3.4% ~ +12.4%；GR00T-Corr 83.21%。**B5 / B7 弱正向 + C1 (35% ⚠️) 弱-中正向累积** = 显式空间约束第 3 条独立信号（VGA + ProGAL-VLA + CorridorVLA），**距 C1 升格阈值仅 4-5pp**——下次再出 1 条同向（非 PI 锚定）即触发升格审查。**(2) UniT** (2604.19734, 04-21, **XPENG + Tsinghua + HKU industrial-academic**) 中信号 — 三分支 cross-reconstruction (action↔vision↔fusion) → unified discrete latent action token + 二联应用 VLA-UniT (policy) + WM-UniT (world model)。**B1 弱负向**（人类视频替代第 5 条 + 首个 industrial-led 案例）/ **B4 弱正向**（latent-WM 应用变体第 3 条）/ **B6 / B7 双向** / **C3 中性偏负**。**(3) AEL** (2604.21725, 04-23, Rutgers) 弱-中信号 — Thompson Sampling bandit + LLM 反思双时间尺度 self-evolution；**B3 弱负向累积**：prompt-level self-evolution 第 8+ 条。**(4) EvoAgent** (2604.20133, 04-22) + **(5) SynAgent** (2604.18557, 04-20) + **(6) EUEA** (2604.19839, 04-21, UNIST) 弱信号 — B6 弱正向 / B1 弱反方 / B3 弱反方累积。**趋势观察**：(a) 显式空间约束架构第 3 条（C1 升格压力）；(b) 人类视频替代第 5 条独立信号 + 首个 industrial-led；(c) prompt/memory 自进化第 8+ 条（B3 节点定义切分议程继续累积压力）；(d) 顶级实验室 arxiv 缺席延续至 26 天，再破上限 +3 天；(e) 扫描漏过累计 11 次系统性偏差立项 → SOP 升级建议（段编号穷举 + 关键词矩阵化）
+- **04-28 增量更新（定时任务）**：当日尚无 daily-digest / paper-scan 生成。**整合 04-27 paper-scan v3.5.3** 的 6 篇论文 + 新趋势观察。**保守偏误 +1 天（04-28）**：B0 (11d) ✅ / B1 (2d) ✅ / B2 (28d) ✅ / B3 (2d) ✅ / B4 (4d) ✅ / B5 (28d) ✅ / **B6 (54d) / B7 (44d) / B8 (42d) 🔴** 三节点持续超阈值（v3.5.0 已审查并维持）/ B9 (13d) ✅。**预测窗口倒计时**：#9 距 05-17 剩 19 天；WALL-B 5/25 软启动剩 27 天；#15 距 2026-08-22 剩 ~4 个月；#16 距 2026-07-31 剩 ~3 个月；#17 距 2026-10-25 剩 ~6 个月。**Phase 4 计数器 24/12**（+UniT WM-UniT 第 6 latent-WM 应用变体）。**套利窗口 #6 latent 预测方法论**：跨模态 5 团队（WAV/GIRL/ViVa/Touch Dreaming/UniT WM-UniT）已扩展到 cross-embodiment + industrial-academic
 
 ### 9.2 速度异常（双周报 03-25 更新）
 | 方法族 | 14d加速比 | 7d加速比 | 趋势 |
@@ -536,6 +540,7 @@ RT-1(2022) → RT-2(2023) → OpenVLA(2024) → π0(2024) → π0.5(2025) → π
 - **Cortex 2.0 (2604.20246, Sereact AI 工业, 04-22)**：工业 VLA + visual latent space WM + Process-Reward Operator (PRO 多准则评分: task progress / risk likelihood / completion likelihood) + flow-based action heads 四级显式分层；数据三源融合（open-source multimodal + Sereact teleoperation/production fleet + synthetic）；单/双臂 4 任务 SOTA VLA baselines 全面超越；**首个工业级 latent-WM planner 背书** = B4 70→75% 触发；C2 最强反证之一
 - **RoboWM-Bench (2604.19092, 04-21)**：首个 manipulation-centric embodiment-grounded video WM 物理可执行性 benchmark；揭示 SOTA video WM "reliably generating physically executable behaviors remains an open challenge"——常见失败：空间推理错误 / 不稳定接触预测 / 非物理形变；B4 内部 video vs latent 路线分化明朗
 - **Hi-WM (2604.21741, Tsinghua/PKU/U.Toronto, 04-23)**：Human-in-the-World-Model 学习 WM 作为 reusable corrective substrate，post-training 失败矫正脱离物理执行 / 真机 setup / 操作员监督；WM-as-post-training-substrate 应用变体（区别于 WAV/GIRL/ViVa 的 inference-time planner，区别于 Cortex 2.0 的 industrial deployment）；latent-WM 第 5 团队（学术 4 + 工业 1）；预测 #17 追踪 Tier-1 复现
+- **WM-UniT (UniT 二联应用变体, 2604.19734, XPENG + Tsinghua + HKU, 04-21)**：cross-embodiment 动力学对齐，human 数据 → humanoid 视频生成可控；与 VLA-UniT (policy) 共享 unified discrete latent action token；latent-WM **第 6 团队**（学术 4 + 工业 1 + industrial-academic 1）；XPENG industrial-academic 混合（部分工业含量但不足以单条达 #16 工业级跟进口径）；强化 "latent 预测 > raw 预测" 跨模态规律到 cross-embodiment 维度
 - 核心张力：好视频 ≠ 好评估器，好评估器 ≠ 好规划器；WM 从侧模块→系统工具→核心基底
 - **VLA-MBPO (03-30)**：UMM 做 WM + multi-view consistency + chunk-level branched rollout——2 月来第 4 个 WM+RL 框架（+ GigaBrain/WoVR/World-VLA-Loop），方法论子问题逐个被解决但碎片化风险
 - **Scaling Sim-to-Real (03-30)**：3D generative worlds + RL，真机 21.7%→75%（+53.3pp），WM-as-data-factory 维度的新验证——但任务复杂度和 RL-specific ablation 待确认
@@ -702,98 +707,4 @@ Helix 02 训练数据：>1000h 人类运动 + >200k 仿真环境。无状态机�
 | SimpleVLA-RL (小红书 04-17 帖 8, 清华+上海 AI Lab) | 单轨迹 SFT + RL 将 LIBERO-10 17→91%，LIBERO-Avg 48.9→94.1% | B2 弱正向（单轨迹数据稀缺场景路线） |
 | TouchAnything (小红书 04-17 帖 15, SJTU 杨朔) | EgoTouch 数据集 + 首个视频→双手触觉估计模型 | B8 弱正向（视频→触觉新数据路径） |
 | **新增 04-22 回溯补扫（2604.09-17 段空洞）** | | |
-| **Touch Dreaming/HTD** (2604.13015, CMU+UT Arlington+Bosch, 04-14) | Humanoid Transformer + latent tactile dreaming 辅助（同时预测 action chunks + 关节力 + tactile latents），**latent tactile > raw tactile +30%**，5 contact-rich 任务 **+90.9% 相对提升** | **B8 方法论级累积第 8 条**；跨模态 latent 预测规律（WAV+GIRL+ViVa+Touch Dreaming）；Phase 3 升至 12.5-13/10，Phase 4 升至 17/12 |
-| **LIDEA** (2604.10677, SJTU Cewu Lu+Yong-Lu Li, 04-12) | 双阶段蒸馏 + 3D 几何对齐，人类视频→机器人策略 embodiment gap 桥接，声称 **80% 机器人演示可由人类视频替代** | B1 绕过路径第 N+1 条；C1 架构贡献第 N+1 条（距升格阈值仅 5%）；B0 张力（数据维度扩大 vs 架构性贡献并存） |
-| **VLA-World for AD** (2604.09059, SJTU+Huawei, 04-10) | 自动驾驶域 VLA + WM 统一架构，action-derived 可行轨迹引导下一帧图像生成 + 对 self-generated 未来帧 reflective reasoning | Phase 4 **AD 跨域扩散子赛道首标**；与 04-20 坦克 700 Coffee Pilot 4.0 车规量产 research+product 双轨共振 10 天 gap |
-| I2RLC (2604.16850, OMRON SINIC X+Waseda, ~04-20) | 10× 演示加速 + 接触丰富 peg-in-hole **100%** 成功率的 IRLC 增量精炼 | B2 中性 / B1 绕过弱反方（算法性绕过数据采集瓶颈） |
-| Web-Gewu (2604.17050, ~04-21) | Browser-based 交互式 RL playground，WebRTC 云边协同 | B1 工程门槛下降第 7+ 条，RL 训练民主化基础设施 |
-| Mini-BEHAVIOR-Gran (2604.17019, ~04-21) | 指令粒度 U 形效应 benchmark，指令设计成为 VLA 性能杠杆 | B0/B3 benchmark 工具 |
-| Seeing Through Touch (2604.11579, KAIST+UNIST, 04-13) | 触觉驱动视觉材质定位（perception，非 policy） | B8 弱间接（tactile-grounded material segmentation） |
-| **新增 04-24 paper-scan（2604.18-22 段补扫）** | | |
-| **Cortex 2.0** (2604.20246, Sereact AI 工业, 04-22) | 工业 VLA + visual latent space WM + Process-Reward Operator + flow-based heads 四级显式分层；单/双臂 4 任务 SOTA VLA 全面超越 | **B4 70→75% (+5%) 触发预测 #11**；首个 latent-WM planner 工业级背书；B6 第 11 条分层信号；C2 最强反证 |
-| **RoboWM-Bench** (2604.19092, 04-21) | manipulation-centric video WM 物理可执行性 benchmark；SOTA video WM 失败模式量化 | B4 中-强反方（video WM 路线）；C2 弱正向（下限保护） |
-| Curiosity-Critic (2604.18701, 04-20) | 累积预测误差作为 WM 训练 intrinsic reward；自动分离 epistemic vs aleatoric error | B4/B3 弱正向（WM 训练方法论） |
-| GNWM (2604.16585, Western Digital, 04-19) | balanced continuous entropy 约束 + topological quantization 自稳定 WM | B4 弱正向方法论级 |
-| **新增 04-25 daily-digest（2604.20-23 段）** | | |
-| **Hi-WM** (2604.21741, Tsinghua/PKU/U.Toronto, 04-23) | Human-in-the-World-Model — 学习 WM 作为 reusable corrective substrate, post-training 失败矫正脱离物理执行/真机/操作员监督 | latent-WM **第 5 团队**（B4 维持 75%）；B2 弱反方（in-WM post-training 替代物理 RL）；B3 机制级闭环弱正向；预测 #17 追踪 Tier-1 复现 |
-| **2604.21192** "How VLAs (Really) Work In Open-World" (04-23) | BEHAVIOR1K 50 任务评估方法论 — 揭露 SOTA 在 open-world long-horizon 系统性高估真实部署能力 (RLC + Comet) | **B1 强反方累积**（B1 77→72% 审计弹药再加码）；B0 间接弱正向（评估方法论改进）；B6 弱正向（长时程 = 分层必要性） |
-| EmbodiedMidtrain (2604.20012, 04-21) | VLM↔VLA 数据分布对齐 mid-training 阶段；lightweight learnable proximity estimator + curated mid-training | B0 弱正向（数据策略 mid-training 维度）；B7 弱反方间接（representation alignment vs 解耦） |
-| **新增 04-26 daily-digest（2604.20-21 段补扫第 4 次）** | | |
-| **PokéVLA** (2604.20834, 04-21 段, 04-26 回溯发现) | Pocket-sized VLA — 1.22B params + 双阶段训练（PokeVLM 多模态 pre-training 2.4M 样本 + 多视角 goal-aware semantics + geometry alignment + novel action expert）；LIBERO 98.2% / Long suite 95.2%（CoT-VLA 69 / WorldVLA 54, +26.2pp gap） | **B9 累积第 7 条独立信号**（参数预算结构性新低）；维持 75%（LIBERO 接近饱和需打折，单条不达 ±5% 门槛）；C1 弱反方间接（架构创新+数据 curation 协同 ≠ 纯架构创新单因主导） |
-
----
-
-## 12. 开源基础设施与工具链
-
-| 工具 | 类别 | 最新版本 | 定位 |
-|------|------|----------|------|
-| LeRobot | 训练框架 | v0.5.0 (2026-03) | 事实标准，集成 X-VLA backbone |
-| StarVLA | 训练框架 | (2026-04) | 模块化全栈框架，VLM+WM backbone 可 swap，多 action head |
-| Isaac Lab | 仿真+RL | - | GPU 并行训练首选 |
-| MuJoCo | 物理引擎 | v3.6.0 (2026-03) | 精细接触仿真 |
-| SAPIEN | 仿真 | v3.0.3 (2026-03) | 零件级交互 |
-| Genesis | 仿真 | v0.4.3 (2026-03-16) | 新兴综合仿真 |
-| GELLO/ALOHA | 数据采集 | - | 遥操作硬件方案 |
-
-**开源分级**：展示型(算法 demo) < 生态锁定型(厂商工具) < 基础设施型(全 CAD+栈+know-how 透明)
-工具链正在快速收敛，继续维护独立训练代码库的团队将面临"无人复用"困境。
-
----
-
-## 13. 产品与市场
-
-- **PMF 真标准**：持续用户留存 + 可量化 ROI + 可靠性验证（非 demo 级别）
-- **人形机器人**：Figure/Tesla/1X/Agility 领跑，中国 Unitree/LimX/银河通用追赶；2026 年进入小批量产线部署但距大规模量产仍有 2-3 年
-- **产业与学术脱节**：学术卷 LIBERO 99.2%→99.5%，产业谈"产线部署""量产基地"——当基准分数与客户付费标准脱钩，学术研究合法性基础正在松动
-
----
-
-## 14. 高频面试要点
-
-**Q: VLA 和传统机器人学习有什么本质区别？**
-A: 传统方法是模块化流水线(感知→规划→控制)，VLA 是端到端：视觉+语言直接映射到动作。优势是涌现泛化能力，代价是可解释性和安全保障。
-
-**Q: 为什么 Flow Matching 胜出？**
-A: Diffusion 走随机路径需 50-100 步去噪，Flow 走最优传输直线仅需 1-10 步。同等精度下推理快 10 倍+，首次让大模型支持 50Hz+ 实时控制。OFP 进一步证明单步 flow 可超越多步版本。
-
-**Q: VLA 最大瓶颈是什么？**
-A: 数据。真机数据采集成本是 #1 约束（1 小时数百元，无法覆盖长尾）。三条绕过路径：互联网视频跨模态迁移、World Model 生成合成数据、Sim2Real。
-
-**Q: RL 后训练为什么是突破口？**
-A: BC 只能学到专家分布内行为，分布外崩溃。RL 通过在线探索收集分布外数据 + 自动奖励(VLM 打分) → 突破 BC 天花板。π0.6 Recap 是典型代表。
-
-**Q: 触觉为什么重要？**
-A: 视觉给坐标，语言给意图，触觉给接触相位真反馈。遮挡下力/形/质不可视觉观测，精密操作的最后 1cm 靠触觉闭环。MoDE-VLA 量化证明：去除力觉-11%，去除触觉-8%。
-
-**Q: World Model 当前状态？**
-A: 从 nice-to-have 预测器 → 评估器 → 规划器 → 动作生成基底 演进中。PlayWorld 已证明 WM→RL 闭环可行(+65%)，但接触密集任务的物理幻觉是致命障碍。方法论分化为 pixel/latent/structured/WAM 四条路线。Cosmos 3（NVIDIA 产品化）+ NC AI WFM（25% GPU 成本达 80%性能）= 双工业级信号。置信度 70%↑，Phase 4 持续超临界(60%)。
-
-**Q: 小模型能替代大模型吗？**
-A: 在受限场景可以。Evo-1 (450M) 达 LIBERO 94.8%，仅 RT-2 参数的 1.4%。GigaBrain-0-Small(840 GFLOPs, 0.13s, 80%)进一步验证。AutoQVLA(ICLR 2026)节省30% VRAM。RoboECC 边缘云协同将延迟从 1274→362ms。置信度已升至 70%。但开放世界泛化仍需大模型。
-
-**Q: SimVLA 的启示？**
-A: 0.5B 模型通过正确训练 recipe（数据 shuffling、归一化、LR schedule）达 98.6% LIBERO。关键："沉默旋钮"(shuffling off = 9.9% vs on = 98.6%) 比花哨模块重要得多。数据策略 > 架构创新(B0)的直接证据。
-
-**Q: Knowledge Insulation 是什么？**
-A: 双轨训练防灾难性遗忘：VLM backbone 只学离散 token（保留语义能力），Action Expert 独立学连续控制，梯度隔离不互传。π0.6 核心技巧之一。
-
-**Q: 当前领域最大风险？**
-A: 学术与产业脱节。学术在 LIBERO 上刷 0.3% 提升，产业需要"产线任务成功率""维护周期"。工具链(LeRobot)收敛加速了实验民主化，但 54 篇 RL 论文中多数是调参报告而非方法创新——"工具易得≠方法成熟"。
-
-**Q: ICLR 2026 揭示了什么？**
-A: 164 篇 VLA 提交(18× 年增长)。关键发现：VLM backbone 大小与 VLA 性能无关(VLM4VLA)；LIBERO 已饱和；Discrete Diffusion VLA 是新兴趋势(4篇并发)；零样本差距依然巨大——开源 VLA 远落后 π0.5/Gemini-Robotics。
-
----
-
-## 15. 校准纪律（使用本记忆时的注意事项）
-
-1. **谦逊折扣**：所有 >80% 置信度已乘 0.9（LLM 在此区间系统性过度自信）
-2. **保守偏误修正**：强证据最小更新 ±5%，Bull+Bear 共识最小 ±10%。**禁止 2-3% 安慰性微调**——要么 ≥5% 要么不调整(记录为观察中)
-3. **逆共识保护**：逆共识信号的筛选阈值为正常的 1/3（防止系统性杀死异见）
-4. **高确定性 = 高风险**：你最确定的判断，恰恰是最需要被挑战的
-5. **生存者偏误警告 🔴**：系统零失败案例记录。每次分析需主动搜索失败/无法复现/部署失败信号
-6. **本文档截止日期**：2026-04-27，VLA 领域每周都有重大变化
-
----
-
-*生成自 KW_VLA Handbook v3 | 332+ 篇源文件 → ~16K tokens 压缩索引 | 定时任务每日 09:00 增量更新 | v2.0.11 2026-04-27 (scheduled task run, integrating 04-27 daily-digest v3.5.2 — low signal day; XPeng humanoid 量产时间表 04-25→04-27 复述 = industrial fulfillment 12th signal + to-C retail dimension; arxiv silence 25 days; structural cleanup of duplicated §11-§15 trailing content from prior runs)*
+| **Touch Dreaming/HTD** (2604.13015, CMU+UT Arlington+Bosch, 04-14) | Humanoid Transformer + latent tactile dreaming 辅助（同时预测 action chunks + 关节力 + tactile latents），**latent tactile > raw tactile +30%**，5 contact-rich 任务 **+90.9% 相对提升** | **B8 方法论级累积第 8 条**；跨模态
