@@ -707,4 +707,105 @@ Helix 02 训练数据：>1000h 人类运动 + >200k 仿真环境。无状态机�
 | SimpleVLA-RL (小红书 04-17 帖 8, 清华+上海 AI Lab) | 单轨迹 SFT + RL 将 LIBERO-10 17→91%，LIBERO-Avg 48.9→94.1% | B2 弱正向（单轨迹数据稀缺场景路线） |
 | TouchAnything (小红书 04-17 帖 15, SJTU 杨朔) | EgoTouch 数据集 + 首个视频→双手触觉估计模型 | B8 弱正向（视频→触觉新数据路径） |
 | **新增 04-22 回溯补扫（2604.09-17 段空洞）** | | |
-| **Touch Dreaming/HTD** (2604.13015, CMU+UT Arlington+Bosch, 04-14) | Humanoid Transformer + latent tactile dreaming 辅助（同时预测 action chunks + 关节力 + tactile latents），**latent tactile > raw tactile +30%**，5 contact-rich 任务 **+90.9% 相对提升** | **B8 方法论级累积第 8 条**；跨模态
+| **Touch Dreaming/HTD** (2604.13015, CMU+UT Arlington+Bosch, 04-14) | Humanoid Transformer + latent tactile dreaming 辅助（同时预测 action chunks + 关节力 + tactile latents），**latent tactile > raw tactile +30%**，5 contact-rich 任务 **+90.9% 相对提升** | **B8 方法论级累积第 8 条**；跨模态 latent 预测规律（WAV+GIRL+ViVa+Touch Dreaming）；Phase 3 升至 12.5-13/10，Phase 4 升至 17/12 |
+| **LIDEA** (2604.10677, SJTU Cewu Lu+Yong-Lu Li, 04-12) | 双阶段蒸馏 + 3D 几何对齐，人类视频→机器人策略 embodiment gap 桥接，声称 **80% 机器人演示可由人类视频替代** | B1 绕过路径第 N+1 条；C1 架构贡献第 N+1 条（距升格阈值仅 5%）；B0 张力（数据维度扩大 vs 架构性贡献并存） |
+| **VLA-World for AD** (2604.09059, SJTU+Huawei, 04-10) | 自动驾驶域 VLA + WM 统一架构，action-derived 可行轨迹引导下一帧图像生成 + 对 self-generated 未来帧 reflective reasoning | Phase 4 **AD 跨域扩散子赛道首标**；与 04-20 坦克 700 Coffee Pilot 4.0 车规量产 research+product 双轨共振 10 天 gap |
+| I2RLC (2604.16850, OMRON SINIC X+Waseda, ~04-20) | 10× 演示加速 + 接触丰富 peg-in-hole **100%** 成功率的 IRLC 增量精炼 | B2 中性 / B1 绕过弱反方（算法性绕过数据采集瓶颈） |
+| Web-Gewu (2604.17050, ~04-21) | Browser-based 交互式 RL playground，WebRTC 云边协同 | B1 工程门槛下降第 7+ 条，RL 训练民主化基础设施 |
+| Mini-BEHAVIOR-Gran (2604.17019, ~04-21) | 指令粒度 U 形效应 benchmark，指令设计成为 VLA 性能杠杆 | B0/B3 benchmark 工具 |
+| Seeing Through Touch (2604.11579, KAIST+UNIST, 04-13) | 触觉驱动视觉材质定位（perception，非 policy） | B8 弱间接（tactile-grounded material segmentation） |
+| **新增 04-24 paper-scan（2604.18-22 段补扫）** | | |
+| **Cortex 2.0** (2604.20246, Sereact AI 工业, 04-22) | 工业 VLA + visual latent space WM + Process-Reward Operator + flow-based heads 四级显式分层；单/双臂 4 任务 SOTA VLA 全面超越 | **B4 70→75% (+5%) 触发预测 #11**；首个 latent-WM planner 工业级背书；B6 第 11 条分层信号；C2 最强反证 |
+| **RoboWM-Bench** (2604.19092, 04-21) | manipulation-centric video WM 物理可执行性 benchmark；SOTA video WM 失败模式量化 | B4 中-强反方（video WM 路线）；C2 弱正向（下限保护） |
+| Curiosity-Critic (2604.18701, 04-20) | 累积预测误差作为 WM 训练 intrinsic reward；自动分离 epistemic vs aleatoric error | B4/B3 弱正向（WM 训练方法论） |
+| GNWM (2604.16585, Western Digital, 04-19) | balanced continuous entropy 约束 + topological quantization 自稳定 WM | B4 弱正向方法论级 |
+| **新增 04-25 daily-digest（2604.20-23 段）** | | |
+| **Hi-WM** (2604.21741, Tsinghua/PKU/U.Toronto, 04-23) | Human-in-the-World-Model — 学习 WM 作为 reusable corrective substrate, post-training 失败矫正脱离物理执行/真机/操作员监督 | latent-WM **第 5 团队**（B4 维持 75%）；B2 弱反方（in-WM post-training 替代物理 RL）；B3 机制级闭环弱正向；预测 #17 追踪 Tier-1 复现 |
+| **2604.21192** "How VLAs (Really) Work In Open-World" (04-23) | BEHAVIOR1K 50 任务评估方法论 — 揭露 SOTA 在 open-world long-horizon 系统性高估真实部署能力 (RLC + Comet) | **B1 强反方累积**（B1 77→72% 审计弹药再加码）；B0 间接弱正向（评估方法论改进）；B6 弱正向（长时程 = 分层必要性） |
+| EmbodiedMidtrain (2604.20012, 04-21) | VLM↔VLA 数据分布对齐 mid-training 阶段；lightweight learnable proximity estimator + curated mid-training | B0 弱正向（数据策略 mid-training 维度）；B7 弱反方间接（representation alignment vs 解耦） |
+| **新增 04-26 daily-digest（2604.20-21 段补扫第 4 次）** | | |
+| **PokéVLA** (2604.20834, 04-21 段, 04-26 回溯发现) | Pocket-sized VLA — 1.22B params + 双阶段训练（PokeVLM 多模态 pre-training 2.4M 样本 + 多视角 goal-aware semantics + geometry alignment + novel action expert）；LIBERO 98.2% / Long suite 95.2%（CoT-VLA 69 / WorldVLA 54, +26.2pp gap） | **B9 累积第 7 条独立信号**（参数预算结构性新低）；维持 75%（LIBERO 接近饱和需打折，单条不达 ±5% 门槛）；C1 弱反方间接（架构创新+数据 curation 协同 ≠ 纯架构创新单因主导） |
+| **新增 04-27 paper-scan v3.5.3（2604.18-25 段补扫，daily-digest 漏过 6 篇）** | | |
+| **🔺 CorridorVLA** (2604.21241, 04-23) | 稀疏空间锚点（Δ-position 增量物理变化）→ corridor tolerance loss 约束 flow-matching action head；跨 SmolVLA + GR00T 双 backbone 验证；LIBERO-Plus +3.4% ~ +12.4%；GR00T-Corr 83.21% | **B5 / B7 弱正向**（FM head 仍主流且可被增强；保持解耦同时注入空间先验）；**C1 (35% ⚠️) 弱-中正向累积** = 显式空间约束第 3 条独立信号（VGA + ProGAL-VLA + CorridorVLA），**距升格阈值仅 4-5pp** |
+| **UniT** (2604.19734, XPENG Robotics + Tsinghua + HKU, 04-21) | Unified Latent Action Tokenizer via Visual Anchoring；三分支 cross-reconstruction (action↔vision↔fusion) → unified discrete latent action token；二联应用 = VLA-UniT (policy) + WM-UniT (world model) | **B1 弱负向**（人类视频替代第 5 条 + **首个 industrial-led 案例**）；**B4 弱正向**（latent-WM 应用变体第 3 条 = Cortex 2.0 / Hi-WM / WM-UniT，#16 工业级跟进口径仅部分工业含量）；**B6 弱正向**（分层第 11+ 条）；**B7 弱负向**（unified token vs decoupled）；**C3 中性偏负** |
+| **AEL** (2604.21725, Rutgers, 04-23) | 双时间尺度 self-evolution = Thompson Sampling bandit (memory retrieval) + LLM 反思（causal insight 注入 prompt）；LLM agent in open-ended environments（非 robotics 域） | **B3 弱负向累积**：prompt-level self-evolution 第 8+ 条（继 SpaceMind/EEAgent/KITE/FIDeL/ChemBot/WALL-B/EvoAgent）；定义切分议程（"权重闭环" vs "prompt/memory 闭环"）继续累积压力 |
+| **EvoAgent** (2604.20133, 04-22) | 主-子 agent 分层 + 三阶段 skill matching + 三层 memory；foreign trade 域；GPT5.2 +28% LLM-as-Judge 平均分 | **B3 弱负向累积**（prompt/skill 进化第 9 条，非 robotics 域权重 0.5）；**B6 弱正向**（hierarchical sub-agent 第 12+ 条，非 robotics 域权重 0.5）；不变更置信度 |
+| **SynAgent** (2604.18557, 04-20, NJUST) | Solo-to-cooperative humanoid manipulation；Interact Mesh + Delaunay tetrahedralization 维持空间关系；Conditional VAE policy + multi-agent PPO | **B1 弱反方**（人类数据 bootstrap → multi-agent humanoid 替代路径）；**B6 弱正向**（multi-agent cooperative = sub-system 分层）；记录"协作人形"细分赛道形成中 |
+| **EUEA** (2604.19839, UNIST, 04-21) | Environmental Understanding VLM 微调 4 种 skill（object perception / task planning / action understanding / goal recognition）+ GRPO 一致性细化 | **B6 弱正向**（skill 分解第 N 条）；不变更置信度 |
+
+---
+
+## 12. 开源基础设施与工具链
+
+| 工具 | 类别 | 最新版本 | 定位 |
+|------|------|----------|------|
+| LeRobot | 训练框架 | v0.5.0 (2026-03) | 事实标准，集成 X-VLA backbone |
+| StarVLA | 训练框架 | (2026-04) | 模块化全栈框架，VLM+WM backbone 可 swap，多 action head |
+| Isaac Lab | 仿真+RL | - | GPU 并行训练首选 |
+| MuJoCo | 物理引擎 | v3.6.0 (2026-03) | 精细接触仿真 |
+| SAPIEN | 仿真 | v3.0.3 (2026-03) | 零件级交互 |
+| Genesis | 仿真 | v0.4.3 (2026-03-16) | 新兴综合仿真 |
+| GELLO/ALOHA | 数据采集 | - | 遥操作硬件方案 |
+
+**开源分级**：展示型(算法 demo) < 生态锁定型(厂商工具) < 基础设施型(全 CAD+栈+know-how 透明)
+工具链正在快速收敛，继续维护独立训练代码库的团队将面临"无人复用"困境。
+
+---
+
+## 13. 产品与市场
+
+- **PMF 真标准**：持续用户留存 + 可量化 ROI + 可靠性验证（非 demo 级别）
+- **人形机器人**：Figure/Tesla/1X/Agility 领跑，中国 Unitree/LimX/银河通用追赶；2026 年进入小批量产线部署但距大规模量产仍有 2-3 年
+- **产业与学术脱节**：学术卷 LIBERO 99.2%→99.5%，产业谈"产线部署""量产基地"——当基准分数与客户付费标准脱钩，学术研究合法性基础正在松动
+
+---
+
+## 14. 高频面试要点
+
+**Q: VLA 和传统机器人学习有什么本质区别？**
+A: 传统方法是模块化流水线(感知→规划→控制)，VLA 是端到端：视觉+语言直接映射到动作。优势是涌现泛化能力，代价是可解释性和安全保障。
+
+**Q: 为什么 Flow Matching 胜出？**
+A: Diffusion 走随机路径需 50-100 步去噪，Flow 走最优传输直线仅需 1-10 步。同等精度下推理快 10 倍+，首次让大模型支持 50Hz+ 实时控制。OFP 进一步证明单步 flow 可超越多步版本。
+
+**Q: VLA 最大瓶颈是什么？**
+A: 数据。真机数据采集成本是 #1 约束（1 小时数百元，无法覆盖长尾）。三条绕过路径：互联网视频跨模态迁移、World Model 生成合成数据、Sim2Real。
+
+**Q: RL 后训练为什么是突破口？**
+A: BC 只能学到专家分布内行为，分布外崩溃。RL 通过在线探索收集分布外数据 + 自动奖励(VLM 打分) → 突破 BC 天花板。π0.6 Recap 是典型代表。
+
+**Q: 触觉为什么重要？**
+A: 视觉给坐标，语言给意图，触觉给接触相位真反馈。遮挡下力/形/质不可视觉观测，精密操作的最后 1cm 靠触觉闭环。MoDE-VLA 量化证明：去除力觉-11%，去除触觉-8%。
+
+**Q: World Model 当前状态？**
+A: 从 nice-to-have 预测器 → 评估器 → 规划器 → 动作生成基底 演进中。PlayWorld 已证明 WM→RL 闭环可行(+65%)，但接触密集任务的物理幻觉是致命障碍。方法论分化为 pixel/latent/structured/WAM 四条路线。Cosmos 3（NVIDIA 产品化）+ NC AI WFM（25% GPU 成本达 80%性能）= 双工业级信号。置信度 70%↑，Phase 4 持续超临界(60%)。
+
+**Q: 小模型能替代大模型吗？**
+A: 在受限场景可以。Evo-1 (450M) 达 LIBERO 94.8%，仅 RT-2 参数的 1.4%。GigaBrain-0-Small(840 GFLOPs, 0.13s, 80%)进一步验证。AutoQVLA(ICLR 2026)节省30% VRAM。RoboECC 边缘云协同将延迟从 1274→362ms。置信度已升至 70%。但开放世界泛化仍需大模型。
+
+**Q: SimVLA 的启示？**
+A: 0.5B 模型通过正确训练 recipe（数据 shuffling、归一化、LR schedule）达 98.6% LIBERO。关键："沉默旋钮"(shuffling off = 9.9% vs on = 98.6%) 比花哨模块重要得多。数据策略 > 架构创新(B0)的直接证据。
+
+**Q: Knowledge Insulation 是什么？**
+A: 双轨训练防灾难性遗忘：VLM backbone 只学离散 token（保留语义能力），Action Expert 独立学连续控制，梯度隔离不互传。π0.6 核心技巧之一。
+
+**Q: 当前领域最大风险？**
+A: 学术与产业脱节。学术在 LIBERO 上刷 0.3% 提升，产业需要"产线任务成功率""维护周期"。工具链(LeRobot)收敛加速了实验民主化，但 54 篇 RL 论文中多数是调参报告而非方法创新——"工具易得≠方法成熟"。
+
+**Q: ICLR 2026 揭示了什么？**
+A: 164 篇 VLA 提交(18× 年增长)。关键发现：VLM backbone 大小与 VLA 性能无关(VLM4VLA)；LIBERO 已饱和；Discrete Diffusion VLA 是新兴趋势(4篇并发)；零样本差距依然巨大——开源 VLA 远落后 π0.5/Gemini-Robotics。
+
+---
+
+## 15. 校准纪律（使用本记忆时的注意事项）
+
+1. **谦逊折扣**：所有 >80% 置信度已乘 0.9（LLM 在此区间系统性过度自信）
+2. **保守偏误修正**：强证据最小更新 ±5%，Bull+Bear 共识最小 ±10%。**禁止 2-3% 安慰性微调**——要么 ≥5% 要么不调整(记录为观察中)
+3. **逆共识保护**：逆共识信号的筛选阈值为正常的 1/3（防止系统性杀死异见）
+4. **高确定性 = 高风险**：你最确定的判断，恰恰是最需要被挑战的
+5. **生存者偏误警告 🔴**：系统零失败案例记录。每次分析需主动搜索失败/无法复现/部署失败信号
+6. **本文档截止日期**：2026-04-28，VLA 领域每周都有重大变化
+
+---
+
+*生成自 KW_VLA Handbook v3 | 332+ 篇源文件 → ~16K tokens 压缩索引 | 定时任务每日 09:00 增量更新 | v2.0.12 2026-04-28 (scheduled task run, integrating 04-27 paper-scan v3.5.3 — 6 papers daily-digest missed across 2604.18-25 segment; CorridorVLA C1 escalation pressure 4-5pp; UniT XPENG industrial-academic latent action token; B3 prompt-level self-evolution accumulation 8+ signals; arxiv silence extended to 26 days)*
