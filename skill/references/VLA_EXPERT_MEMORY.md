@@ -1,8 +1,9 @@
-# VLA 专家记忆 v2.0.39 | 2026-06-26
+# VLA 专家记忆 v2.0.40 | 2026-07-07
 
 > **角色**：压缩索引 + 自足知识底座。无 repo 时独立运作；有 repo 时作为快速框架，深度分析由原始文件补充。
-> **来源**：KW_VLA Handbook（332+ 篇 Markdown，70+ 论文拆解，产业分析，周报系统）。
+> **来源**：KW_VLA Handbook（theory 448 篇 Markdown / 280 篇论文拆解，产业分析，周报系统）。
 > **维护**：定时任务每日 09:00 增量更新。
+> **v2.0.40 变更摘要**（2026-07-07 自动重生）：自2026-06-26以来，handbook新增方向集中于安全与鲁棒性的工程化落地：包括首个理论保证碰撞避免的即插即用CBF安全层（VLSA）、运行时失败检测与恢复的外挂式VLM助手（FailSafe）、以及光照退化下基于事件相机的动作条件化融合（Event-VLA）；同时出现多模态动作生成的新范式，如解耦运动与背景的潜在动作码本（Motion-Focused Latent Action）、双频语义推理与高频执行解耦（TIDAL），以及免训练的语言接地修复（IGAR）和触觉适配参数隔离（Wake up for Touch!）。
 > **v2.0.33 变更摘要**（2026-06-09 定时 vla-hypothesis-review 每周信念审计）：**🔻 C3 index 24→29% canonical 对齐**（BG §2 内核自 05-17 即 29% XPENG VLA 2.0 +5%, 本索引 + 自 05-17 全部报告 stale 24% 漏传 23d, per CLAUDE.md §7 索引向内核收敛; AD-scope caveat 保留, 若本意仅限 AD → 回退内核至 24%）+ **#23 关闭**（4 篇独立 TTC: MPCoT/TTT-VLA/Continuous-Reasoning/Revisiting-ECoT 提前 ~2 月兑现）+ **Phase 6 (TTC) 升格触发 ≥5/15**（精确重计移交 convergence-radar）+ **#27 closure 定稿「rebound 实际兑现 flagship-tier」**（stable-worldmodel/Qwen-VLA/Cosmos 3, '64d 缺席'=测量假象, 详见 BG §6）。B8 终局裁决 undated deferral → 带硬截止默认方向（2026-07-31 前无 policy-level 触觉必需性论文 → 默认 →65%）。**calibration deadlock 根因诊断 = ±5% 聚合缺口 + 80% 谦逊折扣悬崖**（framework 非 evidence, ≥11 项 P0 0 落地真正病灶）。系统级保守偏误 active 44d, §1 信念表 0 数值变更。报告 reports/2026-06-09-hypothesis-review.md。
 > **v2.0.27 变更摘要**（2026-05-26→05-27 增量定时任务 — 连续 2 个零新数据日 / 0 置信度变更 / 系统级“只升不降”保守偏误警报 05-26 正式 fire）：**🟢 零新数据日 ×2 — 0 节点置信度变更**。补整合 05-26 daily-digest（v3.6.19，BELIEF_GRAPH 已 bump）+ 推进至 05-27（三类报告全缺席）。(1) **🔴 05-26 系统级保守偏误警报 fire**：上次任一信念下降 = 04-26 (B1/B3 ↓) 距今满 30 天 → CLAUDE.md §4.3 触发 #4；警报职责 = 强制重审**非**强制下调，05-25 hypothesis-review 已完成 B5/B6/B8 三视角审查裁定**无任一节点存在真实“应下调”证据**（B8 处 50/50，对其 -5% 重蹈 04-26 被 LWD 反转覆辙；B5/B6/B7 上行被 75-77% 校准上限锁死非应下行）→ 维持 0 变更（§内容纪律“不为显得有在工作而制造假变更”）。(2) **§4 保守偏误计数器全体 +1d 至 05-27**：B0 40d / B1 31d软 / B2 软23d 严 56d🔴 / B3 31d软 / C3 10d / B4 33d / B5 57d🔴 / B6 83d🆘 / B7 严73d软28d / B8 71d🔴 / B9 42d（5 节点超阈值不变 B5/B6/B7严/B8/B2严）。(3) **顶级实验室 arxiv 严格缺席 55 天（04-06~05-27 史上最长 +1d）**；**#27（顶级实验室 arxiv rebound 硬截止 2026-06-05）剩 9 天** = 唯一 30 天内到期项，本窗口无 rebound = 反方持续累积；#28（π0.7 60d 延期复现 2026-07-17）剩 51d。(4) 系统级“只升不降”计数 31d（警报持续 active）。(5) **🟡 既存数据一致性观察（不擅自解决）**：BELIEF_GRAPH §1 节点表 B1=72%/B2=77%/B3=72%（04-26 值）vs §4/本记忆 B1=77%/B2=82%/B3=77%（LWD 05-04 值）差 5pp，仅标记供下次 hypothesis-review，**不改任何节点值**。(6) 真正病灶 = calibration ceiling deadlock + ≥11 项 P0 人工裁决 0 落地循环（自 05-15 计 12 天），下次 hypothesis-review 元层最高优先。
 > **v2.0.26 变更摘要**（2026-05-25 增量定时任务 — 双报告日 daily-digest v3.6.16 + paper-scan v3.6.17 / 0 置信度变更 / 真数据日但全部信号被 calibration ceiling deadlock 阻塞 / 系统级"只升不降"警报临界）：**🟡 低信号真数据日 — 0 节点置信度变更**。当日 **两份报告**：(1) daily-digest 24h 窗口捕获 **GesVLA (2605.22812, ~05-21)** gesture-aware dual-VLM（gesture 特征嵌 latent 空间 + hand-model 渲染 gesture 数据生成管线降 sim-to-real）= 弱 B0（数据工程, raw 85% deadlock 不达 +5%）/ 中性 C3（保留语言 ADD gesture ≠ 移除语言, 05-17 C3 sub-trigger 未 fire）/ 弱 B6（dual-VLM）+ **HiF-VLA (arxiv 2512.09928 = 2025-12 旧论文)** motion 表征双向时序推理（hindsight+foresight, LIBERO-Long 96.4%, 延迟 -58.3%）仅因 05-22 开源 + CVPR 2026 接收再浮现 → **按旧论文处理不触发节点**（arxiv ID 核查防"开源 ≠ 新论文"误计）; (2) paper-scan 段穷举补扫 daily-digest 24h 窗口漏过的 4 篇: **🟡 RAW-Dream (2605.12334, ~05-12)** task-agnostic WM-for-RL（task-free WM 预训练 + 现成 VLM reward + dual-noise verification, zero-shot imagination 微调）= **Phase 2×4 交叉（WM 里做 RL）最危险交叉又一实证 + Phase 4 反相变计数器 39→40/12 BG = 3.33× 历史新高（雷达 38→39/12 = 3.25×）**, B4 75% 校准上限 deadlock 阻塞不达 +5% / **🟡 AVP (2605.22183, ~05-22)** VLM 发射 visual-primitive token 作接口条件化动作生成解耦指令/空间/运动 = B7 中正向, deadlock 阻塞 / **🟢 PointACT (2605.21414, ~05-21)** multi-scale point-action expert dual-system 3D-aware = B7/B6 弱 / **🟢 EvoScene-VLA (2605.21862, ~05-21)** recurrent scene prefix 跨 chunk 维护 geometry-aware scene prior（RoboTwin +2pp）= B7 弱（**明确不计 Phase 4**, 沿用雷达归类纪律: decoder-内场景状态 ≠ 生成式 WM）; **流程更正**: **Hand-in-the-Loop / HandITL (2605.15157)** 撤销 05-21 永久 dismiss（本次 WebSearch 独立返回区别于 DexHiL 2603.09121 的摘要 = bimanual dexterous human-in-the-loop intervention, SOP false-negative 校准点, 归 B2/B3 既有累积 belief 0; SOP 应增 "dismiss 后自然浮现需 un-dismiss 复评" 条款）; **2 篇 1-strike pending**（cross-ref 未独立确认, 不计节点不记方法细节）: Pre-VLA (2605.22446) runtime verification for VLA + WM rollouts + Understanding Multimodal Failure in Action-Chunking BC (2605.22493); **段穷举 SOP 第 17 次发现漏过**（2605.12 段第 3 次, 单段连续三次漏过 = 段穷举不可靠最强印证, SOP v2 草案 P0 紧迫上升）+ **2605.18~22 段索引延迟假设第 2 次确认**（lag 3-5d 稳定, 2605.23~24 仍未索引下次 ~05-28 补扫）; **社交情报 4 条全产业/narrative 0 触及 VLA 核心**: Tesla 关 Fremont 经典车型产线转人形（非 arxiv 发布不破缺席）/ 脉塔智能 5000万 Pre-A/A / **智平方 AI²《VLA 过时吗?2026 回应》** 把 VLA 重定义为 WM+类脑开放框架 narrative 防御（加固 C2 15% 下限反证但已不动）/ 福赛科技 2000万 人形专项基金。**🔴 本日核心元信号**: 上次任一信念"降低"= 04-26（B1/B3 ↓）距今 **29d**, **距 CLAUDE.md §4.3 触发 #4「连续 30 天未降低任何信念置信度 → 保守偏误警报」仅剩 1 天（05-26 正式触发）** —— 05-04 后全 ↑ = "只升不降 over-update drift" 进入正式警报临界, 与节点级 B5/B6/B7/B8 "该降未降"方向相反并存 = 校准 deadlock 双面成本, 列下次假设审计元层最高优先。**保守偏误状态（2026-05-25，全体 +4d vs 05-21）**：B0 (38d) ✅ / B1 (29d) ✅ / B2 (软 21d / 严 54d 🔴) / B3 (29d) ✅ / C3 (8d) ✅ / B4 (31d) ✅ / **B5 (55d) 🔴** / **B6 (81d) 🆘 已破 67d 反思阈值 +14d** / B7 (软 26d / 严 71d ⚠️) / **B8 (69d) 🔴** / B9 (40d) ✅。**5 节点超阈值不变**（B5/B6/B7-严/B8/B2-严）。**预测窗口倒计时**：#9 已关闭；#16 数量已满足触发受阻；#19 剩 36d；#22 剩 71d；#23 剩 73d；#24/#25 剩 81d；#26 剩 173d；**#27 距 06-05 剩 11 天 < 2 周关键监测期**（本窗口无 rebound: GesVLA 学术 / HiF-VLA 旧学术 / Tesla 非 arxiv = 反方持续累积）。**顶级实验室 arxiv 严格缺席 53 天**（04-06~05-25 史上最长 +4d, 本批零顶级实验室）。BELIEF_GRAPH.md v3.6.14 → v3.6.16（daily-digest）→ **v3.6.17（paper-scan）**, 0 置信度变更, §4 计数器 daily-digest 已 +4d / paper-scan 不递增。**议程积压 ≥10 P0 + 雷达 2 项**, calibration ceiling deadlock（B0/B4/B6/B7）最高优先未解。**⚠️ GitHub 累积未 push v2.0.21~v2.0.26**（本 session bash mount 同步尝试 push + PowerShell fallback）。（注: v2.0.25 05-21 仅 bump 标题/§9 未留独立 changelog 条目, 见 §9.1 05-21 快照）。**Source Map 行号偏移**：changelog +1 行 / §9.1 +1 行（05-25 当日快照）/ §15 截止日期更新 → Source Map 表格按新行号刷新。
@@ -42,22 +43,22 @@
 
 | Section | 行号 | 优先级 | 深度文件（KW_VLA/ 下） |
 |---|---|---|---|
-| §0 VLA 定义 | 64-71 | 跳过 | — |
-| §1 模型族谱 | 73-112 | 跳过 | — |
-| §2 动作生成范式 | 113-153 | 按需 | — |
-| §3 训练范式 | 154-203 | 跳过 | — |
-| §4 信念网络 ★ | 204-244 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
-| §5 收敛地图 ★ | 245-320 | **必读** | — (本文已是最完整版本) |
-| §6 触觉 | 321-346 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
-| §7 部署 | 347-395 | 按需 | `deployment/` |
-| §8 产业 | 396-461 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
-| §9 当前状态 ★ | 462-581 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
-| §10 深度专题 | 582-671 | 按需 | `theory/frontier/` 对应论文 |
-| §11 论文速查 | 672-847 | 按需 | — |
-| §12 开源基础设施 | 848-864 | 按需 | — |
-| §13 产品与市场 | 865-872 | 跳过 | — |
-| §14 高频面试要点 | 873-909 | 按需 | — |
-| §15 校准纪律 ★ | 910-920 | **必读** | — |
+| §0 VLA 定义 | 65-73 | 跳过 | — |
+| §1 模型族谱 | 74-113 | 跳过 | — |
+| §2 动作生成范式 | 114-154 | 按需 | — |
+| §3 训练范式 | 155-204 | 跳过 | — |
+| §4 信念网络 ★ | 205-245 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
+| §5 收敛地图 ★ | 246-321 | **必读** | — (本文已是最完整版本) |
+| §6 触觉 | 322-347 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
+| §7 部署 | 348-396 | 按需 | `deployment/` |
+| §8 产业 | 397-462 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
+| §9 当前状态 ★ | 463-582 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
+| §10 深度专题 | 583-672 | 按需 | `theory/frontier/` 对应论文 |
+| §11 论文速查 | 673-870 | 按需 | — |
+| §12 开源基础设施 | 871-887 | 按需 | — |
+| §13 产品与市场 | 888-895 | 跳过 | — |
+| §14 高频面试要点 | 896-932 | 按需 | — |
+| §15 校准纪律 ★ | 933-943 | **必读** | — |
 
 ---
 
@@ -842,6 +843,28 @@ Helix 02 训练数据：>1000h 人类运动 + >200k 仿真环境。无状态机�
 | BifrostUMI (2605.03452, 05-05) | Robot-free demonstration → humanoid whole-body manipulation；VR-based portable demo + keypoint trajectory + retargeting + WBC（UMI 系列 humanoid 扩展） | B0 / B1 中正向累积 |
 | Bridging Embodiment Gap (2605.03637, 05-05) + Seeing Realism (2605.02757, 05-04) + Decompose-and-Recompose (2605.01448, 05-02) | sim-to-real video augmentation / disentangled cross-embodiment video editing / atomic skill-action pairs 跨任务泛化 | B0 / B1 中正向累积（4 条本周 data engine 信号 + MolmoAct2 = +5% 候选） |
 | IVLR / Thinking in Text and Images (2605.00438, 05-01) + VILAS (2605.02037, 05-03) + Semantic Autonomy Framework (2605.02525, 05-04) + LiteVLA-H (2605.00884, 04-27 段补) | interleaved vision-language reasoning / Fairino + Jodell + π0/π0.5/GR00T N1.6 三模型并行 / 6-layer reference framework + 88% 指令 <0.1ms / 256M VLA aerial Jetson AGX dual-rate | B3 / B6 弱累积；B9 弱正向（aerial dual-rate） |
+| **🆕 自动重生新增（2026-07-07）** | | |
+| SoftVTBench: A Safety-Aware Visuo-Tactile Benchmark for Physically Constrained Robotic Ma… (2607.04234) | 首个将「物理安全」纳入评估的可变形物体视触觉操作基准——揭示仅看任务完成率会严重高估策略性能，触觉反馈可显著降低不安全操作 | 见 theory/tactile/softvtbench_a_safety_aware_visuo_tactile_benchmark_for_physi_dissection.md |
+| SEAM: Smooth Execution of Action-Chunked Motion for Vision-Language-Action Policies (2607.04609) | 解决 VLA 动作块之间的多模态分叉（multimodal bifurcation）问题——相邻块因独立采样而选择互不兼容的轨迹模式，导致块边界处出现动作突变；SEAM 提供即插即用的推理时平滑方案，无需回传梯度、无需… | 见 theory/vla-core/seam_smooth_execution_of_action_chunked_motion_for_vision_la_dissection.md |
+| Learning Semantic Atomic Skills for Multi-Task Robotic Manipulation (2512.18368) | 用 VLM 驱动的语义分割 + 对比学习构建跨任务可复用的原子技能空间，解决多任务模仿学习中"技能缺乏语义对齐导致泛化受限"的痛点 | 见 theory/vla-core/learning_semantic_atomic_skills_for_multi_task_robotic_manip_dissection.md |
+| Transport Discrepancy as a Reliability Signal for Vision-Language-Action Models (2512.01715) | 为 flow-matching VLA 策略提供每步可靠性估计——利用骨干特征与动作表示之间的传输成本，在不改变 flow-matching 目标的前提下提升分布偏移和长程任务下的成功率 | 见 theory/vla-core/transport_discrepancy_as_a_reliability_signal_for_vision_lan_dissection.md |
+| Restoring Linguistic Grounding in VLA Models via Train-Free Attention Recalibration (2603.06001) | 首次系统揭示 VLA 模型的「语言失明」现象，并提出免训练的注意力重校准方法（IGAR），在零额外训练成本下恢复语言指令对动作生成的约束力。 | 见 theory/vla-core/restoring_linguistic_grounding_in_vla_models_via_train_free_dissection.md |
+| VLSA: Vision-Language-Action Models with Plug-and-Play Safety Constraint Layer (2512.11891) | 首次将控制障碍函数（CBF）引入 VLA 推理阶段，通过即插即用的安全约束层实现**理论保证的碰撞避免**，无需重新训练即可叠加到任意预训练 VLA 上。 | 见 theory/planning/vlsa_vision_language_action_models_with_plug_and_play_safety_dissection.md |
+| Motion-Focused Latent Action Enables Cross-Embodiment VLA Training from Human EgoVideos (2606.18955) | 用无标注人类第一人称视频预训练 VLA，通过解耦运动与背景的潜在动作码本，实现跨具身迁移——仅需 ~50 条机器人轨迹即可完成下游适配。 | 见 theory/vla-core/motion_focused_latent_action_enables_cross_embodiment_vla_tr_dissection.md |
+| Wake up for Touch! Mask-isolated Tactile Alignment Learning in MLLMs (2607.00302) | 解决小参数 MLLM 在引入触觉模态时的灾难性遗忘问题——通过掩码隔离将触觉适配限制在"休眠"参数子空间，零推理开销实现触觉推理同时保留视觉语言能力。 | 见 theory/tactile/wake_up_for_touch_mask_isolated_tactile_alignment_learning_i_dissection.md |
+| Human-as-Humanoid: Enabling Zero-Shot Humanoid Learning from Ego-Exo Human Videos with Hu… (2606.32009) | 用同步主客体人类视频 + 分阶段 IK 将人类操作转化为 60-DoF 人形机器人可执行动作标签，再用 FK-aware 监督训练 VLA，实现零目标机器人演示的实机部署。 | 见 theory/frontier/human_as_humanoid_enabling_zero_shot_humanoid_learning_from_dissection.md |
+| DVG-WM: Disentangled Video Generation Enables Efficient Embodied World Model for Robotic… (2606.32028) | 将世界模型的"动力学建模"和"视觉合成"解耦为两阶段流水线，用 Flow Matching 串联，实现 3.97× 推理加速的同时提升视频质量与物体级准确率 | 见 theory/world-model/dvg_wm_disentangled_video_generation_enables_efficient_embod_dissection.md |
+| Event-VLA: Action-Conditioned Event Fusion for Robust Vision-Language-Action Model (2606.29384) | 解决 VLA 在光照退化场景下的鲁棒性问题——用事件相机（event camera）作为补充传感器，通过"动作条件化路由接口"而非全局 token 融合的方式注入事件信息，在保持正常光照性能的同时显著提升暗光/近黑环境… | 见 theory/tactile/event_vla_action_conditioned_event_fusion_for_robust_vision_dissection.md |
+| Behavior Prompting Policy: Demonstrations as Prompts for Manipulation (2606.30457) | 将"单条人类演示"作为 in-context prompt 注入视觉运动策略，使机器人在零微调条件下即时执行新任务——把 LLM 的 in-context learning 范式平移到了具身操作领域 | 见 theory/frontier/behavior_prompting_policy_demonstrations_as_prompts_for_mani_dissection.md |
+| Sequential Planning via Anchored Robotic Keypoints (SPARK) (2606.30613) | 用零训练的神经符号架构（单一 LLM 调用生成行为树 + 自适应感知自一致性）在 LIBERO-PRO 位置/任务扰动下达到 43.7%，比 VLA 基线和 CaP-Agent0 翻倍以上——把测试时计算预算从「重规划… | 见 theory/planning/sequential_planning_via_anchored_robotic_keypoints_dissection.md |
+| StereoVLA: Enhancing Vision-Language-Action Models with Stereo Vision (2512.21970) | 首个将立体视觉引入 VLA 的模型，通过 GeoSem 编码器从双目视差中提取几何线索，解决单目 RGB 编码器的深度缺失问题，在真实机器人上实现 33.4% 的绝对成功率提升。 | 见 theory/foundation/stereovla_enhancing_vision_language_action_models_with_stere_dissection.md |
+| FailSafe: Reasoning and Recovery from Failures in Vision-Language-Action Models (2510.01642) | 解决 VLA 模型在执行中遭遇失败后无法自我恢复的痛点——通过自动化生成「失败场景 + 可执行恢复动作」配对数据，微调一个外挂 VLM 助手，让任意 VLA 模型获得失败检测与恢复能力。 | 见 theory/planning/failsafe_reasoning_and_recovery_from_failures_in_vision_lang_dissection.md |
+| RouterVLA: Turning Smoke Tests into Supervision for Heterogeneous VLA Selection (2606.27355) | 将部署前的烟雾测试（smoke tests）从"成本"转化为"监督信号"——用少量 probe 执行记录构建专家档案，从异构 VLA 策略池中选出最适合当前条件的专家，在 LIBERO-Plus 上实现 +14.64p… | 见 theory/vla-core/routervla_turning_smoke_tests_into_supervision_for_heterogen_dissection.md |
+| LA4VLA: Learning to Act without Seeing via Language-Action Pretraining (2606.27295) | 首次系统性地证明「去掉视觉观测的语言-动作预训练」可以学到可迁移的动作先验，并与标准VLA预训练互补，显著提升策略性能与视觉鲁棒性。 | 见 theory/foundation/la4vla_learning_to_act_without_seeing_via_language_action_pr_dissection.md |
+| Reinforcement Fine-Tuning of Flow-Matching Policies for Vision-Language-Action Models (2510.09976) | 解决 flow-matching VLA（如 π₀）无法用 PPO 做在线 RL 精调的根本难题——通过 CFM loss 变化构造无似然策略比，实现稳定的 online RL 精调，在 LIBERO 上达到 87.2… | 见 theory/diffusion-flow/reinforcement_fine_tuning_of_flow_matching_policies_for_visi_dissection.md |
+| Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly? (2606.26428) | 通过 task-agnostic 的"玩"预训练获得可复用的灵巧操作先验，再用 sparse-reward RL 微调到精密装配任务——系统性地揭示了预训练中四个设计因素对下游装配效果的影响。 | 见 theory/foundation/play2perfect_what_matters_in_dexterous_play_pretraining_for_dissection.md |
+| World Action Models Enable Continual Imitation Learning with Recurrent Generative Replays (2606.27374) | 首次利用 WAM 自身的生成能力作为回放机制，在无需存储任何历史演示数据的前提下，将灾难性遗忘降低 50%+ | 见 theory/foundation/world_action_models_enable_continual_imitation_learning_with_dissection.md |
+| TIDAL: Temporally Interleaved Diffusion and Action Loop for High-Frequency VLA Control (2601.14945) | 解决 VLA 推理延迟导致的"执行盲区"问题——通过双频架构将语义推理与高频执行解耦，在边缘设备上实现 ~9 Hz 控制更新（基线 ~2.4 Hz 的 4 倍），动态拦截任务成功率提升 2 倍。 | 见 theory/vla-core/tidal_temporally_interleaved_diffusion_and_action_loop_for_h_dissection.md |
 
 ---
 
