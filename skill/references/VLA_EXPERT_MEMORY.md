@@ -1,8 +1,9 @@
-# VLA 专家记忆 v2.0.40 | 2026-07-07
+# VLA 专家记忆 v2.0.41 | 2026-07-09
 
 > **角色**：压缩索引 + 自足知识底座。无 repo 时独立运作；有 repo 时作为快速框架，深度分析由原始文件补充。
-> **来源**：KW_VLA Handbook（theory 448 篇 Markdown / 280 篇论文拆解，产业分析，周报系统）。
+> **来源**：KW_VLA Handbook（theory 450 篇 Markdown / 282 篇论文拆解，产业分析，周报系统）。
 > **维护**：定时任务每日 09:00 增量更新。
+> **v2.0.41 变更摘要**（2026-07-09 自动重生）：自2026-07-07起，handbook新增Lift3D-VLA工作，标志着VLA模型正式向3D几何与动力学感知延伸，其核心是通过2D模型提升策略注入3D先验以实现显式点云推理和时间连贯动作生成；该进展直接呼应perception_mainline中“3D表征作为具身智能第一性原理瓶颈”的判断，并为deployment_mainline中“运行时失败恢复”与world_model_mainline中“world action model”演化提供新的几何-动态耦合基础。
 > **v2.0.40 变更摘要**（2026-07-07 自动重生）：自2026-06-26以来，handbook新增方向集中于安全与鲁棒性的工程化落地：包括首个理论保证碰撞避免的即插即用CBF安全层（VLSA）、运行时失败检测与恢复的外挂式VLM助手（FailSafe）、以及光照退化下基于事件相机的动作条件化融合（Event-VLA）；同时出现多模态动作生成的新范式，如解耦运动与背景的潜在动作码本（Motion-Focused Latent Action）、双频语义推理与高频执行解耦（TIDAL），以及免训练的语言接地修复（IGAR）和触觉适配参数隔离（Wake up for Touch!）。
 > **v2.0.33 变更摘要**（2026-06-09 定时 vla-hypothesis-review 每周信念审计）：**🔻 C3 index 24→29% canonical 对齐**（BG §2 内核自 05-17 即 29% XPENG VLA 2.0 +5%, 本索引 + 自 05-17 全部报告 stale 24% 漏传 23d, per CLAUDE.md §7 索引向内核收敛; AD-scope caveat 保留, 若本意仅限 AD → 回退内核至 24%）+ **#23 关闭**（4 篇独立 TTC: MPCoT/TTT-VLA/Continuous-Reasoning/Revisiting-ECoT 提前 ~2 月兑现）+ **Phase 6 (TTC) 升格触发 ≥5/15**（精确重计移交 convergence-radar）+ **#27 closure 定稿「rebound 实际兑现 flagship-tier」**（stable-worldmodel/Qwen-VLA/Cosmos 3, '64d 缺席'=测量假象, 详见 BG §6）。B8 终局裁决 undated deferral → 带硬截止默认方向（2026-07-31 前无 policy-level 触觉必需性论文 → 默认 →65%）。**calibration deadlock 根因诊断 = ±5% 聚合缺口 + 80% 谦逊折扣悬崖**（framework 非 evidence, ≥11 项 P0 0 落地真正病灶）。系统级保守偏误 active 44d, §1 信念表 0 数值变更。报告 reports/2026-06-09-hypothesis-review.md。
 > **v2.0.27 变更摘要**（2026-05-26→05-27 增量定时任务 — 连续 2 个零新数据日 / 0 置信度变更 / 系统级“只升不降”保守偏误警报 05-26 正式 fire）：**🟢 零新数据日 ×2 — 0 节点置信度变更**。补整合 05-26 daily-digest（v3.6.19，BELIEF_GRAPH 已 bump）+ 推进至 05-27（三类报告全缺席）。(1) **🔴 05-26 系统级保守偏误警报 fire**：上次任一信念下降 = 04-26 (B1/B3 ↓) 距今满 30 天 → CLAUDE.md §4.3 触发 #4；警报职责 = 强制重审**非**强制下调，05-25 hypothesis-review 已完成 B5/B6/B8 三视角审查裁定**无任一节点存在真实“应下调”证据**（B8 处 50/50，对其 -5% 重蹈 04-26 被 LWD 反转覆辙；B5/B6/B7 上行被 75-77% 校准上限锁死非应下行）→ 维持 0 变更（§内容纪律“不为显得有在工作而制造假变更”）。(2) **§4 保守偏误计数器全体 +1d 至 05-27**：B0 40d / B1 31d软 / B2 软23d 严 56d🔴 / B3 31d软 / C3 10d / B4 33d / B5 57d🔴 / B6 83d🆘 / B7 严73d软28d / B8 71d🔴 / B9 42d（5 节点超阈值不变 B5/B6/B7严/B8/B2严）。(3) **顶级实验室 arxiv 严格缺席 55 天（04-06~05-27 史上最长 +1d）**；**#27（顶级实验室 arxiv rebound 硬截止 2026-06-05）剩 9 天** = 唯一 30 天内到期项，本窗口无 rebound = 反方持续累积；#28（π0.7 60d 延期复现 2026-07-17）剩 51d。(4) 系统级“只升不降”计数 31d（警报持续 active）。(5) **🟡 既存数据一致性观察（不擅自解决）**：BELIEF_GRAPH §1 节点表 B1=72%/B2=77%/B3=72%（04-26 值）vs §4/本记忆 B1=77%/B2=82%/B3=77%（LWD 05-04 值）差 5pp，仅标记供下次 hypothesis-review，**不改任何节点值**。(6) 真正病灶 = calibration ceiling deadlock + ≥11 项 P0 人工裁决 0 落地循环（自 05-15 计 12 天），下次 hypothesis-review 元层最高优先。
@@ -43,22 +44,22 @@
 
 | Section | 行号 | 优先级 | 深度文件（KW_VLA/ 下） |
 |---|---|---|---|
-| §0 VLA 定义 | 65-73 | 跳过 | — |
-| §1 模型族谱 | 74-113 | 跳过 | — |
-| §2 动作生成范式 | 114-154 | 按需 | — |
-| §3 训练范式 | 155-204 | 跳过 | — |
-| §4 信念网络 ★ | 205-245 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
-| §5 收敛地图 ★ | 246-321 | **必读** | — (本文已是最完整版本) |
-| §6 触觉 | 322-347 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
-| §7 部署 | 348-396 | 按需 | `deployment/` |
-| §8 产业 | 397-462 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
-| §9 当前状态 ★ | 463-582 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
-| §10 深度专题 | 583-672 | 按需 | `theory/frontier/` 对应论文 |
-| §11 论文速查 | 673-870 | 按需 | — |
-| §12 开源基础设施 | 871-887 | 按需 | — |
-| §13 产品与市场 | 888-895 | 跳过 | — |
-| §14 高频面试要点 | 896-932 | 按需 | — |
-| §15 校准纪律 ★ | 933-943 | **必读** | — |
+| §0 VLA 定义 | 66-74 | 跳过 | — |
+| §1 模型族谱 | 75-114 | 跳过 | — |
+| §2 动作生成范式 | 115-155 | 按需 | — |
+| §3 训练范式 | 156-205 | 跳过 | — |
+| §4 信念网络 ★ | 206-246 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
+| §5 收敛地图 ★ | 247-322 | **必读** | — (本文已是最完整版本) |
+| §6 触觉 | 323-348 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
+| §7 部署 | 349-397 | 按需 | `deployment/` |
+| §8 产业 | 398-463 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
+| §9 当前状态 ★ | 464-583 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
+| §10 深度专题 | 584-673 | 按需 | `theory/frontier/` 对应论文 |
+| §11 论文速查 | 674-873 | 按需 | — |
+| §12 开源基础设施 | 874-890 | 按需 | — |
+| §13 产品与市场 | 891-898 | 跳过 | — |
+| §14 高频面试要点 | 899-935 | 按需 | — |
+| §15 校准纪律 ★ | 936-946 | **必读** | — |
 
 ---
 
@@ -865,6 +866,8 @@ Helix 02 训练数据：>1000h 人类运动 + >200k 仿真环境。无状态机�
 | Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly? (2606.26428) | 通过 task-agnostic 的"玩"预训练获得可复用的灵巧操作先验，再用 sparse-reward RL 微调到精密装配任务——系统性地揭示了预训练中四个设计因素对下游装配效果的影响。 | 见 theory/foundation/play2perfect_what_matters_in_dexterous_play_pretraining_for_dissection.md |
 | World Action Models Enable Continual Imitation Learning with Recurrent Generative Replays (2606.27374) | 首次利用 WAM 自身的生成能力作为回放机制，在无需存储任何历史演示数据的前提下，将灾难性遗忘降低 50%+ | 见 theory/foundation/world_action_models_enable_continual_imitation_learning_with_dissection.md |
 | TIDAL: Temporally Interleaved Diffusion and Action Loop for High-Frequency VLA Control (2601.14945) | 解决 VLA 推理延迟导致的"执行盲区"问题——通过双频架构将语义推理与高频执行解耦，在边缘设备上实现 ~9 Hz 控制更新（基线 ~2.4 Hz 的 4 倍），动态拦截任务成功率提升 2 倍。 | 见 theory/vla-core/tidal_temporally_interleaved_diffusion_and_action_loop_for_h_dissection.md |
+| **🆕 自动重生新增（2026-07-09）** | | |
+| Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation (2607.06564) | 解决传统 2D VLA 缺乏空间推理能力的问题，通过 2D 模型提升策略注入 3D 几何先验，实现显式点云推理与时间连贯的动作生成 | 见 theory/lift3d_vla_lifting_vla_models_to_3d_geometry_and_dynamics_aw_dissection.md |
 
 ---
 
