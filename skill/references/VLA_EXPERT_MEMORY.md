@@ -1,8 +1,9 @@
-# VLA 专家记忆 v2.0.41 | 2026-07-09
+# VLA 专家记忆 v2.0.42 | 2026-07-10
 
 > **角色**：压缩索引 + 自足知识底座。无 repo 时独立运作；有 repo 时作为快速框架，深度分析由原始文件补充。
-> **来源**：KW_VLA Handbook（theory 450 篇 Markdown / 282 篇论文拆解，产业分析，周报系统）。
+> **来源**：KW_VLA Handbook（theory 451 篇 Markdown / 283 篇论文拆解，产业分析，周报系统）。
 > **维护**：定时任务每日 09:00 增量更新。
+> **v2.0.42 变更摘要**（2026-07-10 自动重生）：自2026-07-09起，VLA-Handbook新增两篇关键论文拆解：HiMoE-VLA提出分层MoE架构以解耦动作空间特异性与共享表示，缓解多源机器人数据共训中的负迁移问题；Grounding Spatial Relations in a Compact World Model则揭示目标条件世界模型中空间关系grounding存在的“指令泄漏”现象，并引入“无目标动力学”方案实现真正的指令无关grounding。
 > **v2.0.41 变更摘要**（2026-07-09 自动重生）：自2026-07-07起，handbook新增Lift3D-VLA工作，标志着VLA模型正式向3D几何与动力学感知延伸，其核心是通过2D模型提升策略注入3D先验以实现显式点云推理和时间连贯动作生成；该进展直接呼应perception_mainline中“3D表征作为具身智能第一性原理瓶颈”的判断，并为deployment_mainline中“运行时失败恢复”与world_model_mainline中“world action model”演化提供新的几何-动态耦合基础。
 > **v2.0.40 变更摘要**（2026-07-07 自动重生）：自2026-06-26以来，handbook新增方向集中于安全与鲁棒性的工程化落地：包括首个理论保证碰撞避免的即插即用CBF安全层（VLSA）、运行时失败检测与恢复的外挂式VLM助手（FailSafe）、以及光照退化下基于事件相机的动作条件化融合（Event-VLA）；同时出现多模态动作生成的新范式，如解耦运动与背景的潜在动作码本（Motion-Focused Latent Action）、双频语义推理与高频执行解耦（TIDAL），以及免训练的语言接地修复（IGAR）和触觉适配参数隔离（Wake up for Touch!）。
 > **v2.0.33 变更摘要**（2026-06-09 定时 vla-hypothesis-review 每周信念审计）：**🔻 C3 index 24→29% canonical 对齐**（BG §2 内核自 05-17 即 29% XPENG VLA 2.0 +5%, 本索引 + 自 05-17 全部报告 stale 24% 漏传 23d, per CLAUDE.md §7 索引向内核收敛; AD-scope caveat 保留, 若本意仅限 AD → 回退内核至 24%）+ **#23 关闭**（4 篇独立 TTC: MPCoT/TTT-VLA/Continuous-Reasoning/Revisiting-ECoT 提前 ~2 月兑现）+ **Phase 6 (TTC) 升格触发 ≥5/15**（精确重计移交 convergence-radar）+ **#27 closure 定稿「rebound 实际兑现 flagship-tier」**（stable-worldmodel/Qwen-VLA/Cosmos 3, '64d 缺席'=测量假象, 详见 BG §6）。B8 终局裁决 undated deferral → 带硬截止默认方向（2026-07-31 前无 policy-level 触觉必需性论文 → 默认 →65%）。**calibration deadlock 根因诊断 = ±5% 聚合缺口 + 80% 谦逊折扣悬崖**（framework 非 evidence, ≥11 项 P0 0 落地真正病灶）。系统级保守偏误 active 44d, §1 信念表 0 数值变更。报告 reports/2026-06-09-hypothesis-review.md。
@@ -44,22 +45,22 @@
 
 | Section | 行号 | 优先级 | 深度文件（KW_VLA/ 下） |
 |---|---|---|---|
-| §0 VLA 定义 | 66-74 | 跳过 | — |
-| §1 模型族谱 | 75-114 | 跳过 | — |
-| §2 动作生成范式 | 115-155 | 按需 | — |
-| §3 训练范式 | 156-205 | 跳过 | — |
-| §4 信念网络 ★ | 206-246 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
-| §5 收敛地图 ★ | 247-322 | **必读** | — (本文已是最完整版本) |
-| §6 触觉 | 323-348 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
-| §7 部署 | 349-397 | 按需 | `deployment/` |
-| §8 产业 | 398-463 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
-| §9 当前状态 ★ | 464-583 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
-| §10 深度专题 | 584-673 | 按需 | `theory/frontier/` 对应论文 |
-| §11 论文速查 | 674-873 | 按需 | — |
-| §12 开源基础设施 | 874-890 | 按需 | — |
-| §13 产品与市场 | 891-898 | 跳过 | — |
-| §14 高频面试要点 | 899-935 | 按需 | — |
-| §15 校准纪律 ★ | 936-946 | **必读** | — |
+| §0 VLA 定义 | 67-75 | 跳过 | — |
+| §1 模型族谱 | 76-115 | 跳过 | — |
+| §2 动作生成范式 | 116-156 | 按需 | — |
+| §3 训练范式 | 157-206 | 跳过 | — |
+| §4 信念网络 ★ | 207-247 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
+| §5 收敛地图 ★ | 248-323 | **必读** | — (本文已是最完整版本) |
+| §6 触觉 | 324-349 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
+| §7 部署 | 350-398 | 按需 | `deployment/` |
+| §8 产业 | 399-464 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
+| §9 当前状态 ★ | 465-584 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
+| §10 深度专题 | 585-674 | 按需 | `theory/frontier/` 对应论文 |
+| §11 论文速查 | 675-877 | 按需 | — |
+| §12 开源基础设施 | 878-894 | 按需 | — |
+| §13 产品与市场 | 895-902 | 跳过 | — |
+| §14 高频面试要点 | 903-939 | 按需 | — |
+| §15 校准纪律 ★ | 940-950 | **必读** | — |
 
 ---
 
@@ -868,6 +869,9 @@ Helix 02 训练数据：>1000h 人类运动 + >200k 仿真环境。无状态机�
 | TIDAL: Temporally Interleaved Diffusion and Action Loop for High-Frequency VLA Control (2601.14945) | 解决 VLA 推理延迟导致的"执行盲区"问题——通过双频架构将语义推理与高频执行解耦，在边缘设备上实现 ~9 Hz 控制更新（基线 ~2.4 Hz 的 4 倍），动态拦截任务成功率提升 2 倍。 | 见 theory/vla-core/tidal_temporally_interleaved_diffusion_and_action_loop_for_h_dissection.md |
 | **🆕 自动重生新增（2026-07-09）** | | |
 | Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation (2607.06564) | 解决传统 2D VLA 缺乏空间推理能力的问题，通过 2D 模型提升策略注入 3D 几何先验，实现显式点云推理与时间连贯的动作生成 | 见 theory/lift3d_vla_lifting_vla_models_to_3d_geometry_and_dynamics_aw_dissection.md |
+| **🆕 自动重生新增（2026-07-10）** | | |
+| HiMoE-VLA: Hierarchical Mixture-of-Experts for Generalist Vision-Language-Action Policies (2512.05693) | 用分层 MoE 架构在 action module 内部按深度分离"动作空间特异性"与"共享表示"，解决多源机器人数据共训时的负迁移问题 | 见 theory/foundation/himoe_vla_hierarchical_mixture_of_experts_for_generalist_vis_dissection.md |
+| Grounding Spatial Relations in a Compact World Model: Instruction Leakage and a Goal-Free… (2607.06925) | 揭示目标条件世界模型中空间关系 grounding 的"指令泄漏"陷阱——看似 0.90 的高准确率实为指令转录而非感知，并提出"无目标动力学"修复方案，恢复真正的指令无关 grounding。 | 见 theory/grounding_spatial_relations_in_a_compact_world_model_instruc_dissection.md |
 
 ---
 
