@@ -23,6 +23,13 @@ log() { echo "$(date -u +%FT%TZ) $*" | tee -a "$LOG"; }
 cd "$REPO" || { echo "cannot cd $REPO" >&2; exit 1; }
 log "=== gap-filler START TODAY=$TODAY ==="
 
+# Multi-agent safety: if a human/other agent left uncommitted edits on tracked files
+# OTHER than the KB/CHANGELOG (which this bot owns), the reset --hard below would eat
+# them — so bail instead. Only bot-owned KB churn is safe to discard.
+DIRTY=$(git status --porcelain -- ':!skill/references/VLA_EXPERT_MEMORY.md' ':!CHANGELOG.md' 2>/dev/null)
+if [ -n "$DIRTY" ]; then
+  log "worktree has uncommitted non-KB changes — skipping (won't reset over them): $(echo "$DIRTY" | tr '\n' ' ')"; exit 0
+fi
 # Always rebuild on the primary's latest (discard any stale local regen).
 git fetch origin -q 2>>"$LOG" && git reset --hard origin/main >>"$LOG" 2>&1 || log "reset-to-origin skipped"
 

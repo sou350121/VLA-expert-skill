@@ -447,9 +447,7 @@ def main():
             die("guard failed: §%d header missing from output" % n)
     if len(new_text) < 0.90 * orig_len:
         die("guard failed: output length %d < 90%% of input %d" % (len(new_text), orig_len))
-    # version strictly greater
-    if (maj, minr, patch + 1) <= (maj, minr, patch):
-        die("guard failed: version not strictly greater")
+    # version strictly greater (checked against the actual output header below)
     nm = re.match(r"#\s*VLA\s*专家记忆\s*v(\d+)\.(\d+)\.(\d+)", new_text.split("\n", 1)[0])
     if not nm or (int(nm.group(1)), int(nm.group(2)), int(nm.group(3))) <= (maj, minr, patch):
         die("guard failed: output header version not > input")
