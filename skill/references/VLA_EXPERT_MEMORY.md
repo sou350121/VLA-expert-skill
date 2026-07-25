@@ -1,8 +1,9 @@
-# VLA 专家记忆 v2.0.44 | 2026-07-18
+# VLA 专家记忆 v2.0.45 | 2026-07-25
 
 > **角色**：压缩索引 + 自足知识底座。无 repo 时独立运作；有 repo 时作为快速框架，深度分析由原始文件补充。
-> **来源**：KW_VLA Handbook（332+ 篇 Markdown，70+ 论文拆解，产业分析，周报系统）。
+> **来源**：KW_VLA Handbook（theory 488 篇 Markdown / 319 篇论文拆解，产业分析，周报系统）。
 > **维护**：定时任务每日 09:00 增量更新。
+> **v2.0.45 变更摘要**（2026-07-25 自动重生）：自2026-07-18以来，VLA-Handbook新增方向集中于触觉信号生成（FELT）、偏差感知的数据采集与评估（Scale Up Strategically）、零样本奖励提取（TOPReward）、物理驱动的真实到仿真建模（Agentic Real2Sim）、像素空间动作重定义（Hadi Alzayer et al.）、透明物体灵巧操作（TransDex）、软体神经仿真（SoMA）、长程规划的组合扩散优化（Compositional Diffusion）、速度可控策略（TempoVLA）、Flow-Matching VLA的离线RL精调（Q-VGM）、扩散策略训练稳定性改进（DIPOLE）、边缘端高效部署（RhinoVLA）、终身学习可塑性-稳定性平衡（Towards Human-like Physical Intelligence）、世界模型加速（DriftWorld）、超长上下文策略适应（RoboTTT）、贝叶斯主动评估（Active Real-World Factor-Based Evaluation）、四旋翼语言条件飞行（AeroAct）、人类效率导向后训练（HELP）、噪声空间统一人机协同（UniSteer）以及动作监督下表征解耦（Action QFormer）。
 > **v2.0.44 变更摘要**（2026-07-18 增量定时任务 — 3 日 gap 零新数据日 [07-16/17/18 三类报告全缺席] / 0 置信度变更）：**🟢 零新数据日 — B0–B9 / C1–C3 全维持**。上次记忆 v2.0.43（07-15，双报告日 B8 70→75%）。reports/ 最新仍为 2026-07-15（daily-digest + paper-scan）；social-intel 最新 2026-07-14/15；industry-radar 最新 2026-07-15；xhs 无新采集 → **07-16/17/18 三日 daily-digest / paper-scan / 社交情报全部缺席**（调度器未运行或未落盘，落地健康问题延续 07-10/07-11~14 同类）。零新输入 → 唯一价值 = 保守偏误计数器 +3d + 顶级实验室 arxiv 缺席 +3 + 预测窗口倒计时 −3d + §9 当日快照 + footer 版本号。**§4 信念全维持** [B0 77/B1 72/B2 77/B3 72/B4 75/B5 69/B6 75/B7 75/**B8 75**/B9 75]，C1 35%/C2 15%/C3 29%，0 节点变更。**§4 计数器 [2026-07-18，+3d]**：B0 92d / B1 83d soft / B2 严 **108d🔴** / B3 83d soft / B4 85d / **B5 109d🔴** / **B6 135d🆘** / B7 严 **125d** 软 80d / B8 **3d ✅**（07-15 重置后 +3d）/ B9 94d；**超阈值节点维持 4**（B5/B6/B7-严/B2-严，B8 已重置退出）；**系统级保守偏误警报 active 83d**（末次下调 04-26；07-15 B8 上行不解除"无下调"警报）。**预测倒计时 [2026-07-18，−3d]**：**#16 [WM 产业化→B4 75→80%] ~13d [07-31]** / #22 [non-Berkeley LWD fleet RL] ~17d [08-04] / #24-25 ~27d / #15 ~35d / #17 ~99d；致命实验 17/17 合规，7 天内无到期；**07-31 = 双到期裁决窗口 [B8 回撤审查 + #16 三候选裁决] 剩 ~13d 进入 <2 周关键监测期**。顶级实验室 arxiv 严格缺席 **33d**（自 06-15 T-Rex，+3d）。BELIEF_GRAPH.md 维持 **v3.6.65**（07-15 paper-scan 权威状态，3 日零数据无推进）。**移交积压不变**：🔴 #16 三候选裁决 + 🔴 B8 回撤审查 + B8a/b 拆分（均 07-31，剩 ~13d 紧迫）/ Phase 1 LingBot-VA 候选裁决（雷达）/ 🔥 B5 13/15 真实下调点监测 / 🆘 五节点 calibration ceiling deadlock（B5/B6/B7/B2 + B8 复评）/ ≥11 P0 0 落地 / ⚠️ 排程·落盘健康（07-16~18 三日缺席续 07-10/07-11~14）。**Source Map 行号偏移**：header changelog +1 [v2.0.44] − v2.0.7 trimmed [net 0] / §9.1 snapshot +1 / §9 header + §15 cutoff in-place [→07-18] / footer +2 [v2.0.44 inserted] → net +3 → file 942。§0 Source Map §9-§15 recomputed。GitHub: synced to mirror [cp source→mirror byte-identical] + commit/push via embedded-PAT remote，PowerShell fallback if bash/git fails。
 > **v2.0.43 变更摘要**（2026-07-15 增量定时任务 — 双报告日 daily-digest v3.6.64 + paper-scan v3.6.65 / 🔺 **B8 70→75% (+5%) 执行**）：**🟢 强信号日 — 5 日 gap（07-11~14 未运行）后双报告落地**。① **B8 70→75%**：触觉×latent/WM 单月三连 **TouchWorld** (2607.07287, 哈工深+PHANES AI, 分层触觉基础模型+触觉 WM 预测 subgoal, 6 长时程 contact-rich +15.7/+18.5pp) + **TacImag** (2607.01684, 想象触觉部署免传感器 +44.4%) + **TACO** (2607.02840, 触觉 WM self-corrector) 命中 04-22 预注册触发 + 05-25 Arbiter 反转条件，raw 75≤80 无谦逊折扣；**附 07-31 回撤条件**（hypothesis-review 核验 latent-policy-layer 口径）；TacImag 双刃写入反驳栏（支持 B8a 触觉信息必需 / 削弱 B8b 硬件必需，拆分议程加压）；B8 计数器 120d🔴 重置 0d，超阈值节点 5→4。② **LingBot-VA 2.0**（蚂蚁, 07-10 发布+开源, "业界首个具身原生世界动作模型"：AR 从零预训练+语义视觉-动作 tokenizer+MoE+异步推理 150Hz 单卡, 1.0 论文 RSS 2026）= **#16 工业候选#2** + **Phase 1 反 FM 待裁候选**（计入则 14/15 距临界 1 条）；**DSWAM**（美的 AIRC+同济, 2607.04927, dual-system WAM executor, **首个 matched WAM-vs-VLA 真机对照** 96.3 vs 92.5 + RoboTwin 2.0 randomized 91.90 全场最佳）= **#16 候选#3**——三候选口径裁决 + B4 父级 cap 冲突移交 hypothesis-review 07-31 前（无人值守不动 B4）。③ 弱累积：WorldSample (2607.02431) 真机 RL×WM 数据增强 +28% SR/−59% 训练步 = Phase 2×4 最危险交叉首个真机实证；EgoWAM+H-Tac+LingBot 10Kh = ego-human-video 数据工程连点成线；SOP (2601.03044) fleet-RL 工程先例非复现（#22 语境材料）。④ 产业 §8：Tesla Optimus 弗里蒙特 46 天产线转换 / Unitree G1 UCSD 远程手术上 Nature（遥操非自主）+ R1 降价 2.99 万 / Skild AI $1.4B / AI² Robotics ¥7.35 亿 / LimX Pre-IPO / 京东 RoboBase。计数器 +4d（B8 除外）；系统级警报 80d（上行变更不解除"无下调"）；顶级实验室缺席 30d；段空洞 2607.09x–11x 移交补扫；排程健康：07-10 报告缺失 + 07-11~14 四日未运行。
 > **v2.0.42 变更摘要**（2026-07-11 增量定时任务 — 补整合 07-09/07-10 daily-digest [BG v3.6.62→v3.6.63] + 07-11 零新数据日 / 0 置信度变更）：**🟡 连续低信号 — B0–B9 / C1–C3 全维持**。①07-09 digest：arxiv 段 2607.02x-05x 8 探针 0 净新（StreamingVLA 2603.28565=3 月旧论文 FM streaming 加固；触觉探针全 2601-2606 旧；PI「multi-scale embodied memory」WebSearch 无 ID 不计）；产业 IB-Adapter（星尘/北大/清华 信息瓶颈适配器）+ WJ-Brain（浙大 逻辑推理层）= C1 弱邻接不达门槛；UBTech 万台超仿生 / Robot Era ¥1B / BD Atlas FIFA / Astribot 量产 / Booster RoboCup / NVIDIA×HF LeRobot 全 §8。②07-10 digest：唯一新输入 = **LingBot-VLA 2.0（Robbyant/蚂蚁，07-08 开源）** 6B 跨具身，60,000h（50K 真机+10K 蒸馏人第一视角）→ B1 弱正向单条不达 ±5% + **Phase 5 弱累积 17→18/12**（单条不升格）+ B9 弱邻接 → 0 变更；数据中心叙事反弱化 C1；Mistral Robostral Navigate（8B 单 RGB 导航，非操作）仅标记。③07-11 零新数据（reports 最新 = 07-09；**07-10 digest 报告文件未落盘仅 changelog** = 落盘健康问题续）。B5 维持 13/15 = 全系统最可能真实下调点；**B8 致命实验 07-31 剩 ~20d = 最近到期项**（TacCoRL+T-Rex 双候选阻断默认下调，necessity 待 Chrome 核验）。§4 计数器 [07-11，+3d]：B0 85 / B1 76 / B2 严 101🔴 / B3 76 / B4 78 / B5 102🔴 / B6 128🆘 / B7 严 118 软 73 / B8 116🔴 / B9 87；系统级保守偏误警报 active 76d。BELIEF_GRAPH v3.6.61→v3.6.62[07-09]→v3.6.63[07-10]，全程 0 置信度变更。**⚠️ Git 健康**：v2.0.40/v2.0.41 两版未 commit（上次 commit 06-26 v2.0.39），本次一并补 push。
@@ -43,22 +44,22 @@
 
 | Section | 行号 | 优先级 | 深度文件（KW_VLA/ 下） |
 |---|---|---|---|
-| §0 VLA 定义 | 64-72 | 跳过 | — |
-| §1 模型族谱 | 73-112 | 跳过 | — |
-| §2 动作生成范式 | 113-153 | 按需 | — |
-| §3 训练范式 | 154-203 | 跳过 | — |
-| §4 信念网络 ★ | 204-244 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
-| §5 收敛地图 ★ | 245-325 | **必读** | — (本文已是最完整版本) |
-| §6 触觉 | 326-354 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
-| §7 部署 | 355-403 | 按需 | `deployment/` |
-| §8 产业 | 404-470 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
-| §9 当前状态 ★ | 471-602 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
-| §10 深度专题 | 603-692 | 按需 | `theory/frontier/` 对应论文 |
-| §11 论文速查 | 693-868 | 按需 | — |
-| §12 开源基础设施 | 869-885 | 按需 | — |
-| §13 产品与市场 | 886-893 | 跳过 | — |
-| §14 高频面试要点 | 894-930 | 按需 | — |
-| §15 校准纪律 ★ | 931-953 | **必读** | — |
+| §0 VLA 定义 | 66-74 | 跳过 | — |
+| §1 模型族谱 | 75-114 | 跳过 | — |
+| §2 动作生成范式 | 115-155 | 按需 | — |
+| §3 训练范式 | 156-205 | 跳过 | — |
+| §4 信念网络 ★ | 206-246 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
+| §5 收敛地图 ★ | 247-327 | **必读** | — (本文已是最完整版本) |
+| §6 触觉 | 328-356 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
+| §7 部署 | 357-405 | 按需 | `deployment/` |
+| §8 产业 | 406-472 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
+| §9 当前状态 ★ | 473-604 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
+| §10 深度专题 | 605-694 | 按需 | `theory/frontier/` 对应论文 |
+| §11 论文速查 | 695-891 | 按需 | — |
+| §12 开源基础设施 | 892-908 | 按需 | — |
+| §13 产品与市场 | 909-916 | 跳过 | — |
+| §14 高频面试要点 | 917-953 | 按需 | — |
+| §15 校准纪律 ★ | 954-966 | **必读** | — |
 
 ---
 
@@ -864,6 +865,27 @@ Helix 02 训练数据：>1000h 人类运动 + >200k 仿真环境。无状态机�
 | BifrostUMI (2605.03452, 05-05) | Robot-free demonstration → humanoid whole-body manipulation；VR-based portable demo + keypoint trajectory + retargeting + WBC（UMI 系列 humanoid 扩展） | B0 / B1 中正向累积 |
 | Bridging Embodiment Gap (2605.03637, 05-05) + Seeing Realism (2605.02757, 05-04) + Decompose-and-Recompose (2605.01448, 05-02) | sim-to-real video augmentation / disentangled cross-embodiment video editing / atomic skill-action pairs 跨任务泛化 | B0 / B1 中正向累积（4 条本周 data engine 信号 + MolmoAct2 = +5% 候选） |
 | IVLR / Thinking in Text and Images (2605.00438, 05-01) + VILAS (2605.02037, 05-03) + Semantic Autonomy Framework (2605.02525, 05-04) + LiteVLA-H (2605.00884, 04-27 段补) | interleaved vision-language reasoning / Fairino + Jodell + π0/π0.5/GR00T N1.6 三模型并行 / 6-layer reference framework + 88% 指令 <0.1ms / 256M VLA aerial Jetson AGX dual-rate | B3 / B6 弱累积；B9 弱正向（aerial dual-rate） |
+| **🆕 自动重生新增（2026-07-25）** | | |
+| FELT: Generating Tactile Signals from Vision for Visuo-Tactile Manipulation (2607.20683) | 用单帧 RGB 图像生成 per-finger 触觉压力图，将纯视觉演示数据"升级"为视触双模态数据，解决触觉传感器数据采集瓶颈 | 见 theory/tactile/felt_generating_tactile_signals_from_vision_for_visuo_tactil_dissection.md |
+| Scale Up Strategically: Learning Compositional Generalization via Bias-Aware Evaluation a… (2607.21582) | 诊断预训练 VLA 策略中的指令因子偏差（shortcut learning），并提出一种偏差感知数据采集策略，用一半演示实现更强的组合泛化 | 见 theory/scale_up_strategically_learning_compositional_generalization_dissection.md |
+| TOPReward: Token Probabilities as Hidden Zero-Shot Rewards for Robotics (2602.19313) | 不训练奖励模型、不依赖人工标注——直接读取预训练 VLM 内部 token 概率，得到密集的任务进度奖励信号，在 130 个真实机器人任务上逼近甚至超越需要大规模数据训练的 RoboReward/Robometer。 | 见 theory/topreward_token_probabilities_as_hidden_zero_shot_rewards_fo_dissection.md |
+| Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents (2607.19190) | 用 VLM 驱动的 agentic pipeline 将真实机器人交互录影自动转换为 MuJoCo 可仿真的"事件孪生"（episodic twin），覆盖刚体操作、柔性物体和人形机器人三个通常由独立 pipeline… | 见 theory/foundation/agentic_real2sim_physics_based_world_modeling_with_vision_la_dissection.md |
+| Hadi Alzayer, Wenlong Huang, Haonan Chen et al. — Stanford / UMD / Harvard (2607.19343) | 将动作重新定义为像素空间的掩码轨迹，让同一个视频模型既能做前向动力学预测，也能做逆向行为合成，且跨机器人形态零样本泛化。 | 见 theory/world-model/masked_visual_actions_for_unified_world_modeling_dissection.md |
+| TransDex: Pre-training Visuo-Tactile Policy with Point Cloud Reconstruction for Dexterous… (2603.13869) | 针对透明物体灵巧操作中深度信息丢失/噪声/自遮挡三大痛点，提出"点云重建预训练 + 视触觉分层融合 + 双臂差异化动作预测"的端到端方案，在真实机器人上实现 83% 平均成功率，远超最强基线 47%。 | 见 theory/tactile/transdex_pre_training_visuo_tactile_policy_with_point_cloud_dissection.md |
+| SoMA: A Real-to-Sim Neural Simulator for Robotic Soft-body Manipulation (2602.02402) | 用 3D Gaussian Splatting 构建软体变形体的力驱动神经模拟器，在不依赖预定义物理模型的前提下，实现机器人关节空间动作条件化的长时程稳定仿真，在重仿真和泛化任务上比基线提升约 20%。 | 见 theory/world-model/soma_a_real_to_sim_neural_simulator_for_robotic_soft_body_ma_dissection.md |
+| Compositional Diffusion with Guided Search for Long-Horizon Planning (2601.00126) | 解决组合扩散模型在长程规划中的"模式平均"问题——通过在内嵌搜索机制的扩散去噪过程中进行群体采样和剪枝，使短程局部模型能组合出全局一致的长程计划 | 见 theory/planning/compositional_diffusion_with_guided_search_for_long_horizon_dissection.md |
+| TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies (2606.06491) | 让单一 VLA 策略通过显式速度标量输入实现双向速度控制（$0.5\times$–$2\times$），同时作为数据增强提升默认 $1\times$ 成功率 | 见 theory/vla-core/tempovla_learning_speed_controllable_vision_language_action_dissection.md |
+| Q-VGM: Q-Value-Gradient Matching for Off-Policy Reinforcement Learning of Flow-Matching V… (2606.08015) | 解决 Flow-Matching VLA 策略无法稳定利用 Critic 一阶信号进行离线 RL 精调的核心痛点——将 Q 梯度转化为去噪过程中的残差速度监督信号，避免全链回传。 | 见 theory/rl/q_vgm_q_value_gradient_matching_for_off_policy_reinforcement_dissection.md |
+| Dichotomous Diffusion Policy Optimization (DIPOLE) (2601.00898) | 将扩散策略的 RL 训练从"指数权重不稳定"重构为"二分策略线性组合"，用一个贪心因子 $\omega$ 实现 CFG 风格的推理可控性 | 见 theory/diffusion-flow/dichotomous_diffusion_policy_optimization_dissection.md |
+| RhinoVLA Technical Report (2606.07383) | 将 VLM 视觉 Token 数压缩 $4\times$ 并结合硬件感知编译，在自研 R1 边缘 SoC 上实现 $11.69\ \text{Hz}$ 端到端 VLA 推理，同时通过统一 $72\text{D}$ 接口… | 见 theory/vla-core/rhinovla_technical_report_dissection.md |
+| Towards Human-like Physical Intelligence: Lifelong Vision-Language-Action Learning for Ro… (2607.14852) | 解决 VLA 模型在开放世界部署中的可塑性-稳定性权衡问题，通过双时间尺度 LoRA 门控 + 缓存高效随机回放，实现连续学习新技能的同时不遗忘旧技能 | 见 theory/vla-core/towards_human_like_physical_intelligence_lifelongvision_lang_dissection.md |
+| DriftWorld: Fast World Modeling through Drifting (2607.15065) | 用 drifting generative model 替代 diffusion，将 action-conditioned 世界模型的推理速度提升 17 倍（单步前向传播 vs 多步去噪），使实时策略规划和离线策略评估… | 见 theory/world-model/driftworld_fast_world_modeling_through_drifting_dissection.md |
+| RoboTTT: Context Scaling for Robot Policies (2607.15275) | 将 Test-Time Training (TTT) 集成到 VLA 策略中，把视觉运动上下文从单步/短历史扩展到 8K 时间步（比 SOTA 高三个数量级），解锁一次性情境模仿、在线策略改进和长程多阶段任务能力，且推… | 见 theory/foundation/robottt_context_scaling_for_robot_policies_dissection.md |
+| Active Real-World Factor-Based Evaluation for Generalist Robot Policies (2607.14439) | 将 VLA 策略评估建模为贝叶斯主动学习问题，用概率代理模型自适应选择最具信息量的测试配置，在预算内（100 次真实硬件评估）比随机测试节省 20-40% 的试验次数 | 见 theory/foundation/active_real_world_factor_based_evaluation_for_generalist_rob_dissection.md |
+| AeroAct: Action-Centered World-Action Models for Language-Conditioned Quadrotor Flight (2607.14997) | 将世界-动作模型（WAM）首次落地到真实四旋翼飞行，用视频扩散 Transformer 预测平滑轨迹块，训练时用未来帧做密集监督、推理时直接解码动作而不生成视频。 | 见 theory/world-model/aeroact_action_centered_world_action_models_for_language_con_dissection.md |
+| HELP: Human-Efficient Large-Scale Robot Post-Training with Rollout Segmentation (2607.09776) | 将 VLA 后训练的瓶颈从"样本效率"重新定义为"人类效率"——用角色分工的双操作员监督 12 台机器人 + VLAC-CUT 轨迹分割，实现每单位人类劳动的最大策略提升。 | 见 theory/vla-core/help_human_efficient_large_scale_robot_post_training_with_ro_dissection.md |
+| UniSteer: Unified Noise Steering for Efficient Human-Guided VLA Adaptation (2605.10821) | 解决 diffusion-based VLA 模型在线适配效率低下的问题——通过将人类纠正动作近似反演为噪声空间目标，使人类指导与噪声空间 RL 在同一个轻量噪声 actor 上统一优化，在真实机器人上 66 分钟内将… | 见 theory/vla-core/unisteer_unified_noise_steering_for_efficient_human_guided_v_dissection.md |
+| Action QFormer: Structured Representation Shaping under Action Supervision in Vision-Lang… (2607.14635) | 揭示动作监督对 VLA 预训练多模态表征的"双刃剑"效应，并提出 Action QFormer 作为查询式中间接口来调解这一矛盾——既形成动作兼容表征，又保护语言侧表征不被破坏。 | 见 theory/foundation/action_qformer_structured_representation_shaping_under_actio_dissection.md |
 
 ---
 
