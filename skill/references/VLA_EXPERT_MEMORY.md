@@ -1,8 +1,9 @@
-# VLA 专家记忆 v2.0.54 | 2026-08-02
+# VLA 专家记忆 v2.0.55 | 2026-08-09
 
 > **角色**：压缩索引 + 自足知识底座。无 repo 时独立运作；有 repo 时作为快速框架，深度分析由原始文件补充。
-> **来源**：KW_VLA Handbook（332+ 篇 Markdown，70+ 论文拆解，产业分析，周报系统）。
+> **来源**：KW_VLA Handbook（theory 515 篇 Markdown / 346 篇论文拆解，产业分析，周报系统）。
 > **维护**：定时任务每日 09:00 增量更新。
+> **v2.0.55 变更摘要**（2026-08-09 自动重生）：机械增量——自 2026-08-02 起 handbook 新增 17 篇论文拆解（PhyLatent: Learning Dynamics-Relevant R…、The Geometry of Flow-Matching Uncertain…、Deltoris: Enabling Real-time VLA Infere…、Overcoming Statistical Bias in Action-C…、WorldCycle: Self-Verifiable Reinforceme…、LiLa-WAM: Lightweight Latent Reasoning……）；§11 已追加，来源计数与 Source Map 行号已按最终版面重算；信念网络（§4）与相变状态（§5）按 CLAUDE.md 纪律原样结转，本次无 LLM 改写、无捏造每日增量。
 > **v2.0.44 变更摘要**（2026-07-18 增量定时任务 — 3 日 gap 零新数据日 [07-16/17/18 三类报告全缺席] / 0 置信度变更）：**🟢 零新数据日 — B0–B9 / C1–C3 全维持**。上次记忆 v2.0.43（07-15，双报告日 B8 70→75%）。reports/ 最新仍为 2026-07-15（daily-digest + paper-scan）；social-intel 最新 2026-07-14/15；industry-radar 最新 2026-07-15；xhs 无新采集 → **07-16/17/18 三日 daily-digest / paper-scan / 社交情报全部缺席**（调度器未运行或未落盘，落地健康问题延续 07-10/07-11~14 同类）。零新输入 → 唯一价值 = 保守偏误计数器 +3d + 顶级实验室 arxiv 缺席 +3 + 预测窗口倒计时 −3d + §9 当日快照 + footer 版本号。**§4 信念全维持** [B0 77/B1 72/B2 77/B3 72/B4 75/B5 69/B6 75/B7 75/**B8 75**/B9 75]，C1 35%/C2 15%/C3 29%，0 节点变更。**§4 计数器 [2026-07-18，+3d]**：B0 92d / B1 83d soft / B2 严 **108d🔴** / B3 83d soft / B4 85d / **B5 109d🔴** / **B6 135d🆘** / B7 严 **125d** 软 80d / B8 **3d ✅**（07-15 重置后 +3d）/ B9 94d；**超阈值节点维持 4**（B5/B6/B7-严/B2-严，B8 已重置退出）；**系统级保守偏误警报 active 83d**（末次下调 04-26；07-15 B8 上行不解除"无下调"警报）。**预测倒计时 [2026-07-18，−3d]**：**#16 [WM 产业化→B4 75→80%] ~13d [07-31]** / #22 [non-Berkeley LWD fleet RL] ~17d [08-04] / #24-25 ~27d / #15 ~35d / #17 ~99d；致命实验 17/17 合规，7 天内无到期；**07-31 = 双到期裁决窗口 [B8 回撤审查 + #16 三候选裁决] 剩 ~13d 进入 <2 周关键监测期**。顶级实验室 arxiv 严格缺席 **33d**（自 06-15 T-Rex，+3d）。BELIEF_GRAPH.md 维持 **v3.6.65**（07-15 paper-scan 权威状态，3 日零数据无推进）。**移交积压不变**：🔴 #16 三候选裁决 + 🔴 B8 回撤审查 + B8a/b 拆分（均 07-31，剩 ~13d 紧迫）/ Phase 1 LingBot-VA 候选裁决（雷达）/ 🔥 B5 13/15 真实下调点监测 / 🆘 五节点 calibration ceiling deadlock（B5/B6/B7/B2 + B8 复评）/ ≥11 P0 0 落地 / ⚠️ 排程·落盘健康（07-16~18 三日缺席续 07-10/07-11~14）。**Source Map 行号偏移**：header changelog +1 [v2.0.44] − v2.0.7 trimmed [net 0] / §9.1 snapshot +1 / §9 header + §15 cutoff in-place [→07-18] / footer +2 [v2.0.44 inserted] → net +3 → file 942。§0 Source Map §9-§15 recomputed。GitHub: synced to mirror [cp source→mirror byte-identical] + commit/push via embedded-PAT remote，PowerShell fallback if bash/git fails。
 > **v2.0.43 变更摘要**（2026-07-15 增量定时任务 — 双报告日 daily-digest v3.6.64 + paper-scan v3.6.65 / 🔺 **B8 70→75% (+5%) 执行**）：**🟢 强信号日 — 5 日 gap（07-11~14 未运行）后双报告落地**。① **B8 70→75%**：触觉×latent/WM 单月三连 **TouchWorld** (2607.07287, 哈工深+PHANES AI, 分层触觉基础模型+触觉 WM 预测 subgoal, 6 长时程 contact-rich +15.7/+18.5pp) + **TacImag** (2607.01684, 想象触觉部署免传感器 +44.4%) + **TACO** (2607.02840, 触觉 WM self-corrector) 命中 04-22 预注册触发 + 05-25 Arbiter 反转条件，raw 75≤80 无谦逊折扣；**附 07-31 回撤条件**（hypothesis-review 核验 latent-policy-layer 口径）；TacImag 双刃写入反驳栏（支持 B8a 触觉信息必需 / 削弱 B8b 硬件必需，拆分议程加压）；B8 计数器 120d🔴 重置 0d，超阈值节点 5→4。② **LingBot-VA 2.0**（蚂蚁, 07-10 发布+开源, "业界首个具身原生世界动作模型"：AR 从零预训练+语义视觉-动作 tokenizer+MoE+异步推理 150Hz 单卡, 1.0 论文 RSS 2026）= **#16 工业候选#2** + **Phase 1 反 FM 待裁候选**（计入则 14/15 距临界 1 条）；**DSWAM**（美的 AIRC+同济, 2607.04927, dual-system WAM executor, **首个 matched WAM-vs-VLA 真机对照** 96.3 vs 92.5 + RoboTwin 2.0 randomized 91.90 全场最佳）= **#16 候选#3**——三候选口径裁决 + B4 父级 cap 冲突移交 hypothesis-review 07-31 前（无人值守不动 B4）。③ 弱累积：WorldSample (2607.02431) 真机 RL×WM 数据增强 +28% SR/−59% 训练步 = Phase 2×4 最危险交叉首个真机实证；EgoWAM+H-Tac+LingBot 10Kh = ego-human-video 数据工程连点成线；SOP (2601.03044) fleet-RL 工程先例非复现（#22 语境材料）。④ 产业 §8：Tesla Optimus 弗里蒙特 46 天产线转换 / Unitree G1 UCSD 远程手术上 Nature（遥操非自主）+ R1 降价 2.99 万 / Skild AI $1.4B / AI² Robotics ¥7.35 亿 / LimX Pre-IPO / 京东 RoboBase。计数器 +4d（B8 除外）；系统级警报 80d（上行变更不解除"无下调"）；顶级实验室缺席 30d；段空洞 2607.09x–11x 移交补扫；排程健康：07-10 报告缺失 + 07-11~14 四日未运行。
 > **v2.0.42 变更摘要**（2026-07-11 增量定时任务 — 补整合 07-09/07-10 daily-digest [BG v3.6.62→v3.6.63] + 07-11 零新数据日 / 0 置信度变更）：**🟡 连续低信号 — B0–B9 / C1–C3 全维持**。①07-09 digest：arxiv 段 2607.02x-05x 8 探针 0 净新（StreamingVLA 2603.28565=3 月旧论文 FM streaming 加固；触觉探针全 2601-2606 旧；PI「multi-scale embodied memory」WebSearch 无 ID 不计）；产业 IB-Adapter（星尘/北大/清华 信息瓶颈适配器）+ WJ-Brain（浙大 逻辑推理层）= C1 弱邻接不达门槛；UBTech 万台超仿生 / Robot Era ¥1B / BD Atlas FIFA / Astribot 量产 / Booster RoboCup / NVIDIA×HF LeRobot 全 §8。②07-10 digest：唯一新输入 = **LingBot-VLA 2.0（Robbyant/蚂蚁，07-08 开源）** 6B 跨具身，60,000h（50K 真机+10K 蒸馏人第一视角）→ B1 弱正向单条不达 ±5% + **Phase 5 弱累积 17→18/12**（单条不升格）+ B9 弱邻接 → 0 变更；数据中心叙事反弱化 C1；Mistral Robostral Navigate（8B 单 RGB 导航，非操作）仅标记。③07-11 零新数据（reports 最新 = 07-09；**07-10 digest 报告文件未落盘仅 changelog** = 落盘健康问题续）。B5 维持 13/15 = 全系统最可能真实下调点；**B8 致命实验 07-31 剩 ~20d = 最近到期项**（TacCoRL+T-Rex 双候选阻断默认下调，necessity 待 Chrome 核验）。§4 计数器 [07-11，+3d]：B0 85 / B1 76 / B2 严 101🔴 / B3 76 / B4 78 / B5 102🔴 / B6 128🆘 / B7 严 118 软 73 / B8 116🔴 / B9 87；系统级保守偏误警报 active 76d。BELIEF_GRAPH v3.6.61→v3.6.62[07-09]→v3.6.63[07-10]，全程 0 置信度变更。**⚠️ Git 健康**：v2.0.40/v2.0.41 两版未 commit（上次 commit 06-26 v2.0.39），本次一并补 push。
@@ -43,22 +44,22 @@
 
 | Section | 行号 | 优先级 | 深度文件（KW_VLA/ 下） |
 |---|---|---|---|
-| §0 VLA 定义 | 65-73 | 跳过 | — |
-| §1 模型族谱 | 74-113 | 跳过 | — |
-| §2 动作生成范式 | 114-154 | 按需 | — |
-| §3 训练范式 | 155-204 | 跳过 | — |
-| §4 信念网络 ★ | 205-245 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
-| §5 收敛地图 ★ | 246-326 | **必读** | — (本文已是最完整版本) |
-| §6 触觉 | 327-355 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
-| §7 部署 | 356-404 | 按需 | `deployment/` |
-| §8 产业 | 405-475 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
-| §9 当前状态 ★ | 476-614 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
-| §10 深度专题 | 615-704 | 按需 | `theory/frontier/` 对应论文 |
-| §11 论文速查 | 705-880 | 按需 | — |
-| §12 开源基础设施 | 881-897 | 按需 | — |
-| §13 产品与市场 | 898-905 | 跳过 | — |
-| §14 高频面试要点 | 906-942 | 按需 | — |
-| §15 校准纪律 ★ | 943-966 | **必读** | — |
+| §0 VLA 定义 | 66-74 | 跳过 | — |
+| §1 模型族谱 | 75-114 | 跳过 | — |
+| §2 动作生成范式 | 115-155 | 按需 | — |
+| §3 训练范式 | 156-205 | 跳过 | — |
+| §4 信念网络 ★ | 206-246 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
+| §5 收敛地图 ★ | 247-327 | **必读** | — (本文已是最完整版本) |
+| §6 触觉 | 328-356 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
+| §7 部署 | 357-405 | 按需 | `deployment/` |
+| §8 产业 | 406-476 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
+| §9 当前状态 ★ | 477-615 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
+| §10 深度专题 | 616-705 | 按需 | `theory/frontier/` 对应论文 |
+| §11 论文速查 | 706-899 | 按需 | — |
+| §12 开源基础设施 | 900-916 | 按需 | — |
+| §13 产品与市场 | 917-924 | 跳过 | — |
+| §14 高频面试要点 | 925-961 | 按需 | — |
+| §15 校准纪律 ★ | 962-974 | **必读** | — |
 
 ---
 
@@ -875,6 +876,24 @@ Helix 02 训练数据：>1000h 人类运动 + >200k 仿真环境。无状态机�
 | BifrostUMI (2605.03452, 05-05) | Robot-free demonstration → humanoid whole-body manipulation；VR-based portable demo + keypoint trajectory + retargeting + WBC（UMI 系列 humanoid 扩展） | B0 / B1 中正向累积 |
 | Bridging Embodiment Gap (2605.03637, 05-05) + Seeing Realism (2605.02757, 05-04) + Decompose-and-Recompose (2605.01448, 05-02) | sim-to-real video augmentation / disentangled cross-embodiment video editing / atomic skill-action pairs 跨任务泛化 | B0 / B1 中正向累积（4 条本周 data engine 信号 + MolmoAct2 = +5% 候选） |
 | IVLR / Thinking in Text and Images (2605.00438, 05-01) + VILAS (2605.02037, 05-03) + Semantic Autonomy Framework (2605.02525, 05-04) + LiteVLA-H (2605.00884, 04-27 段补) | interleaved vision-language reasoning / Fairino + Jodell + π0/π0.5/GR00T N1.6 三模型并行 / 6-layer reference framework + 88% 指令 <0.1ms / 256M VLA aerial Jetson AGX dual-rate | B3 / B6 弱累积；B9 弱正向（aerial dual-rate） |
+| **🆕 自动重生新增（2026-08-09）** | | |
+| PhyLatent: Learning Dynamics-Relevant Representations for JEPA World Models (2608.05720) | 解决 JEPA 世界模型中"全局不崩溃 ≠ 局部有用"的核心矛盾——即使潜空间分布保持非退化，局部几何仍可能被外观变化主导、物理状态混淆或反事实分支压缩。 | 见 theory/world-model/phylatent_learning_dynamics_relevant_representations_for_jep_dissection.md |
+| The Geometry of Flow-Matching Uncertainty: A Cost-free Uncertainty Proxy and Its Applicat… (2607.27933) | 从流匹配去噪轨迹的几何弯曲中零成本提取不确定性信号，为 FM-based VLA 提供无需额外训练或推理的安全监控机制 | 见 theory/diffusion-flow/the_geometry_of_flow_matching_uncertainty_a_cost_free_uncert_dissection.md |
+| Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Spec… (2608.04428) | 针对 Diffusion-based VLA 模型在边缘设备上的推理延迟痛点，提出算法-硬件协同设计框架，通过利用连续控制步之间的时间冗余实现比特级稀疏计算，配合推测解码摊薄内存流量，最终在专用加速器上实现 34.2×… | 见 theory/vla-core/deltoris_enabling_real_time_vla_inference_in_embodied_ai_via_dissection.md |
+| Overcoming Statistical Bias in Action-Controllable World Models (2608.04653) | 解决动作条件世界模型中"模型能预测未来但预测不受动作控制"的根本问题——通过反事实一致性约束让模型学到真正的因果动力学而非视觉惯性捷径。 | 见 theory/world-model/overcoming_statistical_bias_in_action_controllable_world_mod_dissection.md |
+| WorldCycle: Self-Verifiable Reinforcement Learning for Long-Horizon Video World Models (2608.04964) | 利用可逆动作循环的代数恒等性质，为长视界视频世界模型提供零标注的轨迹级监督信号，解决自回归复合误差无法验证的根本瓶颈。 | 见 theory/world-model/worldcycle_self_verifiable_reinforcement_learning_for_long_h_dissection.md |
+| LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation (2608.03701) | 将未来状态预测与动作生成统一到单流紧凑潜在空间中，以 0.5B 参数（0.2B 可训练）在单张 24GB GPU 上实现端到端训练，在 50 个 RoboTwin 2.0 任务上达到 90.48% 成功率，同时提出无语… | 见 theory/world-model/lila_wam_lightweight_latent_reasoning_world_action_model_for_dissection.md |
+| Gated Memory Policy: In-Context Memorization and Adaptation (2604.18933) | 解决 visuomotor policy 中"何时需要记忆"和"回忆什么"两个核心问题，通过门控机制 + 交叉注意力 + 扩散噪声增强，在非马尔可夫任务上大幅提升性能，同时不牺牲马尔可夫任务的表现。 | 见 theory/frontier/gated_memory_policy_in_context_memorization_and_adaptation_dissection.md |
+| Unified Visuomotor Targets: Supervising VLAs Beyond Physical Actions (2608.03563) | 不改动 VLA 架构、不增加数据，仅把训练目标从「底层动作」替换为「融合视觉动态码的统一潜在目标」，在 LIBERO-Plus 和真实双臂机器人上显著提升训练效率与鲁棒性（已录用 IROS 2026）。 | 见 theory/vla-core/unified_visuomotor_targets_supervising_vlas_beyond_physical_dissection.md |
+| VLAFlow: A Unified Training Framework for Vision-Language-Action Models via Co-training a… (2607.01586) | 在完全相同的架构、数据、动作空间下，首次系统对比四种 VLA 预训练范式，发现「仅动作建模」在异构数据上会产生负迁移，而语言监督与未来潜在对齐互补结合（MindLWPI）实现最稳定的跨平台迁移。 | 见 theory/planning/vlaflow_a_unified_training_framework_for_vision_language_act_dissection.md |
+| ChainVLA: Chaining Vision-Language-Action Queries through a Unified Execution State for L… (2608.02326) | 解决 action-chunked VLA 在查询边界处的「状态断连」问题——通过统一的执行状态（Progress Context + Motion Tail）将连续查询链式连接，在仅 1.2B 参数下超越 8B+2B… | 见 theory/vla-core/chainvla_chaining_vision_language_action_queries_through_a_u_dissection.md |
+| Look Where It Matters: Adaptive Visual Refinement for Vision-Language-Action Models (2608.02197) | 发现 VLA 视觉编码器存在注意力伪影（attention artifacts），通过注册令牌（register tokens）吸收溢出空间信息并恢复干净注意力，再配合不确定性门控的局部裁剪细化，显著提升精确操作成功率。 | 见 theory/vla-core/look_where_it_matters_adaptive_visual_refinement_for_vision_dissection.md |
+| Multi-View Unified Camera Fields: Geometry-Shaped Action-Facing Representations for RGB-O… (2608.01826) | 解决多相机 VLA 策略中"深度不可恢复"和"跨视图特征不一致"两大痛点，通过训练时几何注入在 backbone 内部构建统一的动作面向隐场，部署时零额外开销。 | 见 theory/tactile/multi_view_unified_camera_fields_geometry_shaped_action_faci_dissection.md |
+| Why Does Action Chunking Improve Behavioral Cloning Performance in Robotic Control? (2608.02547) | 首次系统性地揭示了动作分块（Action Chunking）提升行为克隆性能的真实机制——不是之前假设的时间一致性或视界缩减，而是非马尔可夫表达力 + 复合误差降低 + 隐式集成效应三个因素的组合。 | 见 theory/frontier/why_does_action_chunking_improve_behavioral_cloning_performa_dissection.md |
+| Dynamic Execution Commitment of Vision-Language-Action Models (2605.11567) | 解决 VLA action chunking 中固定执行步长的刚性问题，通过自推测前缀验证让执行 horizon 动态涌现，在保持成功率的同时减少推理调用。 | 见 theory/vla-core/dynamic_execution_commitment_of_vision_language_action_model_dissection.md |
+| Safe Vision Language Action Models via Barrier Enhanced Flow Matching (2607.29569) | 将形式化安全约束（CBF）直接嵌入 Flow Matching 生成过程，而非在 VLA 输出端做后处理过滤，为 VLA 部署提供可复用的安全框架，且无需安全数据集或模型重训练。 | 见 theory/diffusion-flow/safe_vision_language_action_models_via_barrier_enhanced_flow_dissection.md |
+| WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning (2607.29613) | 解决 VLA-RL 中 Critic 在部分可观测环境下价值估计不准的痛点——通过联合预测未来潜状态和估计价值，让 Critic 的表征显式学习环境动态而非仅回归标量回报。 | 见 theory/rl/wcm_a_world_critic_model_for_vision_language_action_reinforc_dissection.md |
+| QuantWAMs: Calibrating at the Right Granularity for World Action Models (2607.28405) | 针对世界动作模型（WAMs）的迭代去噪+闭环执行特性，提出一套 PTQ 量化框架，在 W4A4 精度下将性能损失控制在 0.2-0.7 个百分点，同时显存降至 FP16 的 29% | 见 theory/world-model/quantwams_calibrating_at_the_right_granularity_for_world_act_dissection.md |
 
 ---
 

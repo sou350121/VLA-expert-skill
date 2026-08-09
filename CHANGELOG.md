@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-08-09 — Daily Update
+
+- KB regenerated v2.0.54 -> v2.0.55 (auto-regen)
+- §11 论文速查: appended 17 new paper-dissection(s) from VLA-Handbook (since 2026-08-02); append-only
+- 来源 counts refreshed: theory 515 md / 346 dissections
+- Source Map 行号 recomputed from final section offsets
+- Belief network (§4) + phase-transition state (§5) carried forward verbatim (no LLM rewrite)
+- Change-summary line: mechanical fallback (LLM unavailable)
+
 ## 2026-07-25 — Daily Update
 
 - KB regenerated v2.0.44 -> v2.0.45 (auto-regen)
