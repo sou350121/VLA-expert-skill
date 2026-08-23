@@ -1,8 +1,9 @@
-# VLA 专家记忆 v2.0.56 | 2026-08-16
+# VLA 专家记忆 v2.0.57 | 2026-08-23
 
 > **角色**：压缩索引 + 自足知识底座。无 repo 时独立运作；有 repo 时作为快速框架，深度分析由原始文件补充。
-> **来源**：KW_VLA Handbook（theory 536 篇 Markdown / 367 篇论文拆解，产业分析，周报系统）。
+> **来源**：KW_VLA Handbook（theory 556 篇 Markdown / 387 篇论文拆解，产业分析，周报系统）。
 > **维护**：定时任务每日 09:00 增量更新。
+> **v2.0.57 变更摘要**（2026-08-23 自动重生）：机械增量——自 2026-08-16 起 handbook 新增 21 篇论文拆解（HarmoHOI: Harmonizing Appearance and 3D…、EATR-Stereo: Embodiment-Aware Token Rou…、HBVLA: Pushing 1-Bit Post-Training Quan…、Route by Kinematics, Act by Observation…、MPCoT: Reward-Guided Multi-Path Latent…、RoboEdit: Turning Human Manipulation Vi……）；§11 已追加，来源计数与 Source Map 行号已按最终版面重算；信念网络（§4）与相变状态（§5）按 CLAUDE.md 纪律原样结转，本次无 LLM 改写、无捏造每日增量。
 > **v2.0.56 变更摘要**（2026-08-16 自动重生）：机械增量——自 2026-08-09 起 handbook 新增 21 篇论文拆解（UniTexture: Cross-Task Universal Advers…、DreamX-Phi 1.0: Action-Conditioned Vide…、SEAR: Sample Efficient Action Chunking…、Learning contact representations in rea…、SpatialVAM: Spatial-Aware Multi-View Vi…、Trajectory First: A Curriculum for Disc……）；§11 已追加，来源计数与 Source Map 行号已按最终版面重算；信念网络（§4）与相变状态（§5）按 CLAUDE.md 纪律原样结转，本次无 LLM 改写、无捏造每日增量。
 > **v2.0.55 变更摘要**（2026-08-09 自动重生）：机械增量——自 2026-08-02 起 handbook 新增 17 篇论文拆解（PhyLatent: Learning Dynamics-Relevant R…、The Geometry of Flow-Matching Uncertain…、Deltoris: Enabling Real-time VLA Infere…、Overcoming Statistical Bias in Action-C…、WorldCycle: Self-Verifiable Reinforceme…、LiLa-WAM: Lightweight Latent Reasoning……）；§11 已追加，来源计数与 Source Map 行号已按最终版面重算；信念网络（§4）与相变状态（§5）按 CLAUDE.md 纪律原样结转，本次无 LLM 改写、无捏造每日增量。
 > **v2.0.44 变更摘要**（2026-07-18 增量定时任务 — 3 日 gap 零新数据日 [07-16/17/18 三类报告全缺席] / 0 置信度变更）：**🟢 零新数据日 — B0–B9 / C1–C3 全维持**。上次记忆 v2.0.43（07-15，双报告日 B8 70→75%）。reports/ 最新仍为 2026-07-15（daily-digest + paper-scan）；social-intel 最新 2026-07-14/15；industry-radar 最新 2026-07-15；xhs 无新采集 → **07-16/17/18 三日 daily-digest / paper-scan / 社交情报全部缺席**（调度器未运行或未落盘，落地健康问题延续 07-10/07-11~14 同类）。零新输入 → 唯一价值 = 保守偏误计数器 +3d + 顶级实验室 arxiv 缺席 +3 + 预测窗口倒计时 −3d + §9 当日快照 + footer 版本号。**§4 信念全维持** [B0 77/B1 72/B2 77/B3 72/B4 75/B5 69/B6 75/B7 75/**B8 75**/B9 75]，C1 35%/C2 15%/C3 29%，0 节点变更。**§4 计数器 [2026-07-18，+3d]**：B0 92d / B1 83d soft / B2 严 **108d🔴** / B3 83d soft / B4 85d / **B5 109d🔴** / **B6 135d🆘** / B7 严 **125d** 软 80d / B8 **3d ✅**（07-15 重置后 +3d）/ B9 94d；**超阈值节点维持 4**（B5/B6/B7-严/B2-严，B8 已重置退出）；**系统级保守偏误警报 active 83d**（末次下调 04-26；07-15 B8 上行不解除"无下调"警报）。**预测倒计时 [2026-07-18，−3d]**：**#16 [WM 产业化→B4 75→80%] ~13d [07-31]** / #22 [non-Berkeley LWD fleet RL] ~17d [08-04] / #24-25 ~27d / #15 ~35d / #17 ~99d；致命实验 17/17 合规，7 天内无到期；**07-31 = 双到期裁决窗口 [B8 回撤审查 + #16 三候选裁决] 剩 ~13d 进入 <2 周关键监测期**。顶级实验室 arxiv 严格缺席 **33d**（自 06-15 T-Rex，+3d）。BELIEF_GRAPH.md 维持 **v3.6.65**（07-15 paper-scan 权威状态，3 日零数据无推进）。**移交积压不变**：🔴 #16 三候选裁决 + 🔴 B8 回撤审查 + B8a/b 拆分（均 07-31，剩 ~13d 紧迫）/ Phase 1 LingBot-VA 候选裁决（雷达）/ 🔥 B5 13/15 真实下调点监测 / 🆘 五节点 calibration ceiling deadlock（B5/B6/B7/B2 + B8 复评）/ ≥11 P0 0 落地 / ⚠️ 排程·落盘健康（07-16~18 三日缺席续 07-10/07-11~14）。**Source Map 行号偏移**：header changelog +1 [v2.0.44] − v2.0.7 trimmed [net 0] / §9.1 snapshot +1 / §9 header + §15 cutoff in-place [→07-18] / footer +2 [v2.0.44 inserted] → net +3 → file 942。§0 Source Map §9-§15 recomputed。GitHub: synced to mirror [cp source→mirror byte-identical] + commit/push via embedded-PAT remote，PowerShell fallback if bash/git fails。
@@ -45,22 +46,22 @@
 
 | Section | 行号 | 优先级 | 深度文件（KW_VLA/ 下） |
 |---|---|---|---|
-| §0 VLA 定义 | 67-75 | 跳过 | — |
-| §1 模型族谱 | 76-115 | 跳过 | — |
-| §2 动作生成范式 | 116-156 | 按需 | — |
-| §3 训练范式 | 157-206 | 跳过 | — |
-| §4 信念网络 ★ | 207-247 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
-| §5 收敛地图 ★ | 248-328 | **必读** | — (本文已是最完整版本) |
-| §6 触觉 | 329-357 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
-| §7 部署 | 358-406 | 按需 | `deployment/` |
-| §8 产业 | 407-477 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
-| §9 当前状态 ★ | 478-616 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
-| §10 深度专题 | 617-706 | 按需 | `theory/frontier/` 对应论文 |
-| §11 论文速查 | 707-922 | 按需 | — |
-| §12 开源基础设施 | 923-939 | 按需 | — |
-| §13 产品与市场 | 940-947 | 跳过 | — |
-| §14 高频面试要点 | 948-984 | 按需 | — |
-| §15 校准纪律 ★ | 985-997 | **必读** | — |
+| §0 VLA 定义 | 68-76 | 跳过 | — |
+| §1 模型族谱 | 77-116 | 跳过 | — |
+| §2 动作生成范式 | 117-157 | 按需 | — |
+| §3 训练范式 | 158-207 | 跳过 | — |
+| §4 信念网络 ★ | 208-248 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
+| §5 收敛地图 ★ | 249-329 | **必读** | — (本文已是最完整版本) |
+| §6 触觉 | 330-358 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
+| §7 部署 | 359-407 | 按需 | `deployment/` |
+| §8 产业 | 408-478 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
+| §9 当前状态 ★ | 479-617 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
+| §10 深度专题 | 618-707 | 按需 | `theory/frontier/` 对应论文 |
+| §11 论文速查 | 708-945 | 按需 | — |
+| §12 开源基础设施 | 946-962 | 按需 | — |
+| §13 产品与市场 | 963-970 | 跳过 | — |
+| §14 高频面试要点 | 971-1007 | 按需 | — |
+| §15 校准纪律 ★ | 1008-1020 | **必读** | — |
 
 ---
 
@@ -917,6 +918,28 @@ Helix 02 训练数据：>1000h 人类运动 + >200k 仿真环境。无状态机�
 | τ: Learning Touch-Augmented Vision-Language-Action Models from Future Visual Supervision (2607.24485) | 用 JEPA 风格的未来视觉预测作为自监督信号，让触觉表征学会捕捉接触交互动力学，而非仅编码瞬时接触状态；训练后移除预测分支，推理零开销。 | 见 theory/tactile/tau_learning_touch_augmented_vision_language_action_models_f_dissection.md |
 | DFM-VLA: Iterative Action Refinement for Robot Manipulation via Discrete Flow Matching (2603.26320) | 将离散流匹配（Discrete Flow Matching）引入 VLA 动作生成，用 token 级概率速度场实现全动作序列的迭代细化，解决 AR 和离散扩散模型中"一旦生成就无法修正"的 irreversible… | 见 theory/diffusion-flow/dfm_vla_iterative_action_refinement_for_robot_manipulation_v_dissection.md |
 | Reinforcing Action Policies by Prophesying (2511.20633) | 用预训练世界模型（Prophet）在"想象"中跑 RL 闭环，以 FlowScale 稳定梯度，解决 VLA 后训练阶段数据效率与优化稳定性两大痛点。 | 见 theory/frontier/reinforcing_action_policies_by_prophesying_dissection.md |
+| **🆕 自动重生新增（2026-08-23）** | | |
+| HarmoHOI: Harmonizing Appearance and 3D Motion for Multi-view Hand-Object Interaction Syn… (2607.17097) | 首个在统一扩散管线中同时生成多视角手物交互(HOI)视频与全局对齐3D运动轨迹的框架——用"伪视频"桥接2D外观与3D几何的模态鸿沟 | 见 theory/frontier/harmohoi_harmonizing_appearance_and_3d_motion_for_multi_view_dissection.md |
+| EATR-Stereo: Embodiment-Aware Token Routing of Paired Stereo Evidence for Humanoid Vision… (2608.17453) | 在预训练VLA不改动的前提下，通过「主视图Token保留 + 交叉视图辅助Token + 身体分段本体感受路由」三层设计，让人形机器人头载立体相机在长时程任务中可靠利用互补视角证据 | 见 theory/perception/eatr_stereo_embodiment_aware_token_routing_of_paired_stereo_dissection.md |
+| HBVLA: Pushing 1-Bit Post-Training Quantization for Vision-Language-Action Models (2602.13710) | 将 VLA 模型权重压缩至 1-bit 精度，在 LIBERO 上保留 92.2% 的全精度性能，同时减少 82% 的权重内存占用，解决 VLA 在资源受限机器人上的部署瓶颈。 | 见 theory/foundation/hbvla_pushing_1_bit_post_training_quantization_for_vision_la_dissection.md |
+| Route by Kinematics, Act by Observation: Kinematics-Supervised Expert Routing in MoE-Augm… (2607.26807) | 解决 MoE-VLA 中路由器因动作运动学异质性而失效的问题——通过运动学聚类标签监督训练路由器，在推理时仅凭视觉-语言观察即可实现精准专家分配。 | 见 theory/vla-core/route_by_kinematics_act_by_observation_kinematics_supervised_dissection.md |
+| MPCoT: Reward-Guided Multi-Path Latent Reasoning for Test-Time Scalable Vision-Language-A… (2606.06245) | 解决 VLA 在长视界和高不确定性控制中单步决策脆弱的问题，通过多路径潜在推理在不改变动作接口、不生成推理 token 的前提下，实现可配置的测试时推理深度与宽度。 | 见 theory/rl/mpcot_reward_guided_multi_path_latent_reasoning_for_test_tim_dissection.md |
+| RoboEdit: Turning Human Manipulation Videos into Scalable Robot Experience (2608.18948) | 解决机器人数据稀缺痛点——通过视频编辑技术将海量人类操作视频自动转化为物理可信、动作一致的机器人训练数据，同时输出对齐的 3D 手部状态轨迹 | 见 theory/foundation/roboedit_turning_human_manipulation_videos_into_scalable_rob_dissection.md |
+| Counterfactual Behavior Cloning: Offline Imitation Learning from Imperfect Human Demonstr… (2505.10760) | 将行为克隆的损失函数推广到"反事实动作空间"，让机器人从不完美的、含噪声的人类演示中自动恢复出潜在的最优策略，无需额外标注或环境交互。 | 见 theory/frontier/counterfactual_behavior_cloning_offline_imitation_learning_f_dissection.md |
+| Tactile Sim2Real without Tactile Simulation via Bottlenecked Latent Reconstruction (2608.15897) | 解决触觉传感器在仿真中难以建模的核心痛点——不依赖任何物理触觉仿真，通过在仿真中训练"Oracle 传感器"策略、再用 Rectified Flow 将真实触觉潜表示对齐到 Oracle 空间，实现零样本 Sim2Re… | 见 theory/tactile/tactile_sim2real_without_tactile_simulation_via_bottlenecked_dissection.md |
+| GS-VLA: Plug-and-Play Viewpoint Canonicalization for Frozen VLA Policies via Gaussian Spl… (2608.19066) | 首个用 3D 高斯泼溅解决 VLA 跨视角泛化问题的即插即用模块，无需重训策略即可将 LIBERO 最差场景从 9.3% 恢复到 72.1%+ | 见 theory/vla-core/gs_vla_plug_and_play_viewpoint_canonicalization_for_frozen_v_dissection.md |
+| Action-Effect Memory Pretraining for Robot Manipulation (arXiv:2606.12499v2) (2606.12499) | 将长程视觉-动作交互历史压缩为单个紧凑向量（复用最终视觉token），作为可迁移的时间表征注入下游策略，解决部分可观测下单帧视觉编码信息不足的问题 | 见 theory/foundation/action_effect_memory_pretraining_for_robot_manipulation_dissection.md |
+| ReTouch: Empowering Contact-Rich Dexterous Manipulation with Online-Refined Tactile Predi… (2608.01824) | 解决 VLA 中触觉预测在灵巧操作执行过程中过时的问题——把触觉预测当作可在线更新的控制状态，而非一次性前向输出，在 7 个真实接触密集型任务上平均成功率提升 18.4%。 | 见 theory/tactile/retouch_empowering_contact_rich_dexterous_manipulation_with_dissection.md |
+| Hydra-0: Action Flow for Generalist World Modeling and Control (2608.18077) | 用像素级"动作流"（action flow）统一替代各具身形态的异构命令空间，使一个世界模型可同时跨平台预测、评估策略、并驱动真实机器人 | 见 theory/foundation/hydra_0_action_flow_for_generalist_world_modeling_and_contro_dissection.md |
+| Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence (2608.16590) | 解决现有具身 Agent Harness 开环执行、无法在物理运行中持续学习的根本缺陷，通过三层时间尺度闭环 + 可进化 Harness 实现 VLA 策略冻结条件下的自我进化，在 LIBERO-Pro 和 RoboC… | 见 theory/frontier/zetta_zeta_an_efficient_closed_loop_embodied_harness_for_sel_dissection.md |
+| NebulaVLA: A Dual-Frequency Vision-Language-Action Model With Guide Action for Robotic Ma… (2608.16503) | 用异步双频率架构解耦高层语义推理（10 Hz）与底层动作控制（20 Hz），同时引入 GESTURE-7 统一动作表示和 Guide Action 扩散去噪平滑机制，系统性解决 VLA 部署中的效率-性能权衡、跨具身泛… | 见 theory/vla-core/nebulavla_a_dual_frequency_vision_language_action_model_with_dissection.md |
+| τ₀-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computati… (2608.16885) | 将分层 VLA 的高层子任务生成从"单次前向传播"升级为"可伸缩推理过程"——通过世界模型引导的测试时计算（TTC），在执行前比较多个候选子任务的视觉后果，显著提升长视界操作的连贯性与成功率。 | 见 theory/foundation/tau0_vla_a_hierarchical_robot_foundation_model_with_world_mo_dissection.md |
+| Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and… (2608.16889) | 解决长视界操作中 VLA 技能链式组合时的错误累积与过渡失配问题，通过「子任务级探索 + 过渡感知记忆」将探索成本从指数级降为线性级，在 RoboMemArena 千步家务任务上实现 11.6% 任务成功率提升。 | 见 theory/planning/dont_drop_the_baton_long_horizon_robot_manipulation_via_agen_dissection.md |
+| StageWAM: Joint-Embedding Stage Prediction for World-Action Models in Robot Manipulation (2608.10780) | 解决 WAM 中未来状态表示的短视问题——在短程视频-动作预测之上，引入阶段感知的语义级世界模型，为 VLA/WAM 提供更丰富的上下文预测 | 见 theory/world-model/stagewam_joint_embedding_stage_prediction_for_world_action_m_dissection.md |
+| Ontology-Grounded World Models for Failure Diagnosis and Closed-Loop Repair in Physical A… (2608.13901) | 在 EV-WM 世界模型之上叠加一层基于本体的诊断与验证门控修正接口，让具身系统能从"预测失败"中自动诊断原因并执行闭环修复，而非仅仅用标量分数丢弃低质量候选。 | 见 theory/world-model/ontology_grounded_world_models_for_failure_diagnosis_and_clo_dissection.md |
+| Reflex: Enabling Fast and Predictive Vision-Language-Action Models for Reaction-Critical… (2608.14379) | 解决 VLA 在动态操作场景中的双重瓶颈——缺乏未来预判能力 + 推理延迟过高——通过潜空间预测 + 多帧融合 + 系统级加速，在 1B 参数模型上实现动态任务平均 50.4% 成功率（基线 VLA-Adapter 仅… | 见 theory/vla-core/reflex_enabling_fast_and_predictive_vision_language_action_m_dissection.md |
+| ForgeWM: Progressive Causal Training for Few-Step Action-Conditioned Video World Models (2608.14022) | 将双向动作条件视频生成器通过四阶段渐进训练转化为预算特化的少步因果世界模型，在保持帧级键鼠控制精度的同时实现 1/2/4 步推理。 | 见 theory/world-model/forgewm_progressive_causal_training_for_few_step_action_cond_dissection.md |
+| ContactGuard: Pre-Contact Execution Monitoring with Action-Conditioned Latent World Models (2608.13438) | 在机械臂真正接触物体之前，用潜在世界模型"想象"执行后果，提前拦截大概率失败的抓取动作——不修改底层策略，即插即用。 | 见 theory/world-model/contactguard_pre_contact_execution_monitoring_with_action_co_dissection.md |
 
 ---
 
