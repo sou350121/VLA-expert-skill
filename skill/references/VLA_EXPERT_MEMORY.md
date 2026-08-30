@@ -1,8 +1,9 @@
-# VLA 专家记忆 v2.0.57 | 2026-08-23
+# VLA 专家记忆 v2.0.58 | 2026-08-30
 
 > **角色**：压缩索引 + 自足知识底座。无 repo 时独立运作；有 repo 时作为快速框架，深度分析由原始文件补充。
-> **来源**：KW_VLA Handbook（theory 556 篇 Markdown / 387 篇论文拆解，产业分析，周报系统）。
+> **来源**：KW_VLA Handbook（theory 575 篇 Markdown / 406 篇论文拆解，产业分析，周报系统）。
 > **维护**：定时任务每日 09:00 增量更新。
+> **v2.0.58 变更摘要**（2026-08-30 自动重生）：机械增量——自 2026-08-23 起 handbook 新增 19 篇论文拆解（Riemann-1.0: An Embodied World Action M…、TemporalFlow-VLA: Learning Physically G…、FlashVLA: Streaming Action Decoding for…、Tactile-WAM: Touch-Aware World Action M…、One Policy, Many Embodiments: Unified C…、Learning to Accelerate Vision-Language-……）；§11 已追加，来源计数与 Source Map 行号已按最终版面重算；信念网络（§4）与相变状态（§5）按 CLAUDE.md 纪律原样结转，本次无 LLM 改写、无捏造每日增量。
 > **v2.0.57 变更摘要**（2026-08-23 自动重生）：机械增量——自 2026-08-16 起 handbook 新增 21 篇论文拆解（HarmoHOI: Harmonizing Appearance and 3D…、EATR-Stereo: Embodiment-Aware Token Rou…、HBVLA: Pushing 1-Bit Post-Training Quan…、Route by Kinematics, Act by Observation…、MPCoT: Reward-Guided Multi-Path Latent…、RoboEdit: Turning Human Manipulation Vi……）；§11 已追加，来源计数与 Source Map 行号已按最终版面重算；信念网络（§4）与相变状态（§5）按 CLAUDE.md 纪律原样结转，本次无 LLM 改写、无捏造每日增量。
 > **v2.0.56 变更摘要**（2026-08-16 自动重生）：机械增量——自 2026-08-09 起 handbook 新增 21 篇论文拆解（UniTexture: Cross-Task Universal Advers…、DreamX-Phi 1.0: Action-Conditioned Vide…、SEAR: Sample Efficient Action Chunking…、Learning contact representations in rea…、SpatialVAM: Spatial-Aware Multi-View Vi…、Trajectory First: A Curriculum for Disc……）；§11 已追加，来源计数与 Source Map 行号已按最终版面重算；信念网络（§4）与相变状态（§5）按 CLAUDE.md 纪律原样结转，本次无 LLM 改写、无捏造每日增量。
 > **v2.0.55 变更摘要**（2026-08-09 自动重生）：机械增量——自 2026-08-02 起 handbook 新增 17 篇论文拆解（PhyLatent: Learning Dynamics-Relevant R…、The Geometry of Flow-Matching Uncertain…、Deltoris: Enabling Real-time VLA Infere…、Overcoming Statistical Bias in Action-C…、WorldCycle: Self-Verifiable Reinforceme…、LiLa-WAM: Lightweight Latent Reasoning……）；§11 已追加，来源计数与 Source Map 行号已按最终版面重算；信念网络（§4）与相变状态（§5）按 CLAUDE.md 纪律原样结转，本次无 LLM 改写、无捏造每日增量。
@@ -46,22 +47,22 @@
 
 | Section | 行号 | 优先级 | 深度文件（KW_VLA/ 下） |
 |---|---|---|---|
-| §0 VLA 定义 | 68-76 | 跳过 | — |
-| §1 模型族谱 | 77-116 | 跳过 | — |
-| §2 动作生成范式 | 117-157 | 按需 | — |
-| §3 训练范式 | 158-207 | 跳过 | — |
-| §4 信念网络 ★ | 208-248 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
-| §5 收敛地图 ★ | 249-329 | **必读** | — (本文已是最完整版本) |
-| §6 触觉 | 330-358 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
-| §7 部署 | 359-407 | 按需 | `deployment/` |
-| §8 产业 | 408-478 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
-| §9 当前状态 ★ | 479-617 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
-| §10 深度专题 | 618-707 | 按需 | `theory/frontier/` 对应论文 |
-| §11 论文速查 | 708-945 | 按需 | — |
-| §12 开源基础设施 | 946-962 | 按需 | — |
-| §13 产品与市场 | 963-970 | 跳过 | — |
-| §14 高频面试要点 | 971-1007 | 按需 | — |
-| §15 校准纪律 ★ | 1008-1020 | **必读** | — |
+| §0 VLA 定义 | 69-77 | 跳过 | — |
+| §1 模型族谱 | 78-117 | 跳过 | — |
+| §2 动作生成范式 | 118-158 | 按需 | — |
+| §3 训练范式 | 159-208 | 跳过 | — |
+| §4 信念网络 ★ | 209-249 | **必读** | `docs/system/BELIEF_GRAPH.md`（完整变化历史） |
+| §5 收敛地图 ★ | 250-330 | **必读** | — (本文已是最完整版本) |
+| §6 触觉 | 331-359 | 跳过 | `theory/tactile/` + `theory/frontier/tactile_*` |
+| §7 部署 | 360-408 | 按需 | `deployment/` |
+| §8 产业 | 409-479 | 按需 | `companies/` + `memory/blog/archives/vla-social-intel/` |
+| §9 当前状态 ★ | 480-618 | **必读** | `reports/weekly/` 或 `reports/biweekly/` 最新 |
+| §10 深度专题 | 619-708 | 按需 | `theory/frontier/` 对应论文 |
+| §11 论文速查 | 709-966 | 按需 | — |
+| §12 开源基础设施 | 967-983 | 按需 | — |
+| §13 产品与市场 | 984-991 | 跳过 | — |
+| §14 高频面试要点 | 992-1028 | 按需 | — |
+| §15 校准纪律 ★ | 1029-1041 | **必读** | — |
 
 ---
 
@@ -940,6 +941,26 @@ Helix 02 训练数据：>1000h 人类运动 + >200k 仿真环境。无状态机�
 | Reflex: Enabling Fast and Predictive Vision-Language-Action Models for Reaction-Critical… (2608.14379) | 解决 VLA 在动态操作场景中的双重瓶颈——缺乏未来预判能力 + 推理延迟过高——通过潜空间预测 + 多帧融合 + 系统级加速，在 1B 参数模型上实现动态任务平均 50.4% 成功率（基线 VLA-Adapter 仅… | 见 theory/vla-core/reflex_enabling_fast_and_predictive_vision_language_action_m_dissection.md |
 | ForgeWM: Progressive Causal Training for Few-Step Action-Conditioned Video World Models (2608.14022) | 将双向动作条件视频生成器通过四阶段渐进训练转化为预算特化的少步因果世界模型，在保持帧级键鼠控制精度的同时实现 1/2/4 步推理。 | 见 theory/world-model/forgewm_progressive_causal_training_for_few_step_action_cond_dissection.md |
 | ContactGuard: Pre-Contact Execution Monitoring with Action-Conditioned Latent World Models (2608.13438) | 在机械臂真正接触物体之前，用潜在世界模型"想象"执行后果，提前拦截大概率失败的抓取动作——不修改底层策略，即插即用。 | 见 theory/world-model/contactguard_pre_contact_execution_monitoring_with_action_co_dissection.md |
+| **🆕 自动重生新增（2026-08-30）** | | |
+| Riemann-1.0: An Embodied World Action Model for Physical AI (2608.27033) | 首个全因果自回归 World Action Model，在单一模型中统一了可执行机器人策略与动作条件视觉世界模拟，基于 200K+ 小时异构具身数据进行渐进式预训练 | 见 theory/world-model/riemann_10_an_embodied_world_action_model_for_physical_ai_dissection.md |
+| TemporalFlow-VLA: Learning Physically Grounded Execution History for Long-Horizon Robot M… (2608.26821) | 解决 VLA 模型在多阶段操作中因视觉相似状态导致的行为歧义问题——通过训练期物理接地时序流监督，让两个紧凑时序查询编码执行历史，部署时无需任何几何推理。 | 见 theory/vla-core/temporalflow_vla_learning_physically_grounded_execution_hist_dissection.md |
+| FlashVLA: Streaming Action Decoding for Fast and Asynchronous VLA Inference (2608.27384) | 将流式扩散的视频生成范式迁移到 VLA 动作解码，用一个 streaming buffer + chunk-wise causal attention 同时解决推理延迟和异步执行失配两个痛点 | 见 theory/vla-core/flashvla_streaming_action_decoding_for_fast_and_asynchronous_dissection.md |
+| Tactile-WAM: Touch-Aware World Action Model with Tactile Asymmetric Attention (2606.26663) | 解决世界动作模型（WAM）在接触丰富操作中因纯视觉预测而遗漏滑动、卡滞等物理状态的问题，通过触觉非对称注意力机制将触觉信号安全注入 WAM，在 ManiFeel 上将平均成功率从 15.6% 提升至 32.7%（2.1… | 见 theory/tactile/tactile_wam_touch_aware_world_action_model_with_tactile_asym_dissection.md |
+| One Policy, Many Embodiments: Unified Camera-Centric Action Geometry Pre-training for Het… (2608.26058) | 用相机中心锚点运动作为共享动作空间，让单模型同时学习机器人轨迹和人类手部视频，无需显式人-机动作重定向即可跨单臂/双臂/人形/人手异构形态执行操作 | 见 theory/frontier/one_policy_many_embodiments_unified_camera_centric_action_ge_dissection.md |
+| Learning to Accelerate Vision-Language-Action Models through Adaptive Visual Token Caching (2602.00686) | 将 VLA 推理加速从启发式规则转化为可学习的策略——通过两个轻量模块动态决定哪些视觉 token 复用、哪些重算，在 1.76x 加速的同时提升任务成功率。 | 见 theory/vla-core/learning_to_accelerate_vision_language_action_models_through_dissection.md |
+| TacForcing: Streaming Action Generation with Execution-Time Tactile Feedback (2608.25798) | 解决 chunk-based VLA 在执行动作块期间触觉反馈过时的问题，用流式生成 + 执行感知触觉注意力实现"边执行边感知边调整" | 见 theory/tactile/tacforcing_streaming_action_generation_with_execution_time_t_dissection.md |
+| MA-VLA: Multi-Arm Vision-Language-Action Model for Collaboration and Compositional Genera… (2608.25864) | 将单条全局语言指令分解为每臂原子动作序列，使多臂VLA能够组合出训练时未见过的协作模式，解决多臂协作的组合泛化难题 | 见 theory/vla-core/ma_vla_multi_arm_vision_language_action_model_for_collaborat_dissection.md |
+| GlanceWAM: Sparse Test-Time Imagination for World-Action Models (2608.23927) | 解决世界-动作模型（WAM）中视频生成延迟与任务成功率的根本矛盾——通过异步稀疏想象，在单一视频 DiT 内同时实现实时推理和更高成功率。 | 见 theory/world-model/glancewam_sparse_test_time_imagination_for_world_action_mode_dissection.md |
+| VLANeXt: Recipes for Building Strong VLA Models (2602.18532) | 在统一框架下对 VLA 设计空间进行 500+ 次系统消融，提炼 12 条可复现的构建配方，产出 2.5B 参数模型 VLANeXt，在 LIBERO 和 LIBERO-plus 上均超越现有 SOTA（包括 7B 的… | 见 theory/vla-core/vlanext_recipes_for_building_strong_vla_models_dissection.md |
+| DreamTrajectory: Trajectory-Guided Action Generation with World Model Alignment for Mobil… (2608.01381) | 解决移动操作 VLA 在大动作空间下基座-手臂协调不精确、开环执行导致计划-执行偏差累积的两大痛点，通过"联合生成末端轨迹+动作块"和"测试时世界模型打分筛选"实现端到端提升 | 见 theory/diffusion-flow/dreamtrajectory_trajectory_guided_action_generation_with_wor_dissection.md |
+| A Latency-Aware Framework for Visuomotor Policy Learning on Industrial Robots (2602.14255) | 针对工业机器人高延迟观测-执行间隙，提出一套系统级延迟感知执行策略——不修改策略架构或训练流程，仅通过时间戳对齐的动作调度，即可在 100-500ms 推理延迟下保持接近专家演示的运动质量。 | 见 theory/frontier/a_latency_aware_framework_for_visuomotor_policy_learning_on_dissection.md |
+| LaGEA: Language Guided Embodied Agents for Robotic Manipulation (2509.23155) | 用 VLM 生成的结构化自然语言反思作为时序锚定的奖励塑形信号，解决 VLM-RL 融合中奖励稀疏、噪声大、缺乏因果归因的三大痛点。 | 见 theory/frontier/lagea_language_guided_embodied_agents_for_robotic_manipulati_dissection.md |
+| Think Only When Needed: Prompt-Authority Control for Selective Slow-Path Intervention in… (2608.23224) | 解决检索增强冻结 VLA 策略时的「prompt-form collapse」问题——外部检索文本直接拼接到 prompt 会导致成功率从 92.47% 暴跌至 3.00%，TOWN-VLA 通过 prompt-aut… | 见 theory/vla-core/think_only_when_needed_prompt_authority_control_for_selectiv_dissection.md |
+| Beyond Viewpoint Generalization: What Multi-View Demonstrations Offer and How to Synthesi… (2603.26757) | 首次系统证明多视角演示数据即使在固定评估视角下也能提升操作成功率，并提出 RoboNVS 框架从单目视频合成新视角数据来突破单视角数据缩放瓶颈 | 见 theory/frontier/beyond_viewpoint_generalization_what_multi_view_demonstratio_dissection.md |
+| Just Noticeable Difference Modeling for Token Compression in Vision-Language-Action Models (2608.21247) | 首次将经典感知心理学中的"最小可觉差"(JND)理论引入 VLA 推理加速，用动作偏差而非视觉冗余或注意力分数来指导 token 压缩——在 LIBERO 基准上于激进压缩比下带来最高 +41.65pp 的准确率提升。 | 见 theory/vla-core/just_noticeable_difference_modeling_for_token_compression_in_dissection.md |
+| ForeTime-VLA: Causal Future-Token Distillation from a World Action Model for Conveyor-Bel… (2608.20735) | 将 Fast-WAM 的预测性未来结构蒸馏为 64-D 因果编码注入 π0.5 VLA，使策略在不部署世界模型的前提下获得对运动物体的接触时机和姿态预判能力 | 见 theory/foundation/foretime_vla_causal_future_token_distillation_from_a_world_a_dissection.md |
+| CertVLA: Certified Defense against Physical Visual Attacks for Vision-Language-Action Mod… (2608.20791) | 首个针对连续动作 VLA 策略的可认证补丁防御框架——不再依赖"试了有效"的经验鲁棒性，而是给出每个执行动作块都已被擦除攻击的数学保证。 | 见 theory/vla-core/certvla_certified_defense_against_physical_visual_attacks_fo_dissection.md |
+| VT-MUSE: Multimodal Unified Sequential Visuotactile Representation Learning for Manipulat… (2608.21290) | 解决视觉-触觉融合中「独立编码后融合」和「忽略接触时序演化」两大痛点，通过两阶段表征学习将跨模态时序对齐 + 条件变分潜变量建模统一到序列级表征中，可直接替换下游 VLA 编码器用于触觉操作任务。 | 见 theory/tactile/vt_muse_multimodal_unified_sequential_visuotactile_represent_dissection.md |
 
 ---
 
