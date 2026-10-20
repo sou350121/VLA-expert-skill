@@ -2,7 +2,7 @@
 
 > **角色**：压缩索引 + 自足知识底座。无 repo 时独立运作；有 repo 时作为快速框架，深度分析由原始文件补充。
 > **来源**：KW_VLA Handbook（theory 575 篇 Markdown / 406 篇论文拆解，产业分析，周报系统）。
-> **维护**：定时任务每日 09:00 增量更新。
+> **维护**：历史快照；本次不重校准信念或相变百分比。当前来源见 HANDBOOK_CURRENT.md。
 > **v2.0.58 变更摘要**（2026-08-30 自动重生）：机械增量——自 2026-08-23 起 handbook 新增 19 篇论文拆解（Riemann-1.0: An Embodied World Action M…、TemporalFlow-VLA: Learning Physically G…、FlashVLA: Streaming Action Decoding for…、Tactile-WAM: Touch-Aware World Action M…、One Policy, Many Embodiments: Unified C…、Learning to Accelerate Vision-Language-……）；§11 已追加，来源计数与 Source Map 行号已按最终版面重算；信念网络（§4）与相变状态（§5）按 CLAUDE.md 纪律原样结转，本次无 LLM 改写、无捏造每日增量。
 > **v2.0.57 变更摘要**（2026-08-23 自动重生）：机械增量——自 2026-08-16 起 handbook 新增 21 篇论文拆解（HarmoHOI: Harmonizing Appearance and 3D…、EATR-Stereo: Embodiment-Aware Token Rou…、HBVLA: Pushing 1-Bit Post-Training Quan…、Route by Kinematics, Act by Observation…、MPCoT: Reward-Guided Multi-Path Latent…、RoboEdit: Turning Human Manipulation Vi……）；§11 已追加，来源计数与 Source Map 行号已按最终版面重算；信念网络（§4）与相变状态（§5）按 CLAUDE.md 纪律原样结转，本次无 LLM 改写、无捏造每日增量。
 > **v2.0.56 变更摘要**（2026-08-16 自动重生）：机械增量——自 2026-08-09 起 handbook 新增 21 篇论文拆解（UniTexture: Cross-Task Universal Advers…、DreamX-Phi 1.0: Action-Conditioned Vide…、SEAR: Sample Efficient Action Chunking…、Learning contact representations in rea…、SpatialVAM: Spatial-Aware Multi-View Vi…、Trajectory First: A Curriculum for Disc……）；§11 已追加，来源计数与 Source Map 行号已按最终版面重算；信念网络（§4）与相变状态（§5）按 CLAUDE.md 纪律原样结转，本次无 LLM 改写、无捏造每日增量。

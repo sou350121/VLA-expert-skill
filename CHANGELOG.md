@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-20 — Restore published-source maintenance
+
+- Export the full commit-pinned theory, company, report and deployment inventory; preserve history rather than resetting a stale snapshot date.
+- Add grounded DeepSeek reading notes and a verifiable source/artifact manifest.
+- Preserve legacy belief and phase bodies; label their snapshot status.
+- Replace silent skips and hard resets with locked, bounded, failure-reporting sync and content-only publication.
+- Align skill, platform adapters and installation guidance; validate bundles in read-only CI.
+
 ## 2026-08-30 — Daily Update
 
 - KB regenerated v2.0.57 -> v2.0.58 (auto-regen)

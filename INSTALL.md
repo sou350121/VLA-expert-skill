@@ -1,112 +1,66 @@
-# VLA Expert Skill — LLM 安装指南
+# Install VLA Expert
 
-> **给 LLM 的说明**：你正在帮用户安装 VLA Expert Skill。请先判断你所在的环境，然后按对应方式完成安装。
-
-## Step 1：判断你的环境
-
-检查以下信号判断你在哪个平台：
-
-| 信号 | 平台 | 安装路径 |
-|------|------|---------|
-| 你能访问 `.claude/` 目录或看到 `SKILL.md` frontmatter | **Claude Code / Cowork** | → Step 2A |
-| 你能访问 `.cursor/rules/` 或 `.cursorrules` | **Cursor** | → Step 2B |
-| 你在 Codex CLI / OpenCode / Aider 等终端工具中 | **Codex / OpenCode / 其他** | → Step 2C |
-| 你不确定 | **通用方式** | → Step 2D |
-
-## Step 2A：Claude Code / Cowork
+Clone the repository and preserve the complete `skill/` directory. The current
+source guide, complete index, manifest and historical memory work together.
+Copying only `VLA_EXPERT_MEMORY.md` installs an old snapshot.
 
 ```bash
-# 1. Clone repo
 git clone https://github.com/sou350121/VLA-expert-skill.git
-
-# 2. 复制 skill 文件到项目
-mkdir -p .claude/skills/vla-expert/references
-cp VLA-expert-skill/skill/SKILL.md .claude/skills/vla-expert/
-cp VLA-expert-skill/skill/references/VLA_EXPERT_MEMORY.md .claude/skills/vla-expert/references/
-
-# 3. 验证
-ls .claude/skills/vla-expert/
-# 应该看到：SKILL.md 和 references/VLA_EXPERT_MEMORY.md
 ```
 
-安装完成后，用户对话中提到 VLA 相关问题时，你会自动加载这个 Skill。
+## Codex: project skill
 
-## Step 2B：Cursor
+From the target project, copy into an unused skill directory:
 
 ```bash
-# 1. Clone repo
-git clone https://github.com/sou350121/VLA-expert-skill.git
-
-# 2. 复制规则文件
-mkdir -p .cursor/rules
-cp VLA-expert-skill/platforms/cursor/.cursorrules .cursor/rules/vla-expert.md
-
-# 3. 复制知识库
-mkdir -p docs
-cp VLA-expert-skill/skill/references/VLA_EXPERT_MEMORY.md docs/
-
-# 4. 验证
-cat .cursor/rules/vla-expert.md | head -5
+mkdir -p .agents/skills
+cp -r VLA-expert-skill/skill .agents/skills/vla-expert
 ```
 
-或者更简单——直接在 Cursor Settings → Rules 中添加：
-1. 打开 Cursor → Settings → Rules for AI
-2. 粘贴 `platforms/cursor/.cursorrules` 的内容
-3. 将 `VLA_EXPERT_MEMORY.md` 放在项目根目录或 `docs/` 下
+If `vla-expert` already exists, review its local changes before updating it.
+Do not replace project AGENTS.md or global instructions. Start a new session to
+discover the skill. See [official skills documentation](https://developers.openai.com/codex/skills).
 
-## Step 2C：Codex / OpenCode / Aider
+## Claude Code
 
-这些工具通常支持 system prompt 或 instructions 文件：
+Copy the complete `skill/` folder into the target project's unused
+`.claude/skills/vla-expert/` directory. Preserve existing instructions.
 
-**Codex CLI：**
-```bash
-# 将 SYSTEM_PROMPT.md 设为 codex 的 instructions
-cp VLA-expert-skill/platforms/codex/SYSTEM_PROMPT.md codex-instructions.md
+## Cursor
 
-# 运行时指定
-codex --instructions codex-instructions.md
-```
+Keep the complete skill as `vla-expert/` in the project and add the portable
+`platforms/cursor/.cursorrules` adapter through your Cursor version's rule settings.
+The adapter points to `vla-expert/SKILL.md` and its references. Do not overwrite
+an existing rules file or assume a renamed legacy rule uses the current rule schema.
 
-**OpenCode：**
-```bash
-# OpenCode 使用 .opencode/instructions.md
-mkdir -p .opencode
-cp VLA-expert-skill/platforms/codex/SYSTEM_PROMPT.md .opencode/instructions.md
-```
+## Other tools
 
-**Aider：**
-```bash
-# Aider 使用 .aider.conf.yml 或 --system-prompt
-cp VLA-expert-skill/platforms/codex/SYSTEM_PROMPT.md .aider.prompt.md
-aider --read .aider.prompt.md
-```
+Use `platforms/codex/SYSTEM_PROMPT.md` as a portable adapter together with the
+canonical skill and references, through your tool's documented context mechanism.
+This repository does not prescribe undocumented command-line flags.
 
-**所有平台通用**：确保 `VLA_EXPERT_MEMORY.md` 在项目中可被 LLM 读取。
+## Verify and update
 
-## Step 2D：通用方式（任何支持 system prompt 的工具）
+Ask about a concrete VLA method. Confirm the answer cites an accessible source,
+identifies the source date/version and separates evidence from inference.
+An elaborate debate format is not proof of a successful installation.
 
-1. 将 `platforms/codex/SYSTEM_PROMPT.md` 的内容复制为 system prompt
-2. 将 `skill/references/VLA_EXPERT_MEMORY.md` 作为上下文/附件传入
-3. 开始对话
+Pull updates in the clone and review changes before updating the installed copy.
+Updating the clone does not update previously copied installations automatically.
 
-## Step 3：验证安装
+## Maintainer sync
 
-安装后问一句测试：
+The existing server cron runs at **20:00 Asia/Shanghai**. It calls
+`scripts/cron-build-expert-memory.sh`, with a common lock and a 900-second limit.
+Only three generated current-source files may be automatically committed.
+Code changes and manual knowledge edits require maintainer approval.
 
-> "Diffusion Policy 和 Flow Matching 哪个更好？"
+The generator reads committed Handbook objects, includes the complete source
+inventory, and pins every entry to a commit. It never recalibrates historical
+beliefs or calls GPT, qwen or OpenRouter. Changed evidence uses one bounded call
+to the existing DeepSeek account; failed extraction, invalid quotes, dirty
+worktrees and rejected pushes fail visibly instead of reporting no update.
 
-如果回答中出现 🔴 Bull / 🔵 Bear / 🟢 Arbiter 三视角辩论，说明安装成功。
-
-## 保持更新
-
-知识库每日更新。定期拉取最新版本：
-
-```bash
-cd VLA-expert-skill
-git pull
-# 然后重新复制 VLA_EXPERT_MEMORY.md 到对应位置
-```
-
----
-
-📚 知识来源：[VLA-Handbook](https://github.com/sou350121/VLA-Handbook)（70+ 论文深度拆解，300+ 社区笔记）
+The daily GitHub workflow validates published artifacts; it does not copy an
+old `updates` branch into `main`. It needs no model secret. The server receipt
+distinguishes draft validation from a remotely verified publication.
