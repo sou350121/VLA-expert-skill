@@ -1,13 +1,13 @@
 {
   "schema": 1,
   "source_repo": "https://github.com/sou350121/VLA-Handbook",
-  "source_commit": "815996afe46eb7d60b0ef3c33270fe0a35fefa4d",
-  "synced_date": "2026-10-29",
+  "source_commit": "6f7ead1a3caead4825aded77bfd8de599c5fec6d",
+  "synced_date": "2026-10-30",
   "counts": {
-    "theory_markdown": 798,
-    "dissections": 628,
+    "theory_markdown": 800,
+    "dissections": 630,
     "company_markdown": 13,
-    "indexed_files": 899
+    "indexed_files": 901
   },
   "source_hashes": {
     "companies/README.md": "a65ddd199669bf954425589c1a0fcdcb15cbab7c567fa525663429311c663d38",
@@ -28,7 +28,7 @@
     "deployment/autonomous_robot_data_collection_2026.md": "53b47c1203cd26a3c07173d479054f0ad37cf49f57282eb7a635d952c5d914fb",
     "deployment/camera_calibration_eye_in_hand.md": "4fd77986e06036cc8d5d06ae5153723116b207b7cd47cb033d7cc113951766eb",
     "deployment/community_field_notes_english.md": "1705ef13f9dc735e3ade99f372fce9d48b1241f7de7982b64b96bf18f9809bf8",
-    "deployment/community_field_notes_github.md": "bdc74caab443e46c01e974b5cecfe6f3524d3b9cd1a951a45ac1ab5768ddec52",
+    "deployment/community_field_notes_github.md": "58628eab408c260173fd22c0ef52dce475402b8af590407c9f452a1dc11f8b81",
     "deployment/community_field_notes_xiaohongshu.md": "f1640a9174d69c8efe09c2408b445adf2f81d2f633a622d61c252b710ef05237",
     "deployment/contact_rich_data_collection_2026.md": "c7b571d1c19a466e1f295b00bbf72e196ce2ce154a44c3b730ed5cada38f5ec8",
     "deployment/data_collection_solutions.md": "31ad84c6c4af1337b59de5c2f8c786042635caba1ef83cdc7e48033a1f18a565",
@@ -55,7 +55,7 @@
     "deployment/perception/supertac_dove_biomimetic_multimodal_tactile_sensing.md": "5420a48008c305d51516b5078dc1adbd762343a80ed308c20d0fb626a6763635",
     "deployment/perception/tactile_array_algorithms_capacitive_piezoresistive.md": "1ee7ac700444178232c9ba8d9a9dd1621a8007a7849d3cde107c694f1fcda45f",
     "deployment/pi0_deployment.md": "6349aaf6f380adce1dc484dd7e3c0bae743707264ecf58af008ca8a4a6310c23",
-    "deployment/release_tracker.md": "9b64caf319fb01de44b390abf2b68c4fbed93edba8cb7c8185e7a7513da6ab3a",
+    "deployment/release_tracker.md": "f3363d78e94ce29cdc57f6356029ba476bce9a4228770a3291ddaf7a5b839160",
     "deployment/robot_data_collection_acceptance.md": "d3e8fb51d966a54b3a733ed158297989df0c984a973d4f5eadabff2a30a8fb91",
     "deployment/robot_data_collection_landscape_2026.md": "bc9975dafa710caf0bc7acd31647d217da9a41bbca3485feb0532809eed84e6f",
     "deployment/robot_data_collection_research_catalog_2026.md": "cc908a8795e1b39cbf406b7b852a88e6031610ea2e44e65a551e7e4c301a9fbf",
@@ -111,8 +111,8 @@
     "reports/biweekly/reflection_2026-09-23.md": "cc5d0a984808f271e49117bab5ca8a86caa9de2e55f12c8ad482c036db9e2175",
     "reports/biweekly/reflection_2026-10-07.md": "1e6123752ac27d05e9628736058494298fd8394e9e3301e36d6c1f027cf2e20b",
     "reports/biweekly/reflection_2026-10-21.md": "c4e1accc3cf3a88e7d075698af4d6268d9d25bb2323e92c22f4966e688216617",
-    "theory/README.md": "dd18f3b6c93738bb6b38b826b10f1307fd2779e2ce934092c9d1680ce2ce83c5",
-    "theory/benchmark_tracker.md": "2d8f8d0ee24e93773f21a767c4ac1b213cafd25a9a41b1aea841a7d6ec9e9c24",
+    "theory/README.md": "0b329a8bf793c19fd3cfbe7d5faedc28780eb3aafaeb0f2a996e74e571251efb",
+    "theory/benchmark_tracker.md": "38760cbb583c56c2dd7dbab1b116e2a578c9ac20d4bfb2936c47d06b64c4b296",
     "theory/deployment/README.md": "e44166663a45b8c4c3d923de8b7b238cb7969ad0706669b0e8dfe984caa59d0f",
     "theory/deployment/adapting_video_models_for_robot_control_via_motion_guided_as_dissection.md": "af3e52e488c1ef1ed1a26aad3569e95b1d70346c2ba22c147bebbe2c0a9cb149",
     "theory/deployment/aegis_a_backup_reflex_for_physical_ai_dissection.md": "f8b7e2c7d8b5bf14468f23d6c0cca9cd4585b1534b5788af4c69e747ebfe81be",
@@ -425,7 +425,7 @@
     "theory/perception/vistabot_view_robust_robot_manipulation_via_spatiotemporal_a_dissection.md": "3b69f0ddacfc4d6031fe90674895000eb05307f49f0044d8c24d5d1f4ae5404e",
     "theory/perception/waveformer_wave_equation_vision_2026.md": "1b024fd66cdd874538020b41953d54ef6f4a17218f5313e393bc8c34603656e1",
     "theory/perception/zero_1_to_3_zero_shot_one_image_to_3d_object_2023.md": "3692503faf6d8d88c88fa9d744dd49e0f4ee176e326b2233613b485739bb18b8",
-    "theory/planning/README.md": "2e957b76c8841255e126498a127b1806539cebe2b95d9cd6374717e54773dfca",
+    "theory/planning/README.md": "29975fbead6463a9f0dfadd879c9ed43da0697e4e780d218ff2b6723468e0f12",
     "theory/planning/a_hierarchical_spatiotemporal_action_tokenizer_for_in_contex_dissection.md": "7d36174e3ceaa66bc8c396f8906fa4d6ea1028fa90b3cf1f870e081f5370631b",
     "theory/planning/a_pattern_language_for_resilient_visual_agents_dissection.md": "2120bf65d84ffdd10c0ca33a5a3d3ba51674aaab4603e7e5c293b1cea107ae1f",
     "theory/planning/alignment_vla.md": "b5904789ee32ec0b1af634ea19fbc708d62bd2787c331c79ba00b6b36becb1d6",
@@ -491,6 +491,7 @@
     "theory/planning/tex3d_objects_as_attack_surfaces_via_adversarial_3d_textures_dissection.md": "8d19e9da81732f998c352cf188f690dd30d65839a03b24f2b470f3ebd2a01c27",
     "theory/planning/thinker_vlm_embodied_intelligence_2026.md": "9740125f2d902aa398542ba762eb5bf0b2c491c4ea0dcd35998123f092433b10",
     "theory/planning/thinking_in_text_and_images_interleaved_vision_language_reas_dissection.md": "bd986a9ce786524443ee3f07ce0ae85968a5b70dbb411926e20beaa2b7a82f01",
+    "theory/planning/thinkworld_world_imagination_reinforces_chain_of_dynamics_re_dissection.md": "888ae90394048259a632b4db08ccc4317fc7527982628c1eac6a35e9df39e40c",
     "theory/planning/tiny_lora_13_params_reasoning_2026.md": "b0a4fc086e4c465a8e829494f9a286c379f409b1067bc8055925e8e95dd6b8b3",
     "theory/planning/towards_provable_probabilistic_safety_for_scalable_embodied_dissection.md": "160dcecbb9536c9962abedc194f626b29580d663caf234989c49a0db73631431",
     "theory/planning/uni_skill_building_self_evolving_skill_repository_for_genera_dissection.md": "c8465e620787bcc3916da62dd85897dcf40d7acf737576cdfd283ed1b4490ef9",
@@ -803,7 +804,7 @@
     "theory/vla-core/what_should_robot_policies_learn_to_predict_rethinking_super_dissection.md": "62d7669b265435e3c5d847a2c646e18191095dfda0c58f5d4e65937ca6754ef2",
     "theory/vla-core/world_pilot_steering_vision_language_action_models_with_worl_dissection.md": "74a9de1c499d35e091bd23120116c742847301d585c8e0ed4f5d02fa6edefe3b",
     "theory/vla-core/xiaomi_robotics_0_dissection.md": "b6068211281505a540304accae37ddac6d057aeebab195a05da249577d2bca4a",
-    "theory/world-model/README.md": "f07ddb0dd3a3a73b904eed4f7469aafebd81d3dd2193ba8e4b062d0264ab5cd4",
+    "theory/world-model/README.md": "e82704f13e22e3b6af60b74c83653f4f515126e9368f0335da8b9daf463396c4",
     "theory/world-model/accerl_a_distributed_asynchronous_reinforcement_learning_and_dissection.md": "7fe792b2562e4f08c6d6326b1fb708647abc337673e377d02f939c69740d8bee",
     "theory/world-model/aeroact_action_centered_world_action_models_for_language_con_dissection.md": "64bf3b6684a18d842aa4c59860d12c1fcec0310a4345de05a3473b17ab556d6b",
     "theory/world-model/agent_world_model_infinity_synthetic_environments_for_agenti_dissection.md": "ad0f2e4bd9839f987b74361f0166aec9e2d27401b3b204d71b3eff678037ca4d",
@@ -891,6 +892,7 @@
     "theory/world-model/vector_quantized_world_model_latent_feedback_motion_planning_dissection.md": "5383fd5f28a5efc2ed7900bd348a11efaae017e31f1f4b4fb586b82f4fa8f03a",
     "theory/world-model/verivla_adaptive_test_time_verification_for_flow_based_vlas_dissection.md": "dc219236a756d3cd43bb90aace2bce967707d14df0174991bf93c50b5890c8ba",
     "theory/world-model/video_generation_models_in_robotics_survey_2026.md": "fa43df59cd7a7f32ac0fb02023719fea76442c94cf3a606021685cd309ccb6ef",
+    "theory/world-model/vision_language_action_or_world_action_just_action_models_dissection.md": "a385ac5e4d60b1ff94d34b1977064cff2a980f6a06482ec1b6081ae3e32a4bfb",
     "theory/world-model/vlaw_iterative_co_improvement_vla_world_model_2026.md": "040c6835004c3756adcb22b552b19e7638981050e86879f29df47756267751b9",
     "theory/world-model/vloa_embodied_world_model_3d_point_cloud_trajectory_2026.md": "07be220e27746ca4e9adcaff5c426d13a4a9dbd8c3c7f0d2e08e8aab119c0ee6",
     "theory/world-model/wam_three_routes_video_pretraining_vs_vla_2026.md": "dc99d0032ed091a5ea6d75265003e3e86b1d32d89c017cbc90c4cf79ebbe77d9",
@@ -941,7 +943,7 @@
   "provider": "deepseek-flash",
   "belief_recalibrated": false,
   "artifacts": {
-    "skill/references/HANDBOOK_CURRENT.md": "c7994dda1a75ca202e2fd29bc1e2f1e027f6e64733717f796dd0a252a96ed85b",
-    "skill/references/HANDBOOK_INDEX.md": "25075a0adcb87906c5f41b03c4affaee70fcad1b794b782412d2b2afba5476e0"
+    "skill/references/HANDBOOK_CURRENT.md": "fdb40915642313737469f1a447dcf012e5da7749fce35908b8890c949fcc20ba",
+    "skill/references/HANDBOOK_INDEX.md": "460d1b8fd81b1966cf2cd5599cbb8e282021f06fbc9fce1f526de7f1195c04e6"
   }
 }
