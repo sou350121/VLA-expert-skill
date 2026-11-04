@@ -1,20 +1,20 @@
 {
   "schema": 1,
   "source_repo": "https://github.com/sou350121/VLA-Handbook",
-  "source_commit": "528b5a66354e16d1d3f8f07e5ff2fe171590970b",
-  "synced_date": "2026-11-03",
+  "source_commit": "3c458304f20576e826004fc9f0ce5a4dd27dbf8c",
+  "synced_date": "2026-11-04",
   "counts": {
-    "theory_markdown": 815,
-    "dissections": 645,
+    "theory_markdown": 816,
+    "dissections": 646,
     "company_markdown": 13,
-    "indexed_files": 916
+    "indexed_files": 919
   },
   "source_hashes": {
     "companies/README.md": "a65ddd199669bf954425589c1a0fcdcb15cbab7c567fa525663429311c663d38",
     "companies/asia.md": "28a2aec79ac1f3b2cb63096fa382250dbad7089ce000571014f0f0a61d87ce00",
-    "companies/china.md": "d0120e99d527a317fbde476e35468c2bdd1e9e54831f873afa21b041337e754f",
+    "companies/china.md": "9d95788602bf164c6392346de60f5d47f9254e920e90997bfc552b083d8e3a91",
     "companies/china_humanoid_robot_valuation_top10_2026.md": "b941acbc5d17292270fe8ebf0f3f42ee0984b0c177bb75cb4e7cf411c2da27ed",
-    "companies/embodied_ai.md": "1541f09165dcb17af6276454b50758c0a0cef84ce8b52a02f8ea9c6db83f0705",
+    "companies/embodied_ai.md": "301117db9fdf1c3414a394f2c9b7fd9040919c465ec5943956da8f486d9051c1",
     "companies/industry_mainline.md": "db7e08b21da3335d88be5befee167a00b01d10cab0cfbe8a30371c0f2c874711",
     "companies/industry_reports/README.md": "8305a1d42ee85a67eff3ba7e4e17b408cc3547a06e27d8630189702591a235cd",
     "companies/industry_reports/beijing_humanoid_robot_oem_14_ipo_signals_2026.md": "e97b8428a8d2816e36c0aec4d7245e4055a10480e4dace0cd3f8129ca9d848ee",
@@ -55,7 +55,7 @@
     "deployment/perception/supertac_dove_biomimetic_multimodal_tactile_sensing.md": "5420a48008c305d51516b5078dc1adbd762343a80ed308c20d0fb626a6763635",
     "deployment/perception/tactile_array_algorithms_capacitive_piezoresistive.md": "1ee7ac700444178232c9ba8d9a9dd1621a8007a7849d3cde107c694f1fcda45f",
     "deployment/pi0_deployment.md": "6349aaf6f380adce1dc484dd7e3c0bae743707264ecf58af008ca8a4a6310c23",
-    "deployment/release_tracker.md": "a252040edbe74c48eb8b6f4f8eaa853d7cb040139e52a0489ed07773fb292cf8",
+    "deployment/release_tracker.md": "cb5457667c6452409552e8ecab4f55c93808a9acc684fdfff7207196aceed86b",
     "deployment/robot_data_collection_acceptance.md": "d3e8fb51d966a54b3a733ed158297989df0c984a973d4f5eadabff2a30a8fb91",
     "deployment/robot_data_collection_landscape_2026.md": "bc9975dafa710caf0bc7acd31647d217da9a41bbca3485feb0532809eed84e6f",
     "deployment/robot_data_collection_research_catalog_2026.md": "cc908a8795e1b39cbf406b7b852a88e6031610ea2e44e65a551e7e4c301a9fbf",
@@ -94,7 +94,8 @@
     "reports/biweekly/2026-10-07.md": "62da9501b8c8b0d8a590aac4114cbec5b1c40cfdd3b4751610b164060e18c896",
     "reports/biweekly/2026-10-15.md": "1d0bba244f7f63e72a3a4a1e3ca3e916c65e099d6640ab1207355d4c4f693d20",
     "reports/biweekly/2026-10-21.md": "0a85541e69a1a4fb6d3ffefe5af2e2d33e9aac61776777c055509c6d28895f2b",
-    "reports/biweekly/README.md": "a9c3da8a7c83dee4aba28a21e8531e6ac22903da3ac0c95086830f3fb2fee475",
+    "reports/biweekly/2026-11-04.md": "070c0bb21d6f90f4d7f4f9cc1349cacb4aa5e241004e72d31a4b9c4ddf00723f",
+    "reports/biweekly/README.md": "96bcade83609e20e732d2f8a91929b1f94afc96bd761f5f52b5650ea7ba39c4f",
     "reports/biweekly/reflection_2026-02-25.md": "dfaaeecd70b68163593e4bef99cd97e4b5901078ee4c57a765ad8400e5e90319",
     "reports/biweekly/reflection_2026-02-26.md": "b98ac3ac107056cdc453a395f9a6dfdda86841fccef3340a0fce0d700e09cbfd",
     "reports/biweekly/reflection_2026-03-11.md": "c2472b11983e31dcf89102c4f6960084c53b62ab44f0190594cb493d102e2dbf",
@@ -111,7 +112,8 @@
     "reports/biweekly/reflection_2026-09-23.md": "cc5d0a984808f271e49117bab5ca8a86caa9de2e55f12c8ad482c036db9e2175",
     "reports/biweekly/reflection_2026-10-07.md": "1e6123752ac27d05e9628736058494298fd8394e9e3301e36d6c1f027cf2e20b",
     "reports/biweekly/reflection_2026-10-21.md": "c4e1accc3cf3a88e7d075698af4d6268d9d25bb2323e92c22f4966e688216617",
-    "theory/README.md": "b30e442da0dc9bb043da79058989afc8ae8085d95251d8817e4b0a321c04e117",
+    "reports/biweekly/reflection_2026-11-04.md": "0c3bea09bb96b9e18c493a1de472b80a1f6b7fb986c407fe817ff12d653ffb59",
+    "theory/README.md": "6b89606fb96e46b8ab5945c14892881a13db666e116551dcd30d5012ddea48e9",
     "theory/benchmark_tracker.md": "f7c912430b57733eabc73951bceaf2591e76b3b48e4c57bb6490a2082055dd32",
     "theory/deployment/README.md": "e44166663a45b8c4c3d923de8b7b238cb7969ad0706669b0e8dfe984caa59d0f",
     "theory/deployment/adapting_video_models_for_robot_control_via_motion_guided_as_dissection.md": "af3e52e488c1ef1ed1a26aad3569e95b1d70346c2ba22c147bebbe2c0a9cb149",
@@ -269,7 +271,7 @@
     "theory/foundation/offline_semantic_guidance_for_efficient_vision_language_acti_dissection.md": "c0f19643955c87740b68b2ef6cc3a81633852b368587629e2987e5bfde2fd908",
     "theory/foundation/oxygen_unified_kv_cache_management_for_vla_inference_under_m_dissection.md": "900ef0fe3b0b1ec81a8f5043ebfd91471dbe79e27b9341f542ddfd2e31eb5a9e",
     "theory/foundation/paiworld_a_3d_consistent_world_foundation_model_for_robotic_dissection.md": "40baa2783f74ecf0808862f037288432986f9c65cd72fac032e9626e3585fa85",
-    "theory/foundation/paper_index.md": "97b3558eebf84af6335ca2f4c8881d53b854c1b4d1c4a3dedff2667ff0b20e6f",
+    "theory/foundation/paper_index.md": "66a7bedf20bf32e2b85fdd1fc64535e8f461225261bca6045e621531a5daefde",
     "theory/foundation/particlesplat_self_supervised_object_centric_latent_particle_dissection.md": "32a84a2a5077e3c785533004839d3811cfbda305adb2e8460d2920dc71820640",
     "theory/foundation/peft_lora.md": "eb1196abe182554bc2df34d25118923a30199182b490714d540716d507e57e44",
     "theory/foundation/play2perfect_what_matters_in_dexterous_play_pretraining_for_dissection.md": "910a060921d6bf60c49b8f1399e036d3dfd8509617ba047546666660b262e079",
@@ -432,7 +434,7 @@
     "theory/perception/vistabot_view_robust_robot_manipulation_via_spatiotemporal_a_dissection.md": "3b69f0ddacfc4d6031fe90674895000eb05307f49f0044d8c24d5d1f4ae5404e",
     "theory/perception/waveformer_wave_equation_vision_2026.md": "1b024fd66cdd874538020b41953d54ef6f4a17218f5313e393bc8c34603656e1",
     "theory/perception/zero_1_to_3_zero_shot_one_image_to_3d_object_2023.md": "3692503faf6d8d88c88fa9d744dd49e0f4ee176e326b2233613b485739bb18b8",
-    "theory/planning/README.md": "f77117fe2b951b8f118da174ca9cdd1fe7d702e310060b7fc595a540bb2b6869",
+    "theory/planning/README.md": "56084379448a61bb720ba80625725bda44162208f06cb25389bff3423dd13d14",
     "theory/planning/a_hierarchical_spatiotemporal_action_tokenizer_for_in_contex_dissection.md": "7d36174e3ceaa66bc8c396f8906fa4d6ea1028fa90b3cf1f870e081f5370631b",
     "theory/planning/a_pattern_language_for_resilient_visual_agents_dissection.md": "2120bf65d84ffdd10c0ca33a5a3d3ba51674aaab4603e7e5c293b1cea107ae1f",
     "theory/planning/alignment_vla.md": "b5904789ee32ec0b1af634ea19fbc708d62bd2787c331c79ba00b6b36becb1d6",
@@ -491,6 +493,7 @@
     "theory/planning/roboclaw_an_agentic_framework_for_scalable_long_horizon_robo_dissection.md": "377dd7e74e796a137229c78d835cc1e2e348f778b025045ffe2e9db34dc07d88",
     "theory/planning/robostream_weaving_spatio_temporal_reasoning_with_memory_in_dissection.md": "248f3fd576592c10f7ec5bec84e9be94f1710f94d35055572c3e71f9622be825",
     "theory/planning/safe_night_vla_seeing_the_unseen_via_thermal_perceptive_visi_dissection.md": "b9ffbba65bc06e57a55b95e17b397de9aa1465d2bd2e7ad2474c61c1df554bda",
+    "theory/planning/say_the_same_act_differently_diagnosing_and_steering_text_ac_dissection.md": "b8ceb000e3e68550a76bfa554e5ee6163ba4552b347390480624a098b089be6d",
     "theory/planning/sefa_policy_fast_and_accurate_visuomotor_policy_learning_wit_dissection.md": "a303f5d5e148712a0982b44d3166416713e35e8c56efc6920934823b774e0d61",
     "theory/planning/sensorimotor_alignment_a_platonic_proxy_for_embodied_policy_dissection.md": "3b7c0dc4c16b6077ab4468620bad0833ae8b62482d68bf026af1402aa725f335",
     "theory/planning/sequential_planning_via_anchored_robotic_keypoints_dissection.md": "d1df3a5811b9e65515af41073678ff3c82d3b98e5e951a8e061b81691b482de6",
@@ -927,38 +930,38 @@
     "theory/world-model/worldkv_efficient_world_memory_with_world_retrieval_and_comp_dissection.md": "11ed82b4c556f6015000d2c00d667bbe09a82ac63523c4288ec954e0f9227e35",
     "theory/world-model/x_foresight_a_joint_vision_action_causal_forecasting_network_dissection.md": "53eaeaad41a1887bbcd20508b514a30ede50f40d0b284c71228d0b41d53b2c2b"
   },
-  "evidence_sha256": "1b4ee4ca39a30c321e8b98e1abfa005e2c39a45083a773bebd756d59df45b094",
+  "evidence_sha256": "560eed39a177a426c10afbbe770a892cfa5776550776306a6ffee8849911eb32",
   "notes": [
     {
       "source": "theory/frontier/reki_registering_knowledge_in_vlas_dissection.md",
       "quote": "REKI 要解决的是：VLA 只看当前帧，遇到两个看起来都像“该往对方走”的位姿时，会在 A、B 之间来回摆。它把每帧 VLM 上下文压成 32 个 register token，只把 K/V 留在 action expert 的 self-attention cache 里，让策略用极低开销看到最近约 2 秒。",
-      "reading_tip": "閱讀時可先抓住問題設定：模型如何用極輕量的方式保留近期上下文，再檢查這種記憶是否真能改善決策穩定度。"
+      "reading_tip": "建議先辨識問題設定與機制描述，再區分論文主張與已獨立驗證的結論；把重點放在記憶如何被使用，而不是只記住效能口號。"
     },
     {
       "source": "theory/tactile/n0_vtla_latent_tactile_tokens_2026.md",
       "quote": "这篇论文的核心不是给 VLA 加一路“触觉相机”，而是把触觉从观测上下文移到动作专家的预测条件上：冻结 DINOv2 编码基线差分触觉图，轻量 predictor 估计未来 50 步的接触变化 latent z，z 不进入视觉语言 prefix，只条件 action expert。",
-      "reading_tip": "可把重點放在觸覺資訊被放進哪個介面，以及這種預測式條件與直接拼接觀測的差異。"
+      "reading_tip": "閱讀時可先抓住觸覺條件的注入位置，再檢查訓練階段與評測限制；把作者報告與獨立核驗分開看待，並留意版本差異。"
     },
     {
       "source": "theory/tactile/vla_touch_dual_level_tactile_feedback_2025.md",
       "quote": "VLA-Touch 不是把触觉 token 塞进 VLA 继续预训练，而是把触觉拆成两个接口：高层用 Octopi 把 GelSight 序列读成语言，交给 GPT-4o 重规划；低层用 BRIDGeR 以 RDT-1B 动作为起点做触觉条件精炼。",
-      "reading_tip": "閱讀時可留意模組化分工的代價與收益：高層重規劃和低層動作精煉各自解決什麼問題，又需要哪些外部依賴。"
+      "reading_tip": "建議把重點放在分層介面的分工與固定基礎模型的取捨，並區分工程設計、作者報告與尚未獨立核驗的出版狀態。"
     },
     {
-      "source": "reports/biweekly/2026-10-21.md",
-      "quote": "本期是回溯性回顾，而不是完整周期的结论。14 天窗口里只有 6 天（10-16 至 10-21）有完整采集收据；10-08 至 10-15 共 8 天缺失或未验证。因此下面每一条都只是“已采集样本内的观察”，不能据此判断领域衰退、成熟、收敛或无突破，也不能当作全领域画像。",
-      "reading_tip": "閱讀時先分清樣本觀察與領域結論，遇到缺口標示時，宜把後續敘述當成待累積證據的線索。"
+      "source": "reports/biweekly/2026-11-04.md",
+      "quote": "本报告标称覆盖 14 个日历日，但只有 2026-10-30 至 2026-11-04 共 6 天有可验证的采集回执；2026-10-22 至 10-29 这 8 天缺失或未经验证。因此下面所有内容都只描述**已采集到的样本**，不能据此判断领域整体走向、成熟度或无突破。",
+      "reading_tip": "閱讀此類週期整理時，先確認覆蓋範圍與缺口，再把樣本觀察當作線索而非領域結論；遇到強烈趨勢語句時，回到採集限制檢查。"
     },
     {
       "source": "companies/industry_mainline.md",
-      "quote": "据NVIDIA Robotics 2026-10-29消息，NVIDIA发布Isaac Lab 3.0，新增Newton物理、可切换后端、渲染选项、集群级并行训练、实验性RL后训练及LEAPP部署导出。判断/待核问题：这是训练与部署工具链更新，可能降低仿真到实机门槛；但来源未给出真实机器人性能、成本或采用数据，不能当作量产或可靠性证明。",
-      "reading_tip": "閱讀時可把工具鏈更新與實際部署能力分開看，特別留意來源是否提供現場表現與採用證據。"
+      "quote": "来源陈述：据NVIDIA Robotics 2026-10-29消息，NVIDIA发布Isaac Lab 3.0，新增Newton物理、可切换后端、渲染选项、集群级并行训练、实验性RL后训练及LEAPP部署导出。判断/待核问题：这是训练与部署工具链更新，可能降低仿真到实机门槛；但来源未给出真实机器人性能、成本或采用数据，不能当作量产或可靠性证明。",
+      "reading_tip": "閱讀產業地圖時，宜把來源陳述、判斷與待核問題分層看待；工具鏈發布可視為能力訊號，但不宜直接推成量產或可靠性結論。"
     }
   ],
   "provider": "deepseek-flash",
   "belief_recalibrated": false,
   "artifacts": {
-    "skill/references/HANDBOOK_CURRENT.md": "f02fd929934539c9b82afdbd587e194ed6bb1da74ba7a5559484d9d16e84d6a2",
-    "skill/references/HANDBOOK_INDEX.md": "3aeb8244cda0ea589b61c8dbd2f6476cc742928f686c21cb5a636afea1660e61"
+    "skill/references/HANDBOOK_CURRENT.md": "16ff44067138c121389752b584dec4e325047a6ffe66b1a6d34e16bec1554fc2",
+    "skill/references/HANDBOOK_INDEX.md": "bd0bd715ddb0ecafb8319ca4ed13a76dca6664bfa71eb5585bc5de90df385c19"
   }
 }
