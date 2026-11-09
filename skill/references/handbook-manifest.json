@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "source_repo": "https://github.com/sou350121/VLA-Handbook",
-  "source_commit": "dc5164a95e016a11531b075892eb75cfa4cfa6a8",
-  "synced_date": "2026-11-08",
+  "source_commit": "7083bbb79daaab3d9f2dcbdc57481e15d2df28fb",
+  "synced_date": "2026-11-09",
   "counts": {
     "theory_markdown": 829,
     "dissections": 659,
@@ -20,7 +20,7 @@
     "companies/industry_reports/beijing_humanoid_robot_oem_14_ipo_signals_2026.md": "e97b8428a8d2816e36c0aec4d7245e4055a10480e4dace0cd3f8129ca9d848ee",
     "companies/industry_reports/cicc_dexterous_hand_05.md": "feb0c9bfdc72c5af7fad26af77d4a44d48b9bd4da6b91f0410119d6ddf858e6c",
     "companies/industry_reports/guojin_force_control_torque_sensors_2026.md": "ab6186d801a13aa27b30b75d6e9925754e8e9488ecca3e1dde111ce89863a1df",
-    "companies/international.md": "9336d0b0485204ac95217ff8c1e9d5cb5a14ac757dd48d0f73c84dcb66c5f40e",
+    "companies/international.md": "cfa6c8fb70562aab91e22b00ada534ae964efde85363029224a13f80b4fabd47",
     "companies/limx_dynamics_series_b_200m_2026.md": "b9b27ea4010ed341a2947369f3fca52762648e4b11447345bf40ea5afc285fda",
     "companies/startups.md": "4714ed177c8f6d1143bfbdd4fc11db46fdb5f0b2740059039160058b6ff74a3b",
     "deployment/README.md": "7b96aa48a6310de7fc92def294041cf9f1c22bdaf6e96716bff2ecb9d75a6da9",
@@ -55,7 +55,7 @@
     "deployment/perception/supertac_dove_biomimetic_multimodal_tactile_sensing.md": "5420a48008c305d51516b5078dc1adbd762343a80ed308c20d0fb626a6763635",
     "deployment/perception/tactile_array_algorithms_capacitive_piezoresistive.md": "1ee7ac700444178232c9ba8d9a9dd1621a8007a7849d3cde107c694f1fcda45f",
     "deployment/pi0_deployment.md": "6349aaf6f380adce1dc484dd7e3c0bae743707264ecf58af008ca8a4a6310c23",
-    "deployment/release_tracker.md": "0e2681b6f43ef36020a13cdfcfadb400b783bfe7ec7edfff0519eb7e6e5cd9e8",
+    "deployment/release_tracker.md": "b68f14b068a1d8cd6e0a1982b6fbdba0314ba01d2c7c01ab47d1b49e2d6e62db",
     "deployment/robot_data_collection_acceptance.md": "6aa9350bf8b9ed93252be8e17d1668a86c61008d39d74aaccf9b0191a6fa07c8",
     "deployment/robot_data_collection_landscape_2026.md": "bc9975dafa710caf0bc7acd31647d217da9a41bbca3485feb0532809eed84e6f",
     "deployment/robot_data_collection_research_catalog_2026.md": "cc908a8795e1b39cbf406b7b852a88e6031610ea2e44e65a551e7e4c301a9fbf",
@@ -274,7 +274,7 @@
     "theory/foundation/open_humanscale_an_open_recipe_for_scaling_human_and_robot_e_dissection.md": "d873e9cfdedc3e3066b73797fee0f4d394bbb367b978ee7c1074abba30e23a65",
     "theory/foundation/oxygen_unified_kv_cache_management_for_vla_inference_under_m_dissection.md": "900ef0fe3b0b1ec81a8f5043ebfd91471dbe79e27b9341f542ddfd2e31eb5a9e",
     "theory/foundation/paiworld_a_3d_consistent_world_foundation_model_for_robotic_dissection.md": "40baa2783f74ecf0808862f037288432986f9c65cd72fac032e9626e3585fa85",
-    "theory/foundation/paper_index.md": "9fe7ef14592d62073607743741a2106c901f88f602c221fefd74dcfa429ac656",
+    "theory/foundation/paper_index.md": "fe0eb437c122221ae6ab933f23aec4419f845d5457d761ef7a3f0f55df7384d9",
     "theory/foundation/particlesplat_self_supervised_object_centric_latent_particle_dissection.md": "32a84a2a5077e3c785533004839d3811cfbda305adb2e8460d2920dc71820640",
     "theory/foundation/peft_lora.md": "eb1196abe182554bc2df34d25118923a30199182b490714d540716d507e57e44",
     "theory/foundation/play2perfect_what_matters_in_dexterous_play_pretraining_for_dissection.md": "910a060921d6bf60c49b8f1399e036d3dfd8509617ba047546666660b262e079",
@@ -974,7 +974,7 @@
   "provider": "deepseek-flash",
   "belief_recalibrated": false,
   "artifacts": {
-    "skill/references/HANDBOOK_CURRENT.md": "1347eaf4917fb089bd91a56eca24f4b96c6433f72f8d35ddf2266a31aff24e6e",
-    "skill/references/HANDBOOK_INDEX.md": "b49afc88c9957d5a60aa5bc4b397ab69422522cab51b1cab32ddecc6292af9db"
+    "skill/references/HANDBOOK_CURRENT.md": "95b3f7dbc9ed347ebdc8c6bd92ad5a5f90139ad34118c08d84d4077996f505fe",
+    "skill/references/HANDBOOK_INDEX.md": "e7c580fdc2cc0ce45f3feba22f59fd988ba5c1947f746bec5782877da4dd711f"
   }
 }
