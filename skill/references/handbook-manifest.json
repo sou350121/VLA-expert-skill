@@ -1,13 +1,13 @@
 {
   "schema": 1,
   "source_repo": "https://github.com/sou350121/VLA-Handbook",
-  "source_commit": "93ac530da3517af6acd1311a38b6cee6ef4b1d95",
-  "synced_date": "2026-11-21",
+  "source_commit": "be30d5382f7c33aa5156315d07cfe36798190e2d",
+  "synced_date": "2026-11-22",
   "counts": {
-    "theory_markdown": 862,
-    "dissections": 692,
+    "theory_markdown": 863,
+    "dissections": 693,
     "company_markdown": 13,
-    "indexed_files": 967
+    "indexed_files": 968
   },
   "source_hashes": {
     "companies/README.md": "a65ddd199669bf954425589c1a0fcdcb15cbab7c567fa525663429311c663d38",
@@ -29,7 +29,7 @@
     "deployment/camera_calibration_eye_in_hand.md": "4fd77986e06036cc8d5d06ae5153723116b207b7cd47cb033d7cc113951766eb",
     "deployment/community_field_notes_english.md": "1705ef13f9dc735e3ade99f372fce9d48b1241f7de7982b64b96bf18f9809bf8",
     "deployment/community_field_notes_github.md": "d17b00e332e8e45023663f268921c1bc548fbb0345c4aa9e756deac5e955bade",
-    "deployment/community_field_notes_xiaohongshu.md": "838f65f506fce4ca2268936ccdb868bfd9c17480eab7f5f134126b9441065d22",
+    "deployment/community_field_notes_xiaohongshu.md": "dc9769b68cde4c5bad092b45297a9fcd820c9165f52847714366e7862c3c036a",
     "deployment/contact_rich_data_collection_2026.md": "c7b571d1c19a466e1f295b00bbf72e196ce2ce154a44c3b730ed5cada38f5ec8",
     "deployment/data_collection_solutions.md": "31ad84c6c4af1337b59de5c2f8c786042635caba1ef83cdc7e48033a1f18a565",
     "deployment/dexrobot_dexhand021_production_dexhand_2026.md": "69d4d1aa4420320b7d0d67eefd645ecd556a8889cea74d7be11f825d4d802b8c",
@@ -115,7 +115,7 @@
     "reports/biweekly/reflection_2026-10-21.md": "c4e1accc3cf3a88e7d075698af4d6268d9d25bb2323e92c22f4966e688216617",
     "reports/biweekly/reflection_2026-11-04.md": "0c3bea09bb96b9e18c493a1de472b80a1f6b7fb986c407fe817ff12d653ffb59",
     "reports/biweekly/reflection_2026-11-18.md": "c3ffbf3c072e2c067ee0f2cf17f9d23d3c54cc64111bd9d6de4d7ac94f596b4c",
-    "theory/README.md": "c2d09f7c84b2f41fc7ebd31ce36d54079cc4459456515c20c528d78069476f85",
+    "theory/README.md": "75867db8221147a4ee1bdb391f392d819a5df50cb6d5b7434aa000f636012af8",
     "theory/benchmark_tracker.md": "f25d1a6a1d34b2bf52d935d29b783509f55f2092795287dd7a64abab28b41167",
     "theory/deployment/README.md": "3a91b443b9419794386696a1b14c6f49b22eb4bed0b592c2c8fc2223a8136e48",
     "theory/deployment/adapting_video_models_for_robot_control_via_motion_guided_as_dissection.md": "af3e52e488c1ef1ed1a26aad3569e95b1d70346c2ba22c147bebbe2c0a9cb149",
@@ -665,7 +665,7 @@
     "theory/tactile/zerotouch_tactile_supervised_visual_contact_estimation_for_c_dissection.md": "7acf9c4a7936c2f1c0d2b9fe63bc389d960194b4fe239cbfe460d6d08019a788",
     "theory/vla-core/2d_or_3d_who_governs_salience_in_vla_models_tri_stage_token_dissection.md": "87a17922a83ed32da29b707526a03ce3b2aa66a75716d4e8b9baef8221d5df17",
     "theory/vla-core/3dthinkvla_endowing_vision_language_action_models_with_laten_dissection.md": "5775a472391505b35c8e9d4d7fed3f010e85ac2c9a8b5d746e70d5ac0114c94e",
-    "theory/vla-core/README.md": "d84eae7a3b389be7744be8c51abad9892a95bb7ad8fa9cff0af3fdd32517f6e1",
+    "theory/vla-core/README.md": "7f35805ef4f5054505690832a8bb2c7957957de3856d21a582870ebd39fae51a",
     "theory/vla-core/abot_m0_action_manifold_learning_vla_foundation_2026.md": "a7a3fa8a7ff4370fbfea3606fab72d4db778ed5aaa5042b0f7e36700caa3ad2b",
     "theory/vla-core/act.md": "19fd05ea479d3c8b734273f9c796f02e0851ebb638ec022a187fd1624b61cf56",
     "theory/vla-core/actionground_training_free_runtime_refinement_of_frozen_vla_dissection.md": "a08f885a5fd8dd6de7d3a2bf6404d48b9689d35aa0b0b37efff74fedf5cab2a9",
@@ -821,6 +821,7 @@
     "theory/vla-core/seam_smooth_execution_of_action_chunked_motion_for_vision_la_dissection.md": "22b9f0f840f597346c0f0efa34af617231b714363d243d19ed2fd67ba0e6f3e6",
     "theory/vla-core/self_adaptive_vla_for_robust_robot_deployment_dissection.md": "d250a58c14125d675cd9d0b17cb53c71c99161dd7c3248ac27c6fad4701dcbed",
     "theory/vla-core/sensvla_spatially_grounded_vision_language_action_model_for_dissection.md": "2e0fe250269d10139ea07c15d449ecf437398e04f32c6724a712831812529596",
+    "theory/vla-core/simvla_attributing_gains_in_vla_models_through_controlled_ab_dissection.md": "db587f2a6fdd2b2f476ced822966505320507cedefd25d292aee457ed180a004",
     "theory/vla-core/simvla_simple_vla_baseline_robotic_manipulation_2026.md": "b46552c4c5b9d46a51ce824449b1f67cbd856eececa9198a3ceffa11ade34a9c",
     "theory/vla-core/small_vla_models.md": "0611de459760d31dab78b7e637739da51e2f1209f16b75ee3a3d1852f94d1df0",
     "theory/vla-core/smolstm_a_compact_vision_language_action_model_with_recurren_dissection.md": "e6581a74fb438da66e0b83c235cf8a2b9f92e1f5c9e8a2dc8a86c1e0bb30b46f",
@@ -1009,7 +1010,7 @@
   "provider": "deepseek-flash",
   "belief_recalibrated": false,
   "artifacts": {
-    "skill/references/HANDBOOK_CURRENT.md": "e6f1627d227739bb8c9b64b39cd62a5378acf6d9b62a7163127c2a8127c002f2",
-    "skill/references/HANDBOOK_INDEX.md": "6eea3fe9a15428558c91f10aae681bd6b99c868e8629b1ad59b18e12a75368ed"
+    "skill/references/HANDBOOK_CURRENT.md": "e3f22025d01470af78f4a40dde46ceec6e075698bbb028e2a8b1071cbc9deada",
+    "skill/references/HANDBOOK_INDEX.md": "565be123ea15fd9b1f587572d08aa7c0fa10f2b217f52b31b926bb80fa6671ce"
   }
 }
