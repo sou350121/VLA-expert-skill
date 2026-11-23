@@ -1,13 +1,13 @@
 {
   "schema": 1,
   "source_repo": "https://github.com/sou350121/VLA-Handbook",
-  "source_commit": "be30d5382f7c33aa5156315d07cfe36798190e2d",
-  "synced_date": "2026-11-22",
+  "source_commit": "d1d16cf30691058ce15b178a16517024608862df",
+  "synced_date": "2026-11-23",
   "counts": {
-    "theory_markdown": 863,
-    "dissections": 693,
+    "theory_markdown": 866,
+    "dissections": 696,
     "company_markdown": 13,
-    "indexed_files": 968
+    "indexed_files": 971
   },
   "source_hashes": {
     "companies/README.md": "a65ddd199669bf954425589c1a0fcdcb15cbab7c567fa525663429311c663d38",
@@ -29,7 +29,7 @@
     "deployment/camera_calibration_eye_in_hand.md": "4fd77986e06036cc8d5d06ae5153723116b207b7cd47cb033d7cc113951766eb",
     "deployment/community_field_notes_english.md": "1705ef13f9dc735e3ade99f372fce9d48b1241f7de7982b64b96bf18f9809bf8",
     "deployment/community_field_notes_github.md": "d17b00e332e8e45023663f268921c1bc548fbb0345c4aa9e756deac5e955bade",
-    "deployment/community_field_notes_xiaohongshu.md": "dc9769b68cde4c5bad092b45297a9fcd820c9165f52847714366e7862c3c036a",
+    "deployment/community_field_notes_xiaohongshu.md": "25eeeb4875f5a4ee1f30f798eb94209bac0c23786d3b7b4c411451b9771058c2",
     "deployment/contact_rich_data_collection_2026.md": "c7b571d1c19a466e1f295b00bbf72e196ce2ce154a44c3b730ed5cada38f5ec8",
     "deployment/data_collection_solutions.md": "31ad84c6c4af1337b59de5c2f8c786042635caba1ef83cdc7e48033a1f18a565",
     "deployment/dexrobot_dexhand021_production_dexhand_2026.md": "69d4d1aa4420320b7d0d67eefd645ecd556a8889cea74d7be11f825d4d802b8c",
@@ -115,7 +115,7 @@
     "reports/biweekly/reflection_2026-10-21.md": "c4e1accc3cf3a88e7d075698af4d6268d9d25bb2323e92c22f4966e688216617",
     "reports/biweekly/reflection_2026-11-04.md": "0c3bea09bb96b9e18c493a1de472b80a1f6b7fb986c407fe817ff12d653ffb59",
     "reports/biweekly/reflection_2026-11-18.md": "c3ffbf3c072e2c067ee0f2cf17f9d23d3c54cc64111bd9d6de4d7ac94f596b4c",
-    "theory/README.md": "75867db8221147a4ee1bdb391f392d819a5df50cb6d5b7434aa000f636012af8",
+    "theory/README.md": "c7960e05b52a621b309ffd66b6cc2ccfbb5613a14d1038dd531a0f09f8285b2d",
     "theory/benchmark_tracker.md": "f25d1a6a1d34b2bf52d935d29b783509f55f2092795287dd7a64abab28b41167",
     "theory/deployment/README.md": "3a91b443b9419794386696a1b14c6f49b22eb4bed0b592c2c8fc2223a8136e48",
     "theory/deployment/adapting_video_models_for_robot_control_via_motion_guided_as_dissection.md": "af3e52e488c1ef1ed1a26aad3569e95b1d70346c2ba22c147bebbe2c0a9cb149",
@@ -280,7 +280,7 @@
     "theory/foundation/open_humanscale_an_open_recipe_for_scaling_human_and_robot_e_dissection.md": "d873e9cfdedc3e3066b73797fee0f4d394bbb367b978ee7c1074abba30e23a65",
     "theory/foundation/oxygen_unified_kv_cache_management_for_vla_inference_under_m_dissection.md": "900ef0fe3b0b1ec81a8f5043ebfd91471dbe79e27b9341f542ddfd2e31eb5a9e",
     "theory/foundation/paiworld_a_3d_consistent_world_foundation_model_for_robotic_dissection.md": "40baa2783f74ecf0808862f037288432986f9c65cd72fac032e9626e3585fa85",
-    "theory/foundation/paper_index.md": "05719dd922934f5ebefd634d660c83c11fbc27552b6db30787748cf79810d037",
+    "theory/foundation/paper_index.md": "cb4794d126facbf4a017e569dddf63358ec22340c87af991a25b8a6e5639eb61",
     "theory/foundation/particlesplat_self_supervised_object_centric_latent_particle_dissection.md": "32a84a2a5077e3c785533004839d3811cfbda305adb2e8460d2920dc71820640",
     "theory/foundation/peft_lora.md": "eb1196abe182554bc2df34d25118923a30199182b490714d540716d507e57e44",
     "theory/foundation/play2perfect_what_matters_in_dexterous_play_pretraining_for_dissection.md": "910a060921d6bf60c49b8f1399e036d3dfd8509617ba047546666660b262e079",
@@ -322,7 +322,7 @@
     "theory/foundation/what_can_a_vla_learn_from_the_agent_that_calls_it_task_level_dissection.md": "ddd3bd5c757425e29dc488d3bf0b24de95c9489750e2ffd2c957bad3affa676f",
     "theory/foundation/world_action_models_enable_continual_imitation_learning_with_dissection.md": "15abd40bd32bb17cd89e08263e36b11545815611607fa4339b4b5c8f6e7891e0",
     "theory/frontier/3droid_a_renderable_3d_gaussian_dataset_with_measured_per_sc_dissection.md": "331db9021b9e7f38b62f12f4af9664ec117495e5e6ed4272fbfe7e4c536dd80d",
-    "theory/frontier/README.md": "6e4e3a69f6f4e84c398fbb336311128995de1af74f3778e6c3ccbc15b77604d8",
+    "theory/frontier/README.md": "bdcd7e1397756f9493e4842d9a1fd637f7991db288411496c065d274dfc6ebb5",
     "theory/frontier/a_biophysically_detailed_c_elegans_circuit_as_a_task_agnosti_dissection.md": "f191329fde39102bbf1b95e815f687392ee4c4664921db9ecccf269dee6f33bb",
     "theory/frontier/a_latency_aware_framework_for_visuomotor_policy_learning_on_dissection.md": "6f6cd4721e7996279b7685d15bb7fd4c71f74eb00f837483007581c6c159c6ca",
     "theory/frontier/antigrounding_executable_robot_trajectories_as_visual_prompt_dissection.md": "a6f54c9b959fabd844c3cc9e0e384f32dfdda5c48b5bbee38e24e24a2b301ee4",
@@ -371,6 +371,7 @@
     "theory/frontier/gated_memory_policy_in_context_memorization_and_adaptation_dissection.md": "9d0c8a45e667154f7c13cdde17d3e10f985339d8f79e8fc760dee54a4f69da2e",
     "theory/frontier/gift_guided_intermediate_feature_training_via_action_oriente_dissection.md": "748a063304eba2880b7365b72e65762175afa49ea738a0bd864426b19fc1efc7",
     "theory/frontier/grounded_action_model_3d_grounding_as_a_foundation_for_robot_dissection.md": "fb6caf41e1436b3b44fab708f499c73f976cf4b28c9036cd5a66e0e78a0df296",
+    "theory/frontier/groundingpi_a_grounding_foundation_model_towards_physical_in_dissection.md": "bdbbfef27ed9d3275f21934175fec46a3198a3891e479a4ef27b6e096fb1a202",
     "theory/frontier/guidedattention_interpretable_and_correctable_visual_attenti_dissection.md": "9dd7c698eecd12d0af8a68adf6d5ace1803b6684659dcfbef573fd6987f082f4",
     "theory/frontier/habit_human_aware_behavior_and_interaction_training_dataset_dissection.md": "dc372cc1b76e3d8be36bc6e0a06981503ced67730bdc80a2d7b0e60229ecc3c2",
     "theory/frontier/harmohoi_harmonizing_appearance_and_3d_motion_for_multi_view_dissection.md": "d658d90d63b871c5ba53b74de70a4e1ccea37bc5e7328f25a83a193a27880902",
@@ -459,9 +460,10 @@
     "theory/perception/vistabot_view_robust_robot_manipulation_via_spatiotemporal_a_dissection.md": "3b69f0ddacfc4d6031fe90674895000eb05307f49f0044d8c24d5d1f4ae5404e",
     "theory/perception/waveformer_wave_equation_vision_2026.md": "1b024fd66cdd874538020b41953d54ef6f4a17218f5313e393bc8c34603656e1",
     "theory/perception/zero_1_to_3_zero_shot_one_image_to_3d_object_2023.md": "3692503faf6d8d88c88fa9d744dd49e0f4ee176e326b2233613b485739bb18b8",
-    "theory/planning/README.md": "925b94260e2375b96c8ac320c3f407d7372a92c56bfb1e01d9646d06a2249560",
+    "theory/planning/README.md": "f51def80adf81b187ed4183a1648dfc51f022276b60f37d897c913cde21f128d",
     "theory/planning/a_hierarchical_spatiotemporal_action_tokenizer_for_in_contex_dissection.md": "7d36174e3ceaa66bc8c396f8906fa4d6ea1028fa90b3cf1f870e081f5370631b",
     "theory/planning/a_pattern_language_for_resilient_visual_agents_dissection.md": "2120bf65d84ffdd10c0ca33a5a3d3ba51674aaab4603e7e5c293b1cea107ae1f",
+    "theory/planning/actmem_from_latent_memory_reasoning_to_grounded_robotic_acti_dissection.md": "3505760bcd010bbb9ec7d0a868e9dc547880460b88ba0c89603427612c3a51b0",
     "theory/planning/alignment_vla.md": "b5904789ee32ec0b1af634ea19fbc708d62bd2787c331c79ba00b6b36becb1d6",
     "theory/planning/arc_a_reasoning_recipe_for_robot_foundation_models_dissection.md": "096fde70e9e7346f2fa6f7abf167ffb4a428669e0a4e30b54dc78d706f8a2ab9",
     "theory/planning/behavior_1k_human_centered_embodied_ai_benchmark_omnigibson_2024.md": "c6b34af41edf69b0c72733cfbc415625b9986ff920ffdd22424fe24995cecdba",
@@ -868,7 +870,7 @@
     "theory/vla-core/what_should_robot_policies_learn_to_predict_rethinking_super_dissection.md": "62d7669b265435e3c5d847a2c646e18191095dfda0c58f5d4e65937ca6754ef2",
     "theory/vla-core/world_pilot_steering_vision_language_action_models_with_worl_dissection.md": "74a9de1c499d35e091bd23120116c742847301d585c8e0ed4f5d02fa6edefe3b",
     "theory/vla-core/xiaomi_robotics_0_dissection.md": "b6068211281505a540304accae37ddac6d057aeebab195a05da249577d2bca4a",
-    "theory/world-model/README.md": "3c2c092578e2302593d291316464aae46a5c1f201ffa70f9b855ae8b61ffedf6",
+    "theory/world-model/README.md": "c52b032988714cd1719b12a30d93154298cafcd12fc1b1f61e0b370c18e47538",
     "theory/world-model/accerl_a_distributed_asynchronous_reinforcement_learning_and_dissection.md": "7fe792b2562e4f08c6d6326b1fb708647abc337673e377d02f939c69740d8bee",
     "theory/world-model/aeroact_action_centered_world_action_models_for_language_con_dissection.md": "64bf3b6684a18d842aa4c59860d12c1fcec0310a4345de05a3473b17ab556d6b",
     "theory/world-model/agent_world_model_infinity_synthetic_environments_for_agenti_dissection.md": "ad0f2e4bd9839f987b74361f0166aec9e2d27401b3b204d71b3eff678037ca4d",
@@ -907,6 +909,7 @@
     "theory/world-model/imagewam_do_world_action_models_really_need_video_generation_dissection.md": "65a4dd0e3cccc3d5b3e44ea1d95668d4faae200d835ea0372dbc4ca924bdcc27",
     "theory/world-model/imitation_from_heterogeneous_demonstrations_using_grounded_l_dissection.md": "edc6c4b504cdac9c095db380bb07a3be71306ece7f592570efa0bf4f8a3bdab7",
     "theory/world-model/keep_the_future_drop_the_rollout_rift_for_world_action_model_dissection.md": "5c19f85c4c323f2ec4717763fcbf4e51bcf9e063349d2d0a2a242c962a3c1899",
+    "theory/world-model/la_jepa_compact_robot_policies_with_latent_world_modeling_dissection.md": "1605262375a9815fd8e7a8a371c09adef9e450ff245a09511dd7400e083defae",
     "theory/world-model/last05_a_generalist_world_action_model_with_interaction_cent_dissection.md": "3873d3f3735c2134a956f6c207b42039df53645111951e114f9737e76c1cea8d",
     "theory/world-model/lawam_latent_world_action_models_for_efficient_dynamics_awar_dissection.md": "b79e93e31342956175d565c2cff50a5f7d2e25ab790eff6a4e10e5e4991c0778",
     "theory/world-model/lda_1b_dissection.md": "2051ea254089d3c30283919c8f2335e6f2b31b759cf2d5ecf7b8f84b531e7693",
@@ -1010,7 +1013,7 @@
   "provider": "deepseek-flash",
   "belief_recalibrated": false,
   "artifacts": {
-    "skill/references/HANDBOOK_CURRENT.md": "e3f22025d01470af78f4a40dde46ceec6e075698bbb028e2a8b1071cbc9deada",
-    "skill/references/HANDBOOK_INDEX.md": "565be123ea15fd9b1f587572d08aa7c0fa10f2b217f52b31b926bb80fa6671ce"
+    "skill/references/HANDBOOK_CURRENT.md": "82f527fa950ada65da0039e150ffba84f269a50377da9618abb7d24568627214",
+    "skill/references/HANDBOOK_INDEX.md": "357651a31db198f429cbf08aecc3c8e7b38812893407038b1d090f363371f236"
   }
 }
