@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "source_repo": "https://github.com/sou350121/VLA-Handbook",
-  "source_commit": "d1d16cf30691058ce15b178a16517024608862df",
-  "synced_date": "2026-11-23",
+  "source_commit": "784c880798868f7a0dbff15da6e8e84c39546175",
+  "synced_date": "2026-11-24",
   "counts": {
     "theory_markdown": 866,
     "dissections": 696,
@@ -29,7 +29,7 @@
     "deployment/camera_calibration_eye_in_hand.md": "4fd77986e06036cc8d5d06ae5153723116b207b7cd47cb033d7cc113951766eb",
     "deployment/community_field_notes_english.md": "1705ef13f9dc735e3ade99f372fce9d48b1241f7de7982b64b96bf18f9809bf8",
     "deployment/community_field_notes_github.md": "d17b00e332e8e45023663f268921c1bc548fbb0345c4aa9e756deac5e955bade",
-    "deployment/community_field_notes_xiaohongshu.md": "25eeeb4875f5a4ee1f30f798eb94209bac0c23786d3b7b4c411451b9771058c2",
+    "deployment/community_field_notes_xiaohongshu.md": "cfee052216d61f1477a88334bfd027d56037a52c4a434e25ccb089a409d21ec5",
     "deployment/contact_rich_data_collection_2026.md": "c7b571d1c19a466e1f295b00bbf72e196ce2ce154a44c3b730ed5cada38f5ec8",
     "deployment/data_collection_solutions.md": "31ad84c6c4af1337b59de5c2f8c786042635caba1ef83cdc7e48033a1f18a565",
     "deployment/dexrobot_dexhand021_production_dexhand_2026.md": "69d4d1aa4420320b7d0d67eefd645ecd556a8889cea74d7be11f825d4d802b8c",
@@ -55,7 +55,7 @@
     "deployment/perception/supertac_dove_biomimetic_multimodal_tactile_sensing.md": "5420a48008c305d51516b5078dc1adbd762343a80ed308c20d0fb626a6763635",
     "deployment/perception/tactile_array_algorithms_capacitive_piezoresistive.md": "1ee7ac700444178232c9ba8d9a9dd1621a8007a7849d3cde107c694f1fcda45f",
     "deployment/pi0_deployment.md": "6349aaf6f380adce1dc484dd7e3c0bae743707264ecf58af008ca8a4a6310c23",
-    "deployment/release_tracker.md": "dd636a418fd7f776d75f4e30176c405f6fff212b569059a54ea63e87ba682975",
+    "deployment/release_tracker.md": "5e224e15ce92a6587ae481abecb13e57304aa882f33f4080197dd74e18e03f89",
     "deployment/robot_data_collection_acceptance.md": "6aa9350bf8b9ed93252be8e17d1668a86c61008d39d74aaccf9b0191a6fa07c8",
     "deployment/robot_data_collection_landscape_2026.md": "bc9975dafa710caf0bc7acd31647d217da9a41bbca3485feb0532809eed84e6f",
     "deployment/robot_data_collection_research_catalog_2026.md": "cc908a8795e1b39cbf406b7b852a88e6031610ea2e44e65a551e7e4c301a9fbf",
@@ -116,7 +116,7 @@
     "reports/biweekly/reflection_2026-11-04.md": "0c3bea09bb96b9e18c493a1de472b80a1f6b7fb986c407fe817ff12d653ffb59",
     "reports/biweekly/reflection_2026-11-18.md": "c3ffbf3c072e2c067ee0f2cf17f9d23d3c54cc64111bd9d6de4d7ac94f596b4c",
     "theory/README.md": "c7960e05b52a621b309ffd66b6cc2ccfbb5613a14d1038dd531a0f09f8285b2d",
-    "theory/benchmark_tracker.md": "f25d1a6a1d34b2bf52d935d29b783509f55f2092795287dd7a64abab28b41167",
+    "theory/benchmark_tracker.md": "ebcbd4ac9614c31cb07df3caba00dea893be910c28927c899f0f812a7eb11b3b",
     "theory/deployment/README.md": "3a91b443b9419794386696a1b14c6f49b22eb4bed0b592c2c8fc2223a8136e48",
     "theory/deployment/adapting_video_models_for_robot_control_via_motion_guided_as_dissection.md": "af3e52e488c1ef1ed1a26aad3569e95b1d70346c2ba22c147bebbe2c0a9cb149",
     "theory/deployment/aegis_a_backup_reflex_for_physical_ai_dissection.md": "f8b7e2c7d8b5bf14468f23d6c0cca9cd4585b1534b5788af4c69e747ebfe81be",
@@ -1013,7 +1013,7 @@
   "provider": "deepseek-flash",
   "belief_recalibrated": false,
   "artifacts": {
-    "skill/references/HANDBOOK_CURRENT.md": "82f527fa950ada65da0039e150ffba84f269a50377da9618abb7d24568627214",
-    "skill/references/HANDBOOK_INDEX.md": "357651a31db198f429cbf08aecc3c8e7b38812893407038b1d090f363371f236"
+    "skill/references/HANDBOOK_CURRENT.md": "c6a28e55c8f515df075dfa6d0e7e1cf8dc891a14ae6407ba2457e848b312e805",
+    "skill/references/HANDBOOK_INDEX.md": "e58415d78278475416579c464191712954300e7d72f7ebcf1184e3104553d742"
   }
 }
