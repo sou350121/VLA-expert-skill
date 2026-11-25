@@ -1,13 +1,13 @@
 {
   "schema": 1,
   "source_repo": "https://github.com/sou350121/VLA-Handbook",
-  "source_commit": "784c880798868f7a0dbff15da6e8e84c39546175",
-  "synced_date": "2026-11-24",
+  "source_commit": "4f79332c460ee3aaeef051fa6f5247ef72f7addf",
+  "synced_date": "2026-11-25",
   "counts": {
-    "theory_markdown": 866,
-    "dissections": 696,
+    "theory_markdown": 869,
+    "dissections": 699,
     "company_markdown": 13,
-    "indexed_files": 971
+    "indexed_files": 974
   },
   "source_hashes": {
     "companies/README.md": "a65ddd199669bf954425589c1a0fcdcb15cbab7c567fa525663429311c663d38",
@@ -115,9 +115,9 @@
     "reports/biweekly/reflection_2026-10-21.md": "c4e1accc3cf3a88e7d075698af4d6268d9d25bb2323e92c22f4966e688216617",
     "reports/biweekly/reflection_2026-11-04.md": "0c3bea09bb96b9e18c493a1de472b80a1f6b7fb986c407fe817ff12d653ffb59",
     "reports/biweekly/reflection_2026-11-18.md": "c3ffbf3c072e2c067ee0f2cf17f9d23d3c54cc64111bd9d6de4d7ac94f596b4c",
-    "theory/README.md": "c7960e05b52a621b309ffd66b6cc2ccfbb5613a14d1038dd531a0f09f8285b2d",
-    "theory/benchmark_tracker.md": "ebcbd4ac9614c31cb07df3caba00dea893be910c28927c899f0f812a7eb11b3b",
-    "theory/deployment/README.md": "3a91b443b9419794386696a1b14c6f49b22eb4bed0b592c2c8fc2223a8136e48",
+    "theory/README.md": "bef880721a5ff66ac799d9436fc244baf046f03a4c42af5dcdc58c68330801ce",
+    "theory/benchmark_tracker.md": "a996e47185ff0baba12323120a80e0f7285b7226042c7a982f3ded1a3da74cff",
+    "theory/deployment/README.md": "e15e3ceda74ef74bdae82bcb269b883fba81e46d7ce407e2726203e9dc27515d",
     "theory/deployment/adapting_video_models_for_robot_control_via_motion_guided_as_dissection.md": "af3e52e488c1ef1ed1a26aad3569e95b1d70346c2ba22c147bebbe2c0a9cb149",
     "theory/deployment/aegis_a_backup_reflex_for_physical_ai_dissection.md": "f8b7e2c7d8b5bf14468f23d6c0cca9cd4585b1534b5788af4c69e747ebfe81be",
     "theory/deployment/anyviewdex_view_invariant_dexterous_manipulation_from_rgb_ob_dissection.md": "57b235e90302b5ea49794164b9ca5b2e30ca1b682068333e9f01f9e9c5539dd7",
@@ -137,6 +137,7 @@
     "theory/deployment/equibim_learning_symmetry_equivariant_policy_for_bimanual_ma_dissection.md": "7e419f4a60847df7d905bed13eb403e3bdb2d24ff865ec4ca0edf389663a47a6",
     "theory/deployment/equidexflow_contact_grounded_se_equivariant_dexterous_grasp_dissection.md": "72f75e1a329e4eabde1cc2b358357b2c4665e0179e06235f8ed98554e43ced44",
     "theory/deployment/flashdexretarget_accelerating_dexterous_manipulation_data_ge_dissection.md": "0cb71ade322a3c963f497031bba55653782a0cfd7713ffb30f023553424fb12b",
+    "theory/deployment/going_with_the_flow_koopman_behavioral_models_as_pseudo_plan_dissection.md": "658fe986300b52bd81d0853cfacebc69ab2f2694f5eb26586883ba6f04b0efae",
     "theory/deployment/gr_dexter_bimanual_dexterous_vla.md": "4f7b10bcc63169a3e1e8fc412e14270eafacff98c46950debcc09320c92d7b1f",
     "theory/deployment/grasp_algorithms.md": "2f4f3ce5d9a579682586068f25cdfc29dc307d55fa5512a3ae7763b8861c845a",
     "theory/deployment/hand_in_the_loop_improving_vla_policies_for_dexterous_manipu_dissection.md": "4094b042621ec0518c7b08f1a9eedabb912030ea06ffa642ae85461eb215b995",
@@ -280,7 +281,7 @@
     "theory/foundation/open_humanscale_an_open_recipe_for_scaling_human_and_robot_e_dissection.md": "d873e9cfdedc3e3066b73797fee0f4d394bbb367b978ee7c1074abba30e23a65",
     "theory/foundation/oxygen_unified_kv_cache_management_for_vla_inference_under_m_dissection.md": "900ef0fe3b0b1ec81a8f5043ebfd91471dbe79e27b9341f542ddfd2e31eb5a9e",
     "theory/foundation/paiworld_a_3d_consistent_world_foundation_model_for_robotic_dissection.md": "40baa2783f74ecf0808862f037288432986f9c65cd72fac032e9626e3585fa85",
-    "theory/foundation/paper_index.md": "cb4794d126facbf4a017e569dddf63358ec22340c87af991a25b8a6e5639eb61",
+    "theory/foundation/paper_index.md": "7862229567f058aee983fddaf285259884260a61c1211af94d37022bc72f6539",
     "theory/foundation/particlesplat_self_supervised_object_centric_latent_particle_dissection.md": "32a84a2a5077e3c785533004839d3811cfbda305adb2e8460d2920dc71820640",
     "theory/foundation/peft_lora.md": "eb1196abe182554bc2df34d25118923a30199182b490714d540716d507e57e44",
     "theory/foundation/play2perfect_what_matters_in_dexterous_play_pretraining_for_dissection.md": "910a060921d6bf60c49b8f1399e036d3dfd8509617ba047546666660b262e079",
@@ -322,7 +323,7 @@
     "theory/foundation/what_can_a_vla_learn_from_the_agent_that_calls_it_task_level_dissection.md": "ddd3bd5c757425e29dc488d3bf0b24de95c9489750e2ffd2c957bad3affa676f",
     "theory/foundation/world_action_models_enable_continual_imitation_learning_with_dissection.md": "15abd40bd32bb17cd89e08263e36b11545815611607fa4339b4b5c8f6e7891e0",
     "theory/frontier/3droid_a_renderable_3d_gaussian_dataset_with_measured_per_sc_dissection.md": "331db9021b9e7f38b62f12f4af9664ec117495e5e6ed4272fbfe7e4c536dd80d",
-    "theory/frontier/README.md": "bdcd7e1397756f9493e4842d9a1fd637f7991db288411496c065d274dfc6ebb5",
+    "theory/frontier/README.md": "82daa9b7a18cc85b71665f9cb4e191f35d510ac491d1f657f8b92cd6722c1c4b",
     "theory/frontier/a_biophysically_detailed_c_elegans_circuit_as_a_task_agnosti_dissection.md": "f191329fde39102bbf1b95e815f687392ee4c4664921db9ecccf269dee6f33bb",
     "theory/frontier/a_latency_aware_framework_for_visuomotor_policy_learning_on_dissection.md": "6f6cd4721e7996279b7685d15bb7fd4c71f74eb00f837483007581c6c159c6ca",
     "theory/frontier/antigrounding_executable_robot_trajectories_as_visual_prompt_dissection.md": "a6f54c9b959fabd844c3cc9e0e384f32dfdda5c48b5bbee38e24e24a2b301ee4",
@@ -351,6 +352,7 @@
     "theory/frontier/do_egocentric_video_language_models_capture_both_hand_and_ob_dissection.md": "8d3fb7f37eb2f55569bdae0c4385fa4dc2ce11dde8a71fef983d4dbc8d217c8d",
     "theory/frontier/drift_a_residual_flow_adapter_for_decoding_continuous_output_dissection.md": "fef27a76ec87c585773310e69241a1a04a9467fd3afcdd331bded5b7c09cbb7b",
     "theory/frontier/duomind_enabling_distributed_multi_robot_coordination_with_s_dissection.md": "857c7027d0ab9d6ed9bf8b881a972db21e4392c4048304e296eae1ab2e035dc3",
+    "theory/frontier/ego4gen_generating_geometry_grounded_motion_tokens_as_a_worl_dissection.md": "5533a8893b98f397b131cbe636f54e8bb718692426c2c2e7920f8dc2dff87107",
     "theory/frontier/ego_guidance_enhancing_robot_policy_learning_with_action_fre_dissection.md": "2bae77911c02c260f478b90025a8dda8865a98c8056f30e6ac225f9d8d822aa4",
     "theory/frontier/egohumanoid_v2_human_to_humanoid_transfer_of_coordinated_who_dissection.md": "079376a29fe5f9c8a97631ec7809c37382f2392b6bef8938bbc50eeea12b4d35",
     "theory/frontier/egospeedup_transferring_human_manipulation_tempo_to_robot_po_dissection.md": "32bb9df463e32f24fed58bb180e75eae05aa7a816d1a25f6df55a262cb685c22",
@@ -870,7 +872,7 @@
     "theory/vla-core/what_should_robot_policies_learn_to_predict_rethinking_super_dissection.md": "62d7669b265435e3c5d847a2c646e18191095dfda0c58f5d4e65937ca6754ef2",
     "theory/vla-core/world_pilot_steering_vision_language_action_models_with_worl_dissection.md": "74a9de1c499d35e091bd23120116c742847301d585c8e0ed4f5d02fa6edefe3b",
     "theory/vla-core/xiaomi_robotics_0_dissection.md": "b6068211281505a540304accae37ddac6d057aeebab195a05da249577d2bca4a",
-    "theory/world-model/README.md": "c52b032988714cd1719b12a30d93154298cafcd12fc1b1f61e0b370c18e47538",
+    "theory/world-model/README.md": "4cbefcfe971e65b22f8cf664a864dd4f065d76fbdc214d12698d95ce214e0e4f",
     "theory/world-model/accerl_a_distributed_asynchronous_reinforcement_learning_and_dissection.md": "7fe792b2562e4f08c6d6326b1fb708647abc337673e377d02f939c69740d8bee",
     "theory/world-model/aeroact_action_centered_world_action_models_for_language_con_dissection.md": "64bf3b6684a18d842aa4c59860d12c1fcec0310a4345de05a3473b17ab556d6b",
     "theory/world-model/agent_world_model_infinity_synthetic_environments_for_agenti_dissection.md": "ad0f2e4bd9839f987b74361f0166aec9e2d27401b3b204d71b3eff678037ca4d",
@@ -945,6 +947,7 @@
     "theory/world-model/rolling_wam_world_action_models_with_rolling_imagination_dissection.md": "a331d6a05a28168d2bd23bd827c12f85f452b7ecc6a56d8ef19ee5d84d2d15a3",
     "theory/world-model/ropedreamer_a_kinematic_recurrent_state_space_model_for_dyna_dissection.md": "c8561321d5668aa8e6f9c4406254aa81568021c32e03eb16fad86ee0297d29a2",
     "theory/world-model/simulation_distillation_pretraining_world_models_in_simulati_dissection.md": "f5c54c77dd42690db4a87899755f2501fea4cc154f25ede2e0a53ed71cd1977c",
+    "theory/world-model/simulator_as_proxy_world_model_for_robot_manipulation_dissection.md": "70bcf9b730dc0324466c7727c5fdbc1949e31b595f8fbf2a58e1ec0ec4408169",
     "theory/world-model/skelewam_skeleton_world_action_modeling_for_efficient_roboti_dissection.md": "659670184788a37dca36a7618d8697530089a3a704d0d092e9fe88846010d006",
     "theory/world-model/smolwam_a_latent_world_action_model_for_robotic_manipulation_dissection.md": "2a7befc72c5d43ae611d40455dd40cf0ec1061324723b6d9e7811f39ef98bf2c",
     "theory/world-model/soma_a_real_to_sim_neural_simulator_for_robotic_soft_body_ma_dissection.md": "46d7aacbfc3b578594ff1dcd24e49970f995ecf6a3d04019b37681459a90a503",
@@ -1013,7 +1016,7 @@
   "provider": "deepseek-flash",
   "belief_recalibrated": false,
   "artifacts": {
-    "skill/references/HANDBOOK_CURRENT.md": "c6a28e55c8f515df075dfa6d0e7e1cf8dc891a14ae6407ba2457e848b312e805",
-    "skill/references/HANDBOOK_INDEX.md": "e58415d78278475416579c464191712954300e7d72f7ebcf1184e3104553d742"
+    "skill/references/HANDBOOK_CURRENT.md": "c4d7a5c5f18265f3344eb5d7fb98e5b313d73536d54fdd0d4903b7e18b8e5c44",
+    "skill/references/HANDBOOK_INDEX.md": "13e1924b7a3f51df8ae5ae69e701c03ca3c87dde35ea2727fe9718f43a7d5f2e"
   }
 }
